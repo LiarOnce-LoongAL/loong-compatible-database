@@ -9,6 +9,6 @@ export default {
     enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
         useComponents(ctx.app);
-        ctx.app.use(ElementPlus, { locale: cn })
+        ctx.app.use(ElementPlus)
     },
 };
