@@ -5,14 +5,18 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:build": "vitepress build docs",
+    "register:components": "vitepress-rc",
+    "docs:build": "pnpm run register:components && vitepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "pnpm run register:components && vitepress dev docs",
     "docs:update-package": "pnpm dlx vp-update",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.2",
     "vitepress": "^1.2.3",
+    "vitepress-theme-demoblock": "^3.0.7",
     "vue": "^3.4.0"
   },
   "dependencies": {
