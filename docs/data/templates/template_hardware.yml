@@ -1,6 +1,6 @@
-brand:  #品牌
 model:  #型号
+brand:  #品牌
 type:   #类型
-status:   #兼容状态
+status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容
 notes:  #备注
 link:   #链接

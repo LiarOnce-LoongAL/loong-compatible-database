@@ -20,6 +20,8 @@
     "vue": "^3.4.0"
   },
   "dependencies": {
-    "element-plus": "^2.7.6"
+    "element-plus": "^2.7.6",
+    "glob": "^10.4.2",
+    "js-yaml": "^4.1.0"
   }
 }
