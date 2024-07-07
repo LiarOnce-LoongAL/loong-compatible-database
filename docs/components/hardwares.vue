@@ -1,8 +1,8 @@
 <template>
     <el-button @click="clearFilter">重置筛选</el-button>
-    <el-table ref="tableRef" row-key="model" :data="tableData" border>
+    <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'brand', order: 'ascending' }">
         <el-table-column prop="model" label="型号" />
-        <el-table-column prop="brand" label="品牌" column-key="brand" width="120" />
+        <el-table-column prop="brand" label="品牌" column-key="brand" width="120" sortable />
         <el-table-column prop="type" label="类型" width="180" 
             :filters="filtersJson.filtersHardwareType" 
             :filter-method="filterType" 

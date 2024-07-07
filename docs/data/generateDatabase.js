@@ -14,7 +14,7 @@ const json_template = {
     liblol: []
 }
 
-const hardwares = await glob(__dirname + "/hardwares/**.yml", {})
+const hardwares = await glob(__dirname + "/hardwares/**/*.yml", {})
 hardwares.forEach(files => {
     let yamlFile = fs.readFileSync(files, 'utf-8')
     let jsonResult = yaml.load(yamlFile)
