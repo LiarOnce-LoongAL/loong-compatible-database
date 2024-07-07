@@ -1,0 +1,12 @@
+.VPDoc:not(.has-sidebar) .container {
+    margin: 0 !important;
+    max-width: none !important;
+}
+
+.VPDoc:not(.has-sidebar) .container .content {
+    max-width: none !important;
+}
+
+.vp-doc table{
+    margin: 0;
+}

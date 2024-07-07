@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "register:components": "vitepress-rc",
+    "register:components": "node ./docs/data/generateDatabase.js && vitepress-rc",
     "docs:build": "pnpm run register:components && vitepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "pnpm run register:components && vitepress dev docs",

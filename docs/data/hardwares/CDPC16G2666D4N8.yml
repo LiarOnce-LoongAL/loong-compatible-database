@@ -1,6 +1,6 @@
 model: CDPC16G2666D4N8 #型号
 brand: Colorful #品牌
-type: Memory  #类型
+type: Memory_UDIMM  #类型
 status: 1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容
 notes:  #备注
 link:   #链接

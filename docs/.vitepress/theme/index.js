@@ -1,4 +1,5 @@
 import DefaultTheme from "vitepress/theme";
+import './custom.css'
 import "vitepress-theme-demoblock/dist/theme/styles/index.css";
 import { useComponents } from "./useComponents";
 import ElementPlus from 'element-plus'

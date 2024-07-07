@@ -1,25 +1,18 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "LoongArch Compatibility Database"
+  text: ""
+  tagline: 适用于龙架构的兼容性数据网站
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 硬件兼容性
+      link: /list-hardwares
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: LAT 兼容性
+      link: /list-lat
+    - theme: alt
+      text: LibLOL 兼容性
+      link: /list-liblol
 ---
-

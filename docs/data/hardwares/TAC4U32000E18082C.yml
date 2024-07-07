@@ -1,0 +1,6 @@
+model: TAC4U32000E18082C #型号
+brand: Gloway #品牌
+type: Memory_UDIMM  #类型
+status: 2  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容
+notes: 仅能运行在 2400 MHz 频率下 #备注
+link:   #链接
