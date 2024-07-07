@@ -14,21 +14,25 @@ const json_template = {
     liblol: []
 }
 
-const hardwares = await glob(__dirname + "/hardwares/**/*.yml", {})
+const glob_options = {
+    ignore: ['**/template*.yml']
+}
+
+const hardwares = await glob(__dirname + "/hardwares/**/*.yml", glob_options)
 hardwares.forEach(files => {
     let yamlFile = fs.readFileSync(files, 'utf-8')
     let jsonResult = yaml.load(yamlFile)
     json_template.hardwares.push(jsonResult)
 })
 
-const lat = await glob(__dirname + "/lat/**.yml", {})
+const lat = await glob(__dirname + "/lat/**/*.yml", glob_options)
 lat.forEach(files => {
     let yamlFile = fs.readFileSync(files, 'utf-8')
     let jsonResult = yaml.load(yamlFile)
     json_template.lat.push(jsonResult)
 })
 
-const liblol = await glob(__dirname + "/liblol/**.yml", {})
+const liblol = await glob(__dirname + "/liblol/**/*.yml", glob_options)
 liblol.forEach(files => {
     let yamlFile = fs.readFileSync(files, 'utf-8')
     let jsonResult = yaml.load(yamlFile)

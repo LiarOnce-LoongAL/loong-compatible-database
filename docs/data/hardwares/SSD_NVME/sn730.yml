@@ -1,0 +1,6 @@
+model: SN730 #型号
+brand: Western Digital #品牌
+type: SSD_NVMe  #类型
+status: -1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容
+notes: 报 I/O 错误，用硬盘盒转接 USB 也不行 #备注
+link:   #链接
