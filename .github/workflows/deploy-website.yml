@@ -20,17 +20,17 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          run_install: true
-          version: 8
-
       - name: Set Node.js version
         uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: pnpm
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          run_install: true
+          version: 8
 
       - name: Build docs
         env:
