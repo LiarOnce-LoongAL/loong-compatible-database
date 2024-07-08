@@ -1,13 +1,8 @@
 import { defineConfig } from "vitepress";
-import {
-    demoblockPlugin,
-    demoblockVitePlugin,
-} from "vitepress-theme-demoblock";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
-import { demoblock } from "./config_files/demoblock";
 import { navbar } from "./config_files/navbar";
 import { sidebar_hardwares } from "./config_files/sidebar_hardwares";
 import { sidebar_lat } from "./config_files/sidebar_lat";
@@ -41,12 +36,14 @@ export default defineConfig({
     },
     markdown: {
         config: (md) => {
-            md.use(demoblockPlugin);
+            
         },
     },
     vite: {
+        ssr: {
+            noExternal: ['element-plus']
+        },
         plugins: [
-            demoblockVitePlugin(),
             AutoImport({
                 resolvers: [ElementPlusResolver()],
             }),
@@ -54,6 +51,5 @@ export default defineConfig({
                 resolvers: [ElementPlusResolver()],
             }),
         ],
-    },
-    demoblock: demoblock,
+    }
 });

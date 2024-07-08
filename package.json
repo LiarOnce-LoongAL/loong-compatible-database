@@ -5,10 +5,10 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "register:components": "node ./docs/data/generateDatabase.js && vitepress-rc",
-    "docs:build": "pnpm run register:components && vitepress build docs",
+    "generate:data": "node ./docs/data/generateDatabase.js",
+    "docs:build": "pnpm run generate:data && vitepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "pnpm run register:components && vitepress dev docs",
+    "docs:dev": "pnpm run generate:data && vitepress dev docs",
     "docs:update-package": "pnpm dlx vp-update",
     "docs:preview": "vitepress preview docs"
   },
@@ -16,7 +16,6 @@
     "unplugin-auto-import": "^0.17.6",
     "unplugin-vue-components": "^0.27.2",
     "vitepress": "^1.2.3",
-    "vitepress-theme-demoblock": "^3.0.7",
     "vue": "^3.4.0"
   },
   "dependencies": {
