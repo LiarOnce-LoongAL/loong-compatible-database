@@ -12,10 +12,10 @@
         >
             <template #default="scope">
                 <el-tag v-if="scope.row.status == 0" type="info">未知</el-tag>
-                <el-tag v-if="scope.row.status == 1" type="success">可用</el-tag>
-                <el-tag v-if="scope.row.status == 2" type="warning">存在问题</el-tag>
+                <el-tag v-if="scope.row.status == 1" type="success">兼容</el-tag>
+                <el-tag v-if="scope.row.status == 2" type="warning">有限兼容</el-tag>
                 <el-tag v-if="scope.row.status == 3">新世界可用</el-tag>
-                <el-tag v-if="scope.row.status == -1" type="danger">不可用</el-tag>
+                <el-tag v-if="scope.row.status == -1" type="danger">不兼容</el-tag>
             </template>
         </el-table-column>
         <el-table-column prop="notes" label="备注" />

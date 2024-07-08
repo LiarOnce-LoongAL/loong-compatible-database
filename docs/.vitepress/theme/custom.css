@@ -10,3 +10,11 @@
 .vp-doc table{
     margin: 0;
 }
+
+.VPSidebar {
+    background-color: unset !important;
+}
+
+.VPSidebar .curtain {
+    background-color: unset !important;
+}

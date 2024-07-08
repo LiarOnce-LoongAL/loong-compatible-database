@@ -1,8 +1,7 @@
 ---
-sidebar: true
-layout: doc
 aside: false
 prev: false
 next: false
 ---
-# 硬件相关
+
+# AMD 显卡 (AMDGPU)

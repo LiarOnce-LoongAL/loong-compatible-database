@@ -4,10 +4,10 @@
         <el-table-column prop="name" label="名称" />
         <el-table-column prop="version" label="软件版本号" />
         <el-table-column prop="lat_version" label="LAT 版本号" />
-        <el-table-column prop="latx_or_lata" label="LATX 或 LATA" />
-        <el-table-column prop="date" label="更新日期" />
+        <el-table-column prop="latx_or_lata" label="LATX 或 LATA" width="120" />
+        <el-table-column prop="date" label="更新日期" width="140" />
         <el-table-column prop="status" label="兼容状态" width="100" 
-            :filters="filtersJson.filtersStatus" 
+            :filters="filtersJson.filtersLatStatus" 
             :filter-method="filterStatus" 
             filter-placement="bottom-end"
         >
@@ -15,7 +15,7 @@
                 <el-tag v-if="scope.row.status == 0" type="info">未知</el-tag>
                 <el-tag v-if="scope.row.status == 1" type="success">兼容</el-tag>
                 <el-tag v-if="scope.row.status == 2" type="warning">有限兼容</el-tag>
-                <el-tag v-if="scope.row.status == 3">新世界可用</el-tag>
+                <el-tag v-if="scope.row.status == 3">原生可用</el-tag>
                 <el-tag v-if="scope.row.status == -1" type="danger">不兼容</el-tag>
             </template>
         </el-table-column>
