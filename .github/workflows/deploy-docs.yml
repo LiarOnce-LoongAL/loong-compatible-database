@@ -56,5 +56,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/"
-          api_location: "" 
+          api_location: ""
+          skip_api_build: true
           output_location: "/docs/.vitepress/dist" 
