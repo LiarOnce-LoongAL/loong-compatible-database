@@ -10,7 +10,8 @@
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "pnpm run generate:data && vitepress dev docs",
     "docs:update-package": "pnpm dlx vp-update",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "build:azure": "pnpm run docs:build"
   },
   "devDependencies": {
     "unplugin-auto-import": "^0.17.6",
