@@ -23,7 +23,9 @@ const filtersHardwareType = [
     { text: "手柄控制器", value: "Gamepad" },
     { text: "打印机", value: "Printer" },
     { text: "扫描仪", value: "Scanner" },
+    { text: "打印复印一体机", value: "Printer_AIO" },
     { text: "PCIe 扩展卡", value: "PCIe_Card" },
+    { text: "USB 设备", value: "USB_Device" },
     { text: "固件", value: "Firmware" }
 ];
 
