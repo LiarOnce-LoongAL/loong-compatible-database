@@ -1,0 +1,6 @@
+model: RTL8125 Series #型号
+brand: Realtek #品牌
+type: Ethernet  #类型
+status: 3  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=新世界可用
+notes: 包含各类修订版本，例如 B/BG #备注
+link:   #链接

@@ -1,0 +1,6 @@
+model: Wi-Fi 6 AX101 #型号
+brand: Intel #品牌
+type: Wireless  #类型
+status: -1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=新世界可用
+notes:  #备注
+link: /hardwares/iwlwifi.html#cnvi  #链接
