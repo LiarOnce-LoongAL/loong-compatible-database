@@ -18,3 +18,11 @@
 .VPSidebar .curtain {
     background-color: unset !important;
 }
+
+.VPDoc.has-aside .container .content {
+    margin: 0 !important;
+}
+
+.VPDoc.has-aside .content-container {
+    max-width: unset !important;
+}

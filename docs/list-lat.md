@@ -4,10 +4,10 @@ outline: false
 ---
 # LAT 兼容性
 
-<liblolTagsInfo />
+<latTagsInfo />
 <latList />
 
 <script setup>
-    import liblolTagsInfo from "./components/tags/liblol_tagsinfo.vue"
+    import latTagsInfo from "./components/tags/lat_tagsinfo.vue"
     import latList from "./components/lat.vue"
 </script>

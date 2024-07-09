@@ -1,7 +1,7 @@
 <template>
     <el-button @click="clearFilter">重置筛选</el-button>
     <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'brand', order: 'ascending' }">
-        <el-table-column prop="name" label="名称" />
+        <el-table-column prop="name" label="名称" width="300" />
         <el-table-column prop="version" label="软件版本号" width="140" />
         <el-table-column prop="liblol_version" label="LibLOL 版本号" width="120" />
         <el-table-column prop="date" label="更新日期" width="140" />
@@ -18,8 +18,8 @@
                 <el-tag v-if="scope.row.status == -1" type="danger">不兼容</el-tag>
             </template>
         </el-table-column>
-        <el-table-column prop="notes" label="备注" />
-        <el-table-column prop="link" label="链接" width="90" />
+        <el-table-column prop="notes" label="备注" min-width="300" />
+        <el-table-column prop="link" label="链接" width="60" />
     </el-table>
 </template>
 

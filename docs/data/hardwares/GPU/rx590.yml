@@ -1,4 +1,4 @@
-model: Radeon Pro WX 2100 #型号
+model: Radeon RX 590 #型号
 brand: AMD #品牌
 type: GPU  #类型
 status: 1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容

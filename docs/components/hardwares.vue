@@ -1,9 +1,9 @@
 <template>
     <el-button @click="clearFilter">重置筛选</el-button>
     <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'brand', order: 'ascending' }">
-        <el-table-column prop="model" label="型号" />
-        <el-table-column prop="brand" label="品牌" column-key="brand" width="120" sortable />
-        <el-table-column prop="type" label="类型" width="180" 
+        <el-table-column prop="model" label="型号" width="300" />
+        <el-table-column prop="brand" label="品牌" column-key="brand" width="150" sortable />
+        <el-table-column prop="type" label="类型" width="200" 
             :filters="filtersJson.filtersHardwareType" 
             :filter-method="filterType" 
             filter-placement="bottom-end"
@@ -14,7 +14,7 @@
                 </span>
             </template>
         </el-table-column>
-        <el-table-column prop="status" label="兼容状态" width="100" 
+        <el-table-column prop="status" label="兼容状态" width="120" 
             :filters="filtersJson.filtersStatus" 
             :filter-method="filterStatus" 
             filter-placement="bottom-end"
@@ -27,8 +27,12 @@
                 <el-tag v-if="scope.row.status == -1" type="danger">不兼容</el-tag>
             </template>
         </el-table-column>
-        <el-table-column prop="notes" label="备注" />
-        <el-table-column prop="link" label="链接" width="100" />
+        <el-table-column prop="notes" label="备注" min-width="300" />
+        <el-table-column prop="link" label="链接" width="60">
+            <template #default="scope">
+                <span v-if="scope.row.link"><a :href="scope.row.link">文档</a></span>
+            </template>
+        </el-table-column>
     </el-table>
 </template>
 
