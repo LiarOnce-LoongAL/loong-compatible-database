@@ -13,8 +13,14 @@ const navbar = [
         items: [
             { text: "硬件相关", link: "/hardwares/" },
             { text: "LAT 相关", link: "/lat/" },
-            { text: "LibLOL 相关", link: "/liblol" },
-            { text: "参与贡献", link: "/contribution" }
+            { text: "LibLOL 相关", link: "/liblol" }
+        ],
+    },
+    {
+        text: "参与贡献",
+        items: [
+            { text: "参与贡献", link: "/contribution/" },
+            { text: "常见问题", link: "/contribution/knownissues" }
         ],
     },
 ]
