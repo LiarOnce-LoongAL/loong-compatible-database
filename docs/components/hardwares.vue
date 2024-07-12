@@ -1,5 +1,4 @@
 <template>
-    <el-button @click="clearFilter">重置筛选</el-button>
     <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'brand', order: 'ascending' }">
         <el-table-column prop="model" label="型号" width="300" />
         <el-table-column prop="brand" label="品牌" column-key="brand" width="150" sortable />
@@ -42,15 +41,6 @@ import databaseJson from '../data/datas.min.json'
 import * as filtersJson from './filters' 
 
 const tableRef = ref()
-
-// const resetDateFilter = () => {
-//     tableRef.value.clearFilter(['date'])
-// }
-const clearFilter = () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    tableRef.value.clearFilter()
-}
 
 const filterType = (value, row) => {
     return row.type === value
