@@ -1,6 +1,6 @@
-model: TiPlus7100 #型号
-brand: ZHITAI/YMTC #品牌
-type: SSD_NVMe  #类型
-status: 1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容
-notes:  #备注
-link:   #链接
+model: TiPlus7100
+brand: ZHITAI/YMTC
+type: SSD_NVMe 
+status: 1 
+notes: 
+link:  

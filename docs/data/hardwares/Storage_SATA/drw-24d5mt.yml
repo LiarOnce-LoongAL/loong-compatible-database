@@ -1,6 +1,6 @@
-model: DRW-24D5MT #型号
-brand: ASUS #品牌
-type: Storage_SATA  #类型
-status: 1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容
-notes: 光驱 #备注
-link:   #链接
+model: DRW-24D5MT
+brand: ASUS
+type: Storage_SATA 
+status: 1 
+notes: 光驱
+link:  

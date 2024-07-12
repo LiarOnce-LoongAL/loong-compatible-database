@@ -1,6 +1,6 @@
-model: Radeon RX 6400 #型号
-brand: AMD #品牌
-type: GPU  #类型
-status: 3  #兼容状态 -1=不兼容 0=未知 1=兼容 2=有限兼容 3=新世界可用
-notes:  #备注
-link:   #链接
+model: Radeon RX 6400
+brand: AMD
+type: GPU 
+status: 3 
+notes: 
+link:  

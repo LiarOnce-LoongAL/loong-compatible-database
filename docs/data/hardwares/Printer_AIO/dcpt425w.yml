@@ -1,6 +1,6 @@
-model: DCP-T425W #型号
-brand: Brother #品牌
-type: Printer_AIO  #类型
-status: 1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=新世界可用
-notes: 使用 Wi-Fi 无线连接可以免驱动 #备注
-link:   #链接
+model: DCP-T425W
+brand: Brother
+type: Printer_AIO 
+status: 1 
+notes: 使用 Wi-Fi 无线连接可以免驱动
+link:  

@@ -1,6 +1,6 @@
-model: E2M2 64G #型号
-brand: FORESEE #品牌
-type: SSD_NVMe  #类型
-status: -1  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容
-notes: Steam Deck 64G 版本的拆机硬盘 #备注
-link:   #链接
+model: E2M2 64G
+brand: FORESEE
+type: SSD_NVMe 
+status: -1 
+notes: Steam Deck 64G 版本的拆机硬盘
+link:  
