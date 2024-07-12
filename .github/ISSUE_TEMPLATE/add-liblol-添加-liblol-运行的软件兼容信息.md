@@ -1,15 +1,15 @@
 ---
-name: Add LibLOL 添加 LibLOL 运行的软件兼容信息
-about: 如果需要添加通过 LibLOL 兼容层的兼容性情况请在这里填写模板
-title: "[Add LibLOL]"
+name: Add LibLoL 添加 LibLoL 运行的软件兼容信息
+about: 如果需要添加通过 LibLoL 兼容层的兼容性情况请在这里填写模板
+title: "[Add LibLoL]"
 labels: ''
 assignees: ''
 
 ---
 
-**在提交 LibLOL 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#liblol**
+**在提交 LibLoL 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#liblol**
 
-**LibLOL 信息**
+**LibLoL 信息**
 ```yaml
 name: 
 version: 

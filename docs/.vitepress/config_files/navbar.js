@@ -5,7 +5,7 @@ const navbar = [
         items: [
             { text: "硬件兼容性", link: "/list-hardwares" },
             { text: "LAT 兼容性", link: "/list-lat" },
-            { text: "LibLOL 兼容性", link: "/list-liblol" },
+            { text: "LibLoL 兼容性", link: "/list-liblol" },
         ],
     },
     {
@@ -13,7 +13,7 @@ const navbar = [
         items: [
             { text: "硬件相关", link: "/hardwares/" },
             { text: "LAT 相关", link: "/lat/" },
-            { text: "LibLOL 相关", link: "/liblol" }
+            { text: "LibLoL 相关", link: "/liblol" }
         ],
     },
     {

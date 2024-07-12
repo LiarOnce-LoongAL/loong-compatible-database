@@ -26,7 +26,7 @@ export default defineConfig({
                 items: sidebar_lat
             }],
             "/liblol/": [{
-                text: 'LibLOL 相关',
+                text: 'LibLoL 相关',
                 items: sidebar_liblol
             }]
         },

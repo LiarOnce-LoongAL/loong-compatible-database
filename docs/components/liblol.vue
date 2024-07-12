@@ -1,11 +1,12 @@
 <template>
     <el-button @click="clearFilter">重置筛选</el-button>
-    <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'brand', order: 'ascending' }">
-        <el-table-column prop="name" label="名称" width="300" />
-        <el-table-column prop="version" label="软件版本号" width="140" />
-        <el-table-column prop="liblol_version" label="LibLOL 版本号" width="120" />
-        <el-table-column prop="date" label="更新日期" width="140" />
-        <el-table-column prop="status" label="兼容状态" width="120" 
+    <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'id', order: 'ascending' }">
+        <el-table-column prop="id" label="ID" width="70" />
+        <el-table-column prop="name" label="名称" width="160" />
+        <el-table-column prop="version" label="软件版本号" min-width="120" />
+        <el-table-column prop="liblol_version" label="LibLoL 版本号" width="80" />
+        <el-table-column prop="date" label="更新日期" min-width="140" />
+        <el-table-column prop="status" label="兼容状态" min-width="80" 
             :filters="filtersJson.filtersStatus" 
             :filter-method="filterStatus" 
             filter-placement="bottom-end"
@@ -18,7 +19,7 @@
                 <el-tag v-if="scope.row.status == -1" type="danger">不兼容</el-tag>
             </template>
         </el-table-column>
-        <el-table-column prop="notes" label="备注" min-width="300" />
+        <el-table-column prop="notes" label="备注" min-width="200" />
         <el-table-column prop="link" label="链接" width="60" />
     </el-table>
 </template>

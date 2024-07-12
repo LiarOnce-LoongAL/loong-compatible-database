@@ -250,7 +250,7 @@ link:   #链接
 
 之后根据[此处](#external-docs)的指示将文档展示在指定位置。
 
-## LibLOL
+## LibLoL
 
 ### 开始
 
@@ -261,7 +261,7 @@ link:   #链接
 ```yaml
 name:  #软件名称
 version:  #软件版本号
-liblol_version:   #libLOL 版本号
+liblol_version:   #libLoL 版本号
 date:   #更新日期
 status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=新世界可用
 notes:  #备注
@@ -278,7 +278,7 @@ link:   #链接
 
 ### liblol_version
 
-此处填写运行该软件时使用的 LibLOL 运行库版本，填写范例为：`0.1.5`
+此处填写运行该软件时使用的 LibLoL 运行库版本，填写范例为：`0.1.5`
 
 ### date
 

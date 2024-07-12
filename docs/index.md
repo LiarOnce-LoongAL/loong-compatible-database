@@ -16,6 +16,6 @@ hero:
       text: LAT 兼容性
       link: /list-lat
     - theme: alt
-      text: LibLOL 兼容性
+      text: LibLoL 兼容性
       link: /list-liblol
 ---
