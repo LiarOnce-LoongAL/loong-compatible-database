@@ -5,7 +5,7 @@
         <el-table-column prop="name" label="名称" min-width="160" />
         <el-table-column prop="version" label="软件版本号" min-width="120" />
         <el-table-column prop="liblol_version" label="LibLoL 版本号" width="80" />
-        <el-table-column prop="date" label="更新日期" min-width="140" />
+        <el-table-column prop="date" label="更新日期" width="180" />
         <el-table-column prop="status" label="兼容状态" width="110" 
             :filters="filtersJson.filtersStatus" 
             :filter-method="filterStatus" 
