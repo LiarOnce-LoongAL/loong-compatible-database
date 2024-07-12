@@ -49,6 +49,7 @@ jobs:
           folder: docs/.vitepress/dist
           
   deploy-azure:
+    needs: deploy-pages
     runs-on: ubuntu-latest
     name: Deploy to azure
     steps:
