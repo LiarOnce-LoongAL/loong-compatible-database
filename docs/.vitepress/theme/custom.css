@@ -26,3 +26,7 @@
 .VPDoc.has-aside .content-container {
     max-width: unset !important;
 }
+.vp-doc .el-table .cell {
+    /* Fix line breaks in Firefox */
+    word-break: break-all;
+}
