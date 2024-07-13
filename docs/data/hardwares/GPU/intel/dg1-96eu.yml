@@ -1,0 +1,6 @@
+model: Xe MAX (DG1) (96EU)
+brand: Intel
+type: GPU 
+status: 3
+notes: 需使用 xe 内核模块
+link: 

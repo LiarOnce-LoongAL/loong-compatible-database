@@ -1,0 +1,6 @@
+model: GeForce GT 730 (GF108) / 705 (Fermi)
+brand: NVIDIA
+type: GPU 
+status: 0
+notes: 可尝试使用 Nouveau 驱动测试
+link: 

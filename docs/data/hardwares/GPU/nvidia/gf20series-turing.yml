@@ -1,0 +1,6 @@
+model: GeForce RTX 2080 / 2080 Ti / 2080 SUPER / 2070 / 2070 SUPER / 2060 / 2060 SUPER / 2060(12GB) (Turing)
+brand: NVIDIA
+type: GPU 
+status: -1
+notes: 在开源版本驱动达到可用之前均标记为不兼容
+link: 
