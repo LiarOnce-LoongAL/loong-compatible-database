@@ -7,7 +7,7 @@
             <el-button type="primary">搜索</el-button>
         </el-col>
         <el-col :span="1">
-            <el-button @click="clearFilter">重置筛选</el-button>
+            
         </el-col>
     </el-row>
    
@@ -23,7 +23,4 @@ const tableRef = ref()
 //     tableRef.value.clearFilter(['date'])
 // }
 
-const clearFilter = () => {
-    tableRef.value.clearFilter()
-}
 </script>

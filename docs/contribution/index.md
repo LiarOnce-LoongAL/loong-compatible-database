@@ -59,32 +59,31 @@ link:   #链接
 
 此处提供部分厂商的英文名称，可作为参考，排名不分先后：
 
-| 厂商            | 英文名称 (`brand`值) | 备注                                                                                 |
-| --------------- | ---------------------- | ------------------------------------------------------------------------------------ |
-| 致态/长江存储   | ZHITAI/YMTC            | 对于长江存储旗下的原厂产品，此处均填 `ZHITAI/YMTC`                                 |
-| 合肥长鑫        | CXMT                   |                                                                                      |
-| 福建晋华        | JHICC                  |                                                                                      |
-| 威刚            | ADATA                  |                                                                                      |
-| 七彩虹          | Colorful               |                                                                                      |
-| 江波龙          | longsys                |                                                                                      |
-| 江波龙(FORESEE) | FORESEE                |                                                                                      |
-| 西安紫光国芯    | UniIC                  |                                                                                      |
-| 三星            | Samsung                |                                                                                      |
-| 思得/SK海力士   | Solidigm/SK Hynix      | 对于SK海力士旗下产品，此处均填 `Solidigm/SK Hynix`（包括内存条产品和固态硬盘产品） |
-| 铨兴            | Quanxing               |                                                                                      |
-| 美商海盗船      | Corsair                |                                                                                      |
-| 美光/英睿达     | Crucial/Micron         | 对于美光旗下的原厂产品，此处均填 `Crucial/Micron`                                  |
-| 光威            | Gloway                 |                                                                                      |
-| 金百达          | KingBank               |                                                                                      |
-| 裕太微          | Motorcomm              |                                                                                      |
-| 沐创            | MUCSE                  |                                                                                      |
-| 铠侠            | Kioxia                 |                                                                                      |
-| 东芝            | Toshiba                |                                                                                      |
-| 西数(西部数据)  | Western Digital        |                                                                                      |
-| 闪迪            | Sandisk                |                                                                                      |
-| 超威半导体      | AMD                    |                                                                                      |
-| 英特尔          | Intel                  |                                                                                      |
-| 英伟达          | NVIDIA                 |                                                                                      |
+| 厂商           | 英文名称 (`brand`值) | 备注                                                                                 |
+| -------------- | ---------------------- | ------------------------------------------------------------------------------------ |
+| 致态/长江存储  | ZHITAI/YMTC            | 对于长江存储旗下的原厂产品，此处均填 `ZHITAI/YMTC`                                 |
+| 合肥长鑫       | CXMT                   |                                                                                      |
+| 福建晋华       | JHICC                  |                                                                                      |
+| 威刚           | ADATA                  |                                                                                      |
+| 七彩虹         | Colorful               |                                                                                      |
+| 江波龙         | longsys/FORESEE        | 对于江波龙旗下产品，此处均填 `longsys/FORESEE`（包括内存条产品和固态硬盘产品）     |
+| 西安紫光国芯   | UniIC                  |                                                                                      |
+| 三星           | Samsung                |                                                                                      |
+| 思得/SK海力士  | Solidigm/SK Hynix      | 对于SK海力士旗下产品，此处均填 `Solidigm/SK Hynix`（包括内存条产品和固态硬盘产品） |
+| 铨兴           | Quanxing               |                                                                                      |
+| 美商海盗船     | Corsair                |                                                                                      |
+| 美光/英睿达    | Crucial/Micron         | 对于美光旗下的原厂产品，此处均填 `Crucial/Micron`                                  |
+| 光威           | Gloway                 |                                                                                      |
+| 金百达         | KingBank               |                                                                                      |
+| 裕太微         | Motorcomm              |                                                                                      |
+| 沐创           | MUCSE                  |                                                                                      |
+| 铠侠           | Kioxia                 |                                                                                      |
+| 东芝           | Toshiba                |                                                                                      |
+| 西数(西部数据) | Western Digital        |                                                                                      |
+| 闪迪           | Sandisk                |                                                                                      |
+| 超威半导体     | AMD                    |                                                                                      |
+| 英特尔         | Intel                  |                                                                                      |
+| 英伟达         | NVIDIA                 |                                                                                      |
 
 ### type
 

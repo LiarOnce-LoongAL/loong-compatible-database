@@ -1,7 +1,11 @@
 <template>
+    <el-button @click="clearFilter">重置筛选</el-button>
     <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'brand', order: 'ascending' }">
         <el-table-column prop="model" label="型号" width="300" />
-        <el-table-column prop="brand" label="品牌" column-key="brand" width="150" sortable />
+        <el-table-column prop="brand" label="品牌" column-key="brand" width="150" sortable 
+            :filters="filtersJson.filtersHardwareBrand" 
+            :filter-method="filterBrand" 
+        />
         <el-table-column prop="type" label="类型" width="200" 
             :filters="filtersJson.filtersHardwareType" 
             :filter-method="filterType" 
@@ -41,6 +45,13 @@ import databaseJson from '../data/datas.min.json'
 import * as filtersJson from './filters' 
 
 const tableRef = ref()
+const clearFilter = () => {
+    tableRef.value.clearFilter()
+}
+
+const filterBrand = (value, row) => {
+    return row.brand === value
+}
 
 const filterType = (value, row) => {
     return row.type === value
