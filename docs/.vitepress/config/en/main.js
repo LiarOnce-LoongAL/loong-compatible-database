@@ -15,19 +15,19 @@ export const en = defineConfig({
         },
         nav: navbar,
         sidebar: {
-            "/en/hardwares/": [
+            "/hardwares/": [
                 {
                     text: "Hardwares Info",
                     items: sidebar_hardwares,
                 },
             ],
-            "/en/lat/": [
+            "/lat/": [
                 {
                     text: "LAT Info",
                     items: sidebar_lat,
                 },
             ],
-            "/en/liblol/": [
+            "/liblol/": [
                 {
                     text: "LibLoL Info",
                     items: sidebar_liblol,

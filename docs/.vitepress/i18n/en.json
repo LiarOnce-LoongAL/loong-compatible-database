@@ -1,0 +1,33 @@
+{
+    "components": {
+        "clear_filter": "Clear Filters",
+        "model": "Model",
+        "brand": "Brand",
+        "type": "Type",
+        "status": "Status",
+        "notes": "Notes",
+        "link": "Link",
+        "doc_link": "Doc",
+        "name": "Name",
+        "soft_version": "Version",
+        "liblol_version": "LibLoL Version",
+        "lat_version": "LAT Version",
+        "latx_or_lata": "LATX or LATA",
+        "uptimedate": "Latest Date"
+    },
+    "status": {
+        "unknown": "Unknown",
+        "compatible": "Compatible",
+        "partial": "Partial Support",
+        "new_world": "New-world Available",
+        "native": "Native Available",
+        "unsupported": "Unsupported"
+    },
+    "status_taginfo_hardware": {
+        "unknown": "The hardware's compatibility is unknown and requires you testing",
+        "compatible": "The hardware is compatible with LoongArch platforms and compatible with 'old-world' and 'new-world' distributions",
+        "partial": "The hardware can be compatible with LoongArch platforms but some features are not supported, and may be compatible with both 'old-world' and 'new-world' or only 'old-world' distributions.",
+        "new_world": "The hardware is compatible with LoongArch platforms, but is only available on 'new-world' distributions",
+        "unsupported": "This hardware is incompatible with LoongArch platforms and is incompatible with any 'world' distributions"
+    }
+}

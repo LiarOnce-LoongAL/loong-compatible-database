@@ -1,12 +1,15 @@
 <template>
-    <el-button @click="clearFilter">重置筛选</el-button>
-    <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'brand', order: 'ascending' }">
-        <el-table-column prop="model" label="型号" width="300" />
-        <el-table-column prop="brand" label="品牌" column-key="brand" width="150" sortable 
+    <el-button @click="clearFilter">{{ $t('components.clear_filter') }}</el-button>
+    <el-table ref="tableRef" row-key="model" 
+        :data="tableData" border 
+        :default-sort="{ prop: 'brand', order: 'ascending' }"
+    >
+        <el-table-column prop="model" :label="$t('components.model')" width="300" />
+        <el-table-column prop="brand" :label="$t('components.brand')" column-key="brand" width="150" sortable 
             :filters="filtersJson.filtersHardwareBrand" 
             :filter-method="filterBrand" 
         />
-        <el-table-column prop="type" label="类型" width="200" 
+        <el-table-column prop="type" :label="$t('components.type')" width="200" 
             :filters="filtersJson.filtersHardwareType" 
             :filter-method="filterType" 
             filter-placement="bottom-end"
@@ -17,34 +20,41 @@
                 </span>
             </template>
         </el-table-column>
-        <el-table-column prop="status" label="兼容状态" width="120" 
+        <el-table-column prop="status" :label="$t('components.status')" width="170" 
             :filters="filtersJson.filtersStatus" 
-            :filter-method="filterStatus" 
+            :filter-method="filterStatus"
             filter-placement="bottom-end"
         >
             <template #default="scope">
-                <el-tag v-if="scope.row.status == 0" type="info">未知</el-tag>
-                <el-tag v-if="scope.row.status == 1" type="success">兼容</el-tag>
-                <el-tag v-if="scope.row.status == 2" type="warning">有限兼容</el-tag>
-                <el-tag v-if="scope.row.status == 3">新世界可用</el-tag>
-                <el-tag v-if="scope.row.status == -1" type="danger">不兼容</el-tag>
+                <el-tag v-if="scope.row.status == 0" type="info">{{ $t('status.unknown') }}</el-tag>
+                <el-tag v-if="scope.row.status == 1" type="success">{{ $t('status.compatible') }}</el-tag>
+                <el-tag v-if="scope.row.status == 2" type="warning">{{ $t('status.partial') }}</el-tag>
+                <el-tag v-if="scope.row.status == 3">{{ $t('status.new_world') }}</el-tag>
+                <el-tag v-if="scope.row.status == -1" type="danger">{{ $t('status.unsupported') }}</el-tag>
             </template>
         </el-table-column>
-        <el-table-column prop="notes" label="备注" min-width="300" />
-        <el-table-column prop="link" label="链接" width="60">
+        <el-table-column prop="notes" :label="$t('components.notes')" min-width="200" />
+        <el-table-column prop="link" :label="$t('components.link')" width="60">
             <template #default="scope">
-                <span v-if="scope.row.link"><a :href="scope.row.link">文档</a></span>
+                <span v-if="scope.row.link"><a :href="scope.row.link">{{ $t('components.doc_link') }}</a></span>
             </template>
         </el-table-column>
     </el-table>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
+
 import databaseJson from '../data/datas.min.json'
-import * as filtersJson from './filters' 
+import * as filtersJson from './filters.js'
+// let filtersJson
 
 const tableRef = ref()
+
+let refreshKey = Math.random()
+
 const clearFilter = () => {
     tableRef.value.clearFilter()
 }
@@ -62,4 +72,11 @@ const filterStatus = (value, row) => {
 }
 
 const tableData = databaseJson.hardwares
+
+nextTick(() => {
+    // Used for execute switch language after insert "lang" in <html>
+    localStorage.setItem('lang', document.documentElement.lang)
+    locale.value = localStorage.getItem('lang')
+    tableRef.doLayout()
+})
 </script>

@@ -1,12 +1,15 @@
-const filtersStatus = [
-    { text: "未知", value: 0 },
-    { text: "兼容", value: 1 },
-    { text: "有限兼容", value: 2 },
-    { text: "新世界可用", value: 3 },
-    { text: "不兼容", value: -1 },
+import i18n from "../.vitepress/theme/i18n"
+const $t = i18n.global.t;
+
+export const filtersStatus = [
+    { text: $t("status.unknown"), value: 0 },
+    { text: $t("status.compatible"), value: 1 },
+    { text: $t("status.partial"), value: 2 },
+    { text: $t("status.new_world"), value: 3 },
+    { text: $t("status.unsupported"), value: -1 },
 ];
 
-const filtersHardwareBrand = [
+export const filtersHardwareBrand = [
     { text: "八位堂(8BitDo)", value: "8BitDo" },
     { text: "威刚(ADATA)", value: "ADATA" },
     { text: "超威半导体(AMD)", value: "AMD" },
@@ -38,7 +41,7 @@ const filtersHardwareBrand = [
     { text: "致态/长江存储(ZHITAI/YMTC)", value: "ZHITAI/YMTC" }
 ];
 
-const filtersHardwareType = [
+export const filtersHardwareType = [
     { text: "内存(UDIMM)", value: "Memory_UDIMM" },
     { text: "内存(UDIMM/ECC)", value: "Memory_UDIMMECC" },
     { text: "内存(RDIMM)", value: "Memory_RDIMM" },
@@ -61,12 +64,10 @@ const filtersHardwareType = [
     { text: "固件", value: "Firmware" }
 ];
 
-const filtersLatStatus = [
+export const filtersLatStatus = [
     { text: "未知", value: 0 },
     { text: "兼容", value: 1 },
     { text: "有限兼容", value: 2 },
     { text: "原生可用", value: 3 },
     { text: "不兼容", value: -1 },
 ];
-
-export { filtersStatus, filtersHardwareBrand, filtersHardwareType, filtersLatStatus }

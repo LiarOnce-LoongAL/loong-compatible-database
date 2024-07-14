@@ -1,6 +1,6 @@
 <template>
     <el-button @click="clearFilter">重置筛选</el-button>
-    <el-table ref="tableRef" row-key="model" :data="tableData" border :default-sort="{ prop: 'id', order: 'ascending' }">
+    <el-table ref="tableRef" row-key="name" :data="tableData" border :default-sort="{ prop: 'id', order: 'ascending' }">
         <el-table-column prop="id" label="ID" width="70" />
         <el-table-column prop="name" label="名称" width="210" />
         <el-table-column prop="version" label="软件版本号" width="180" />

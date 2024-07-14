@@ -4,7 +4,7 @@ outline: false
 ---
 # Hardware Compatibility
 
-此处为社区共同测试后确认的硬件，可用于装机参考。
+Here is the hardware list confirmed after joint testing by the community and can be used for installation reference.
 
 <HardwaresTagsInfo />
 <HardwaresList />
