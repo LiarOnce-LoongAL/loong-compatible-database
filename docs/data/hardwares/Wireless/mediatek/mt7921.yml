@@ -1,0 +1,6 @@
+model: Filogic 320 (MT7921/MT7921K/RZ608)
+brand: MediaTek
+type: Wireless 
+status: 3
+notes: 需 Linux 5.12 及以上内核
+link:  

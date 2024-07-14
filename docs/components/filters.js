@@ -23,6 +23,7 @@ const filtersHardwareBrand = [
     { text: "金百达(KingBank)", value: "KingBank" },
     { text: "金士顿(Kingston)", value: "Kingston" },
     { text: "凌久微电子(Lingjiu Micro)", value: "Lingjiu Micro" },
+    { text: "联发科(MediaTek)", value: "MediaTek" },
     { text: "微软(Microsoft)", value: "Microsoft" },
     { text: "摩尔线程(Moore Threads)", value: "Moore Threads" },
     { text: "裕太微电子(Motorcomm)", value: "Motorcomm" },
