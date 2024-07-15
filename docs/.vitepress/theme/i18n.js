@@ -2,9 +2,14 @@ import { createI18n } from "vue-i18n";
 import zh from "../i18n/zh.json";
 import en from "../i18n/en.json";
 
+let current_lang;
+if (typeof window !== "undefined") {
+    current_lang = localStorage.getItem('lang');
+}
+
 const i18n = createI18n({
     // locale: document.documentElement.lang || "zh",
-    locale: localStorage.getItem('lang'),
+    locale: current_lang,
     globalInjection: true,
     silentTranslationWarn: true,
     missingWarn: false,

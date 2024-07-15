@@ -31,7 +31,7 @@ export const shared = defineConfig({
     },
     vite: {
         ssr: {
-            noExternal: ["element-plus"],
+            noExternal: ["element-plus", "vue-i18n"],
         },
         plugins: [
             AutoImport({

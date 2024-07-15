@@ -75,8 +75,12 @@ const tableData = databaseJson.hardwares
 
 nextTick(() => {
     // Used for execute switch language after insert "lang" in <html>
-    localStorage.setItem('lang', document.documentElement.lang)
-    locale.value = localStorage.getItem('lang')
-    tableRef.doLayout()
+    if (typeof window !== "undefined") {
+        // Determine if the "window" exists to allow Vite to build smoothly
+        // There's black magic on the front end, too!!!
+        localStorage.setItem('lang', document.documentElement.lang)
+        locale.value = localStorage.getItem('lang')
+        tableRef.doLayout()
+    }
 })
 </script>
