@@ -1,6 +1,0 @@
-model: GeForce RTX 3090 / 3090 Ti / 3080 / 3080 Ti / 3070 / 3070 Ti / 3060 / 3060 Ti / 3050 (Ampere)
-brand: NVIDIA
-type: GPU 
-status: -1
-notes: 在开源版本驱动达到可用之前均标记为不兼容
-link: 

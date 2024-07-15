@@ -1,6 +1,0 @@
-model: GeForce GTX 690 / 680 / 670 / 660 / 660 Ti / 650 / 650 Ti / 650 Ti Boost / 645 (Kepler)
-brand: NVIDIA
-type: GPU 
-status: 0
-notes: 可尝试使用 Nouveau 驱动测试
-link: 

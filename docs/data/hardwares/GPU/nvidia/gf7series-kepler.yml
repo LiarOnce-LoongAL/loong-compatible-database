@@ -1,6 +1,0 @@
-model: GeForce GTX TITAN Z / TITAN BLACK / TITAN / 780 / 780 Ti / 770 / 760 / 760 Ti (Kepler)
-brand: NVIDIA
-type: GPU 
-status: 0
-notes: 可尝试使用 Nouveau 驱动测试
-link: 

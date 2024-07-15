@@ -1,6 +1,0 @@
-model: GeForce GT 740 / 730 / 720 / 710 (Kepler)
-brand: NVIDIA
-type: GPU 
-status: 0
-notes: 可尝试使用 Nouveau 驱动测试
-link: 

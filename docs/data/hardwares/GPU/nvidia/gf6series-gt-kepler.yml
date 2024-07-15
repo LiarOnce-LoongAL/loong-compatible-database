@@ -1,6 +1,0 @@
-model: GeForce GT 640 / 635 / 630 (GK107/GK208) (Kepler)
-brand: NVIDIA
-type: GPU 
-status: 0
-notes: 可尝试使用 Nouveau 驱动测试
-link: 

@@ -1,6 +1,0 @@
-model: GeForce RTX 4090 / 4090D / 4080 / 4080 SUPER / 4070 / 4070 SUPER / 4070 Ti / 4070 Ti SUPER / 4060 / 4060 Ti (Ada Lovelace)
-brand: NVIDIA
-type: GPU 
-status: -1
-notes: 在开源版本驱动达到可用之前均标记为不兼容
-link: 

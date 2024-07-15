@@ -1,27 +1,27 @@
 <template>
     <el-button @click="clearFilter">{{ $t('components.clear_filter') }}</el-button>
     <el-table ref="tableRef" row-key="model" 
-        :data="tableData" border 
+        :data="tableData" border
         :default-sort="{ prop: 'brand', order: 'ascending' }"
     >
         <el-table-column prop="model" :label="$t('components.model')" width="300" />
         <el-table-column prop="brand" :label="$t('components.brand')" column-key="brand" width="150" sortable 
-            :filters="filtersJson.filtersHardwareBrand" 
+            :filters="filtersHardwareBrand" 
             :filter-method="filterBrand" 
         />
         <el-table-column prop="type" :label="$t('components.type')" width="200" 
-            :filters="filtersJson.filtersHardwareType" 
+            :filters="filtersHardwareType" 
             :filter-method="filterType" 
             filter-placement="bottom-end"
         >
             <template #default="scope">
-                <span v-for="(hardware, index) in filtersJson.filtersHardwareType" :key="index">
+                <span v-for="(hardware, index) in filtersHardwareType" :key="index">
                     <span v-if="scope.row.type == hardware.value">{{ hardware.text }}</span>
                 </span>
             </template>
         </el-table-column>
         <el-table-column prop="status" :label="$t('components.status')" width="170" 
-            :filters="filtersJson.filtersStatus" 
+            :filters="filtersStatus" 
             :filter-method="filterStatus"
             filter-placement="bottom-end"
         >
@@ -43,17 +43,17 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue'
+import { nextTick, ref, getCurrentInstance, onMounted } from 'vue'
+const { proxy } = getCurrentInstance()
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 
 import databaseJson from '../data/datas.min.json'
-import * as filtersJson from './filters.js'
+
+import { filtersHardwareBrand, filtersHardwareType, filtersStatus } from './filters.js'
 // let filtersJson
 
 const tableRef = ref()
-
-let refreshKey = Math.random()
 
 const clearFilter = () => {
     tableRef.value.clearFilter()
@@ -80,7 +80,8 @@ nextTick(() => {
         // There's black magic on the front end, too!!!
         localStorage.setItem('lang', document.documentElement.lang)
         locale.value = localStorage.getItem('lang')
-        tableRef.doLayout()
+        proxy.$forceUpdate()
+        // console.log(proxy)
     }
 })
 </script>

@@ -1,6 +1,0 @@
-model: GeForce GTX 1660 / 1660 Ti / 1660 SUPER / 1650 / 1650 SUPER / 1630 (Turing)
-brand: NVIDIA
-type: GPU 
-status: -1
-notes: 在开源版本驱动达到可用之前均标记为不兼容
-link: 

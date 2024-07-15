@@ -1,0 +1,24 @@
+model: | 
+  GeForce GTX 10 Series
+  GeForce GT 10 Series (Pascal)
+brand: NVIDIA
+type: GPU 
+status: -1
+notes: |
+  在开源版本驱动达到可用之前均标记为不兼容，包含以下型号：
+  TITAN X (Pascal)
+  TITAN Xp (Pascal)
+  TITAN Xp Collector's Edition (Pascal)
+  GeForce GTX 1080
+  GeForce GTX 1080 Ti
+  GeForce GTX 1070
+  GeForce GTX 1070 Ti
+  GeForce GTX 1060(6GB)
+  GeForce GTX 1060(5GB)
+  GeForce GTX 1060(3GB)
+  GeForce GTX 1050(2GB)
+  GeForce GTX 1050(3GB)
+  GeForce GTX 1050 Ti
+  GeForce GT 1030
+  GeForce GT 1010
+link: 

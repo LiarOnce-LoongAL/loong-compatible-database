@@ -1,6 +1,0 @@
-model: TITAN RTX (Turing)
-brand: NVIDIA
-type: GPU 
-status: -1
-notes: 在开源版本驱动达到可用之前均标记为不兼容
-link: 

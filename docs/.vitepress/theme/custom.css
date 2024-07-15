@@ -29,4 +29,5 @@
 .vp-doc .el-table .cell {
     /* Fix line breaks in Firefox */
     word-break: break-word;
+    white-space: pre-line;
 }
