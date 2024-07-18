@@ -8,36 +8,5 @@ model: |
 brand: NVIDIA
 type: GPU 
 status: 0
-notes: | 
-  可尝试使用 Nouveau 驱动测试，包含以下型号：
-  GeForce GTX 590
-  GeForce GTX 580
-  GeForce GTX 570
-  GeForce GTX 560
-  GeForce GTX 560 Ti
-  GeForce GTX 560 Ti Limited Edition
-  GeForce GTX 560 SE
-  GeForce GTX 555
-  GeForce GTX 550 Ti
-  GeForce GTX 480
-  GeForce GTX 470
-  GeForce GTX 465
-  GeForce GTX 460
-  GeForce GTX 460 SE
-  GeForce GTS 450
-  GeForce GT 730 (GF108)
-  GeForce GT 705
-  GeForce GT 645
-  GeForce GT 640(GF116)
-  GeForce GT 630(GF108)
-  GeForce GT 620
-  GeForce GT 610
-  GeForce 605
-  GeForce GT 545
-  GeForce GT 530
-  GeForce GT 520
-  GeForce 510
-  GeForce GT 440
-  GeForce GT 430
-  GeForce GT 420
-link: 
+notes: 可尝试使用 Nouveau 驱动测试，由于型号众多，可在文档处查阅
+link: /hardwares/nvidia.html#fermi-kepler

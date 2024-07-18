@@ -6,30 +6,5 @@ model: |
 brand: NVIDIA
 type: GPU 
 status: 0
-notes: | 
-  可尝试使用 Nouveau 驱动测试，包含以下型号：
-  GeForce GTX TITAN Z
-  GeForce GTX TITAN BLACK
-  GeForce GTX TITAN
-  GeForce GTX 780
-  GeForce GTX 780 Ti
-  GeForce GTX 770
-  GeForce GTX 760
-  GeForce GTX 760 Ti
-  GeForce GT 740
-  GeForce GT 730
-  GeForce GT 720
-  GeForce GT 710
-  GeForce GTX 690
-  GeForce GTX 680
-  GeForce GTX 670
-  GeForce GTX 660
-  GeForce GTX 660 Ti
-  GeForce GTX 650
-  GeForce GTX 650 Ti
-  GeForce GTX 650 Ti Boost
-  GeForce GTX 645
-  GeForce GT 640
-  GeForce GT 635
-  GeForce GT 630(GK107/GK208)
-link: 
+notes: 可尝试使用 Nouveau 驱动测试，由于型号众多，可在文档处查阅
+link: /hardwares/nvidia.html#fermi-kepler

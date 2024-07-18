@@ -2,16 +2,5 @@ model: GeForce RTX 40 Series (Ada Lovelace)
 brand: NVIDIA
 type: GPU 
 status: -1
-notes: | 
-  在开源版本驱动达到可用之前均标记为不兼容，包含以下型号：
-  GeForce RTX 4090
-  GeForce RTX 4090D
-  GeForce RTX 4080
-  GeForce RTX 4080 SUPER
-  GeForce RTX 4070
-  GeForce RTX 4070 SUPER
-  GeForce RTX 4070 Ti
-  GeForce RTX 4070 Ti SUPER
-  GeForce RTX 4060
-  GeForce RTX 4060 Ti
-link: 
+notes: 在开源版本驱动达到可用之前均标记为不兼容，具体型号详见文档
+link: /hardwares/nvidia.html#open-source-driver

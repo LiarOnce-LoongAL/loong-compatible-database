@@ -4,15 +4,5 @@ model: |
 brand: NVIDIA
 type: GPU 
 status: -1
-notes: | 
-  包含以下型号：
-  GeForce GTX TITAN X
-  GeForce GTX 980
-  GeForce GTX 980 Ti
-  GeForce GTX 970
-  GeForce GTX 960
-  GeForce GTX 950
-  GeForce GTX 745
-  GeForce GTX 750
-  GeForce GTX 750 Ti
-link: 
+notes: 使用 Nouveau 驱动兼容性不佳，由于型号众多，可在文档处查阅
+link: /hardwares/nvidia.html#maxwell-pascal
