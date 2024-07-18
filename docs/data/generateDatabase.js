@@ -5,6 +5,7 @@ import { glob } from "glob"
 // Fix __filename and __dirname in ESM
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
+import { type } from "os"
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -12,6 +13,11 @@ const json_template = {
     hardwares:[],
     lat: [],
     liblol: []
+}
+
+const locale_template = {
+    zh: {},
+    en: {}
 }
 
 const glob_options = {
@@ -39,6 +45,11 @@ liblol.forEach(files => {
     json_template.liblol.push(jsonResult)
 })
 
+// Generate locales
+locale_template.zh = JSON.parse(fs.readFileSync(__dirname + "/locales/zh.json"))
+locale_template.en = JSON.parse(fs.readFileSync(__dirname + "/locales/en.json"))
+// End
+
 // console.log(json_template)
 if(fs.existsSync(__dirname + "/datas.json") || fs.existsSync(__dirname + "/datas.min.json")){
     fs.rmSync(__dirname + "/datas.json")
@@ -46,3 +57,4 @@ if(fs.existsSync(__dirname + "/datas.json") || fs.existsSync(__dirname + "/datas
 }
 fs.writeFileSync(__dirname + "/datas.json", JSON.stringify(json_template, null, "\t"))
 fs.writeFileSync(__dirname + "/datas.min.json", JSON.stringify(json_template))
+fs.writeFileSync(__dirname + "/locales.min.json", JSON.stringify(locale_template))

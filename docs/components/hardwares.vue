@@ -6,22 +6,22 @@
     >
         <el-table-column prop="model" :label="$t('components.model')" width="300" />
         <el-table-column prop="brand" :label="$t('components.brand')" column-key="brand" width="150" sortable 
-            :filters="filtersHardwareBrand" 
+            :filters="filter_data[current_lang].filters_hardware_brand" 
             :filter-method="filterBrand" 
         />
         <el-table-column prop="type" :label="$t('components.type')" width="200" 
-            :filters="filtersHardwareType" 
+            :filters="filter_data[current_lang].filters_hardware_type" 
             :filter-method="filterType" 
             filter-placement="bottom-end"
         >
             <template #default="scope">
-                <span v-for="(hardware, index) in filtersHardwareType" :key="index">
+                <span v-for="(hardware, index) in filter_data[current_lang].filters_hardware_type" :key="index">
                     <span v-if="scope.row.type == hardware.value">{{ hardware.text }}</span>
                 </span>
             </template>
         </el-table-column>
         <el-table-column prop="status" :label="$t('components.status')" width="170" 
-            :filters="filtersStatus" 
+            :filters="filter_data[current_lang].filters_status" 
             :filter-method="filterStatus"
             filter-placement="bottom-end"
         >
@@ -33,7 +33,12 @@
                 <el-tag v-if="scope.row.status == -1" type="danger">{{ $t('status.unsupported') }}</el-tag>
             </template>
         </el-table-column>
-        <el-table-column prop="notes" :label="$t('components.notes')" min-width="200" />
+        <el-table-column prop="notes" :label="$t('components.notes')" min-width="200">
+            <template #default="scope">
+                <span v-if="current_lang == 'en' && scope.row.notes_en">{{ scope.row.notes_en }}</span>
+                <span v-else>{{ scope.row.notes }}</span>
+            </template>
+        </el-table-column>
         <el-table-column prop="link" :label="$t('components.link')" width="60">
             <template #default="scope">
                 <span v-if="scope.row.link"><a :href="scope.row.link">{{ $t('components.doc_link') }}</a></span>
@@ -49,8 +54,9 @@ import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 
 import databaseJson from '../data/datas.min.json'
+import filter_data from '../data/locales.min.json'
+const current_lang = document.documentElement.lang
 
-import { filtersHardwareBrand, filtersHardwareType, filtersStatus } from './filters.js'
 // let filtersJson
 
 const tableRef = ref()
