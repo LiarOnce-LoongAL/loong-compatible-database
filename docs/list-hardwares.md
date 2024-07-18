@@ -6,7 +6,12 @@ outline: false
 此处为社区共同测试后确认的硬件，可用于装机参考。
 
 <HardwaresTagsInfo />
-<HardwaresList />
+
+::: raw
+<ClientOnly>
+    <HardwaresList />
+</ClientOnly>
+:::
 
 <script setup>
     import HardwaresTagsInfo from "./components/tags/hardware_tagsinfo.vue"

@@ -9,4 +9,5 @@ brand: NVIDIA
 type: GPU 
 status: 0
 notes: 可尝试使用 Nouveau 驱动测试，由于型号众多，可在文档处查阅
+notes_en: 
 link: /hardwares/nvidia.html#fermi-kepler

@@ -7,7 +7,11 @@ outline: false
 Here is the hardware list confirmed after joint testing by the community and can be used for installation reference.
 
 <HardwaresTagsInfo />
-<HardwaresList />
+::: raw
+<ClientOnly>
+    <HardwaresList />
+</ClientOnly>
+:::
 
 <script setup>
     import HardwaresTagsInfo from "../components/tags/hardware_tagsinfo.vue"

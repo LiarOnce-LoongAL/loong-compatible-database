@@ -5,4 +5,6 @@ latx_or_lata:   #LATX 或 LATA
 date:   #更新日期
 status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=已有原生龙架构版本无需 LAT
 notes:  #备注
+notes_en: 
 link:   #链接
+link_en: 

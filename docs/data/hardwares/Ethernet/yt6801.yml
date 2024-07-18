@@ -3,4 +3,5 @@ brand: Motorcomm
 type: Ethernet 
 status: 1 
 notes: 在新世界可能需自行编译驱动安装
-link:  
+notes_en: It maybe necessary to compile and install drivers by oneself in new-world distributions
+link: 

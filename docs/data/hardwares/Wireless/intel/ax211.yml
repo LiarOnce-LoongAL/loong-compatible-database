@@ -2,5 +2,5 @@ model: Wi-Fi 6 AX211 / Killer AX1675(i/s)
 brand: Intel
 type: Wireless 
 status: -1 
-notes:  
+notes: 
 link: /hardwares/iwlwifi.html#cnvi 

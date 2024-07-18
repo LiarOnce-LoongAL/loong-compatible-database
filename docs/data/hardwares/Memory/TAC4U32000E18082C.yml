@@ -3,4 +3,5 @@ brand: Gloway
 type: Memory_UDIMM 
 status: 2 
 notes: 仅能运行在 2400 MHz 频率下
+notes_en: 
 link:  

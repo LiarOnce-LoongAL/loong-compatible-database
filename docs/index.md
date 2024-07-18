@@ -19,3 +19,7 @@ hero:
       text: LibLoL 兼容性
       link: /list-liblol
 ---
+
+<script>
+  localStorage.setItem('lang', document.documentElement.lang)
+</script>

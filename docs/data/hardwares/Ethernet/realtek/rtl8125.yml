@@ -3,4 +3,5 @@ brand: Realtek
 type: Ethernet 
 status: 3 
 notes: 包含各类修订版本，例如 B/BG
+notes_en: Include revised versions, such as B/BG
 link:  

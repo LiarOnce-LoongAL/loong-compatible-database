@@ -3,4 +3,5 @@ brand: Realtek
 type: Ethernet 
 status: 1 
 notes: 包含各类修订版本，例如 E/F/G/H
-link:  
+notes_en: Include revised versions, such as E/F/G/H
+link: 

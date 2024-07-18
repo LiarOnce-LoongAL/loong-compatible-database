@@ -5,4 +5,5 @@ brand: NVIDIA
 type: GPU 
 status: -1
 notes: 使用 Nouveau 驱动兼容性不佳，由于型号众多，可在文档处查阅
+notes_en: 
 link: /hardwares/nvidia.html#maxwell-pascal
