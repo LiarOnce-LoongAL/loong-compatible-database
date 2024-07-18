@@ -3,11 +3,11 @@ layout: doc
 sidebar: false
 outline: 'deep'
 ---
-# 参与贡献
+# Starting contributing
 
-## 硬件
+## Hardware
 
-### 在填写硬件信息之前
+### Before entering the hardware information
 
 请根据硬件本身的类型确认分类，否则我们不会接受提交。
 
@@ -18,12 +18,14 @@ outline: 'deep'
 这是一份模板文件的内容：
 
 ```yaml
-model:  #型号
-brand:  #品牌
-type:   #类型
-status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=新世界可用
-notes:  #备注
-link:   #链接
+model: 
+brand: 
+type: 
+status: 
+notes: 
+notes_en: 
+link: 
+link_en: 
 ```
 
 **根据模板文件填写完毕后，请一定要修改文件名并根据硬件类型存放到指定的文件夹中，否则我们不会接受该提交，关于文件名规则需根据硬件类型，下文会对具体的文件命名进行解释。**

@@ -1,8 +1,8 @@
-model:  #型号
-brand:  #品牌
-type:   #类型
-status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=新世界可用
-notes:  #备注
+model: 
+brand: 
+type: 
+status: 
+notes: 
 notes_en: 
-link:   #链接
+link: 
 link_en: 

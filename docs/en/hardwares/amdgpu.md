@@ -3,7 +3,7 @@ outline: deep
 prev: false
 next: false
 ---
-# AMD 显卡 (AMDGPU)
+# AMDGPU
 
 ## GCN 1 & GCN 2
 

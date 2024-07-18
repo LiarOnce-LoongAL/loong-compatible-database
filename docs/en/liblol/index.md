@@ -5,4 +5,4 @@ aside: false
 prev: false
 next: false
 ---
-# LibLoL 相关
+# LibLoL Info

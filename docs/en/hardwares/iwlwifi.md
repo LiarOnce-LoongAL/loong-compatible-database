@@ -3,7 +3,7 @@ outline: deep
 prev: false
 next: false
 ---
-# Intel 无线网卡 (iwlwifi)
+# Intel Wireless (iwlwifi)
 
 ## CNVi
 

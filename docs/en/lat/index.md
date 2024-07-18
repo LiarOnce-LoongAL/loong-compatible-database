@@ -5,4 +5,4 @@ aside: false
 prev: false
 next: false
 ---
-# LAT 相关
+# LAT Info
