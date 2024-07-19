@@ -3,5 +3,5 @@ brand: InnoSilicon
 type: GPU 
 status: 1
 notes: 旧世界发行版直接支持，新世界发行版有可用驱动
-notes_en: 
+notes_en: Directly supported by old-world distros, but with available drivers in new-world distros
 link: 

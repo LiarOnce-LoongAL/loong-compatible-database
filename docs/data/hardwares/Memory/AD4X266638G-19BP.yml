@@ -3,5 +3,5 @@ brand: ADATA
 type: Memory_UDIMM
 status: 1
 notes: JEDEC规范2666稳定组双通道
-notes_en: 
+notes_en: Dual-channel compatible and frequency stabilized at 2666MHz under JEDEC specifications
 link: 

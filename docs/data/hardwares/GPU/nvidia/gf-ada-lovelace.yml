@@ -3,5 +3,7 @@ brand: NVIDIA
 type: GPU 
 status: -1
 notes: 在开源版本驱动达到可用之前均标记为不兼容，具体型号详见文档
-notes_en: Before the open-source version of the driver becomes available, these hardware are marked as incompatible. Please refer to the documentation for specific models
+notes_en: | 
+  Before the open-source version of the driver becomes available, these hardware are marked as incompatible.
+  Please refer to the documentation for specific models
 link: /hardwares/nvidia.html#open-source-driver

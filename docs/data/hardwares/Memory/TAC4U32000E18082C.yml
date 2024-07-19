@@ -2,6 +2,6 @@ model: TAC4U32000E18082C
 brand: Gloway
 type: Memory_UDIMM 
 status: 2 
-notes: 仅能运行在 2400 MHz 频率下
-notes_en: 
+notes: 3200MHz，但仅能运行在 2400 MHz 频率下
+notes_en: 3200MHz, but only runs at 2400 MHz.
 link:  

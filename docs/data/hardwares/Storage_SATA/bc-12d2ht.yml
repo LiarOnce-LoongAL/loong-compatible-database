@@ -2,6 +2,6 @@ model: BC-12D2HT
 brand: ASUS
 type: Storage_SATA 
 status: 1 
-notes: 光驱
-notes_en: 
+notes: 蓝光光驱
+notes_en: BD-ROM Drive
 link:  

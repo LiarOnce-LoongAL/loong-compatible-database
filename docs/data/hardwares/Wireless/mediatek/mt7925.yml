@@ -3,5 +3,5 @@ brand: MediaTek
 type: Wireless 
 status: 3
 notes: 需 Linux 6.7 及以上内核
-notes_en: 
+notes_en: Requires Linux 6.7 and above kernel
 link:  

@@ -3,5 +3,5 @@ brand: KingBank
 type: Memory_UDIMM
 status: 1
 notes: 更新固件后可以使用两条内存
-notes_en: 
+notes_en: Dual channel available after firmware update
 link: 

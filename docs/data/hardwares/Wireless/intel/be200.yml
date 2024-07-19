@@ -3,5 +3,5 @@ brand: Intel
 type: Wireless 
 status: 3 
 notes: 需 Linux 6.5 及以上内核
-notes_en: 
+notes_en: Requires Linux 6.5 and above kernel
 link:  

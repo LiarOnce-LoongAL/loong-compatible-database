@@ -3,5 +3,5 @@ brand: Western Digital
 type: SSD_NVMe 
 status: -1 
 notes: 报 I/O 错误，用硬盘盒转接 USB 也不行
-notes_en: 
+notes_en: Reported I/O errors, even with a USB hard disk drive.
 link:  

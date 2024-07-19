@@ -3,5 +3,7 @@ brand: Realtek
 type: Wireless
 status: 1
 notes: 含 AE/BE/CE，需确认是否有 rtw89 模块，可另外安装
-notes_en: 
+notes_en: |
+  Included AE/BE/CE.
+  Need to check if rtw89 module is available, can be installed separately
 link: 

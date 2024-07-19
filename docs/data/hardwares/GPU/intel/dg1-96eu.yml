@@ -3,5 +3,5 @@ brand: Intel
 type: GPU 
 status: 3
 notes: 需使用 xe 内核模块
-notes_en: 
+notes_en: Requires "xe" kernel module
 link: 

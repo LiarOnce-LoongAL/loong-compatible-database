@@ -3,5 +3,5 @@ brand: Microsoft
 type: Gamepad 
 status: 1 
 notes: 需要安装 xpadneo 内核模块
-notes_en: 
+notes_en: Need to install the "xpadneo" kernel module
 link:  

@@ -15,11 +15,6 @@ const json_template = {
     liblol: []
 }
 
-const locale_template = {
-    zh: {},
-    en: {}
-}
-
 const glob_options = {
     ignore: ['**/template*.yml']
 }
@@ -45,7 +40,14 @@ liblol.forEach(files => {
     json_template.liblol.push(jsonResult)
 })
 
+// Add new locale code here
+const locale_template = {
+    zh: {},
+    en: {}
+}
+
 // Generate locales
+// Add new locale code here like:
 locale_template.zh = JSON.parse(fs.readFileSync(__dirname + "/locales/zh.json"))
 locale_template.en = JSON.parse(fs.readFileSync(__dirname + "/locales/en.json"))
 // End

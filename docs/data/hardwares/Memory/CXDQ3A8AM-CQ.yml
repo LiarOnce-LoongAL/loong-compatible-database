@@ -2,6 +2,6 @@ model: CXDQ3A8AM-CQ
 brand: KingBank
 type: Memory_UDIMM
 status: -1
-notes: 8g*2，两条不行，一条好像没事
-notes_en: 
+notes: 8G*2，两条不行，一条好像没事
+notes_en: 8G*2. Two don't work, one seems fine
 link: ""

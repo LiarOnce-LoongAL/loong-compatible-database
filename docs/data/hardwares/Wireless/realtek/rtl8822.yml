@@ -3,5 +3,7 @@ brand: Realtek
 type: Wireless
 status: 1
 notes: 含 BE/CE，以及 USB 版本的 BU/CU 需确认是否有 rtw88 模块，可另外安装
-notes_en: 
+notes_en: |
+  Included BE/CE, and USB version of BU/CU.
+  Need to check if rtw88 module is available, can be installed separately.
 link: 

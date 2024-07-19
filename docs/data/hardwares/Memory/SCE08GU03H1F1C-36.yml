@@ -2,6 +2,6 @@ model: SCE08GU03H1F1C-36
 brand: UniIC
 type: Memory_UDIMM
 status: 2
-notes: 3600实际能稳定跑2666
-notes_en: 
+notes: 3600MHz 实际能稳定跑 2666MHz
+notes_en: 3600MHz, but it's actually stable at 2666MHz.
 link: 
