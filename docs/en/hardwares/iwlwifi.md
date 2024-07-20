@@ -7,4 +7,6 @@ next: false
 
 ## CNVi
 
-请注意，**CNVi 协议网卡不是完整的网卡!!!**，该协议网卡由于物理原因，模块部分并非完整网卡，因此除指定 Intel 平台外，其他平台均不支持。购买时请勿选错。
+Please note that **CNVi protocol NICs are not completed!!!!.**
+
+This protocol NIC is not a complete product due to physical reasons for the module part, so it isn't supported by all platforms except specified Intel. Please do not choose the wrong one when purchasing.

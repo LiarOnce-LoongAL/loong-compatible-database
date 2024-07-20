@@ -5,17 +5,19 @@ outline: 'deep'
 ---
 # Starting contributing
 
+**This document has been translated using DeepL, please improve if necessary!**
+
 ## Hardware
 
 ### Before entering the hardware information
 
-请根据硬件本身的类型确认分类，否则我们不会接受提交。
+Please confirm the classification based on the type of hardware itself, otherwise we will not accept the submission.
 
-在将硬件兼容性信息上传到本仓库之前，请先确认硬件具体情况。
+Before uploading hardware compatibility information to this repository, please confirm the hardware specifics.
 
-确认硬件情况后，复制模板文件 `template_hardware.yml` 到 `/docs/data/hardwares` 的指定的硬件类型中，模板文件也可以在此找到。
+After confirming the hardware, copy the template file `template_hardware.yml` to the specified hardware type in `/docs/data/hardwares`, where the template file can also be found.
 
-这是一份模板文件的内容：
+This is a copy of the template file:
 
 ```yaml
 model: 
@@ -23,191 +25,197 @@ brand:
 type: 
 status: 
 notes: 
-notes_en: 
+notes_en:  # For english notes(if you have)
 link: 
-link_en: 
+link_en:   # For english link(if you have)
 ```
 
-**根据模板文件填写完毕后，请一定要修改文件名并根据硬件类型存放到指定的文件夹中，否则我们不会接受该提交，关于文件名规则需根据硬件类型，下文会对具体的文件命名进行解释。**
+**After filling out the file according to the template file, please make sure to modify the file name and store it in the specified folder according to the hardware type, otherwise we will not accept the submission. Regarding the rule that the file name needs to be according to the hardware type, the specific file naming will be explained below.**
 
-**以下值均需注意大小写**
+**The following values are case sensitive**.
 
 ### model
 
-该值填写硬件具体型号，不同的硬件类型，该值也不相同，**均不需要填写品牌信息**，填写规则请按下表所示：
+The value to fill in the hardware specific model, different hardware types, the value is not the same, **do not required to fill in the brand information**, fill in the rules as shown in the table below:
 
-| 硬件类型             | 型号填写                                                                                                                                                                                       |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 内存(所有接口类型)   | 型号位于内存条产品贴纸上的条形码处，根据厂商的不同一般位于容量电压时序信息的左侧或右侧，若内存条属于厂商的一个系列中，可以在型号前添加该系列的名称，例如 `HyperX `(有空格，需使用空格隔开)。 |
-| 显卡                 | 对外的公开硬件名称，例如 `Radeon RX 580`，若有不同流处理器版本需小括号说明，例如 `Radeon RX 580 (2048SP)`。                                                                               |
-| 有线网卡             | 对外的公开硬件名称，若为 PCIe 接口需在此标明 `(PCIe)`，若为 USB 接口需在此标明 `(USB)`。                                                                                                   |
-| 无线网卡             | 对外的公开硬件名称，若为 PCIe 接口需在此标明 `(PCIe)`，若为 USB 接口需在此标明 `(USB)`。                                                                                                   |
-| 固态硬盘(SATA)       | 厂商对该硬件的对外宣传型号，例如 `SC001 Active`。                                                                                                                                            |
-| 固态硬盘(NVMe)       | 厂商对该硬件的对外宣传型号，例如 `SN750 `。                                                                                                                                                  |
-| 机械硬盘(SATA)       | 厂商对该硬件的对外宣传型号，例如 `ST4000DM004`，并在结尾加上硬盘容量 (`4TB`)。                                                                                                             |
-| 其他存储类设备(SATA) | 厂商对该硬件的对外宣传型号，例如 `BC-12D2HT`                                                                                                                                                 |
-| 键盘                 | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
-| 鼠标                 | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
-| 手柄控制器           | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
-| 打印机               | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
-| 扫描仪               | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
-| 打印复印一体机       | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
-| PCIe 扩展卡          | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
-| USB 设备             | 厂商对该硬件的对外宣传型号。                                                                                                                                                                   |
+| Hardware type                | Model                                                        |
+| ---------------------------- | ------------------------------------------------------------ |
+| Memory (All Interface Types) | The model number is located at the bar-code on the sticker of the memory stick, depending on the manufacturer it is usually located on the left or right side of the capacity and voltage timing information, if the memory stick belongs to one of the products' series, you can add the name of the series in front of the model number, for example, `HyperX ` (there is a space, you need to use a space to separate). |
+| Graphics Card                | The name of the publicly available hardware, e.g. `Radeon RX 580`, with different SP versions in parentheses, e.g. `Radeon RX 580 (2048SP)`. |
+| Ethernet                     | The publicly available hardware names should indicate (`PCIe`) for PCIe and (`USB`) for USB. |
+| Wireless                     | The publicly available hardware names should indicate (`PCIe`) for PCIe and (`USB`) for USB. |
+| SATA SSD                     | Manufacturer's publicized model number for the hardware，e.g. `SC001 Active`。 |
+| NVMe SSD                     | Manufacturer's publicized model number for the hardware，e.g. `SN750`。 |
+| SATA HDD                     | Manufacturer's publicized model number for the hardware，e.g. `ST4000DM004`，and add the HDD capacity at the end (e.g. `4TB`)。 |
+| SATA Storage                 | Manufacturer's publicized model number for the hardware，e.g. `BC-12D2HT` |
+| Keyboard                     | Manufacturer's publicized model number for the hardware.     |
+| Mouse                        | Manufacturer's publicized model number for the hardware.     |
+| Gamepad                      | Manufacturer's publicized model number for the hardware.     |
+| Printer                      | Manufacturer's publicized model number for the hardware.     |
+| Scanner                      | Manufacturer's publicized model number for the hardware.     |
+| All-in-One Printer           | Manufacturer's publicized model number for the hardware.     |
+| PCIe Card                    | Manufacturer's publicized model number for the hardware.     |
+| USB Devices                  | Manufacturer's publicized model number for the hardware.     |
 
 ### brand
 
-该值仅填写硬件所属厂商，**均需使用英语填写**。
+This value is only filled in by the manufacturer to which the hardware belongs, and **all must be filled in using English**.
 
-此处提供部分厂商的英文名称，可作为参考，排名不分先后：
+The English names of some of the manufacturers are provided here for reference in no particular order:
 
-| 厂商           | 英文名称 (`brand`值) | 备注                                                                                 |
-| -------------- | ---------------------- | ------------------------------------------------------------------------------------ |
-| 致态/长江存储  | ZHITAI/YMTC            | 对于长江存储旗下的原厂产品，此处均填 `ZHITAI/YMTC`                                 |
-| 合肥长鑫       | CXMT                   |                                                                                      |
-| 福建晋华       | JHICC                  |                                                                                      |
-| 威刚           | ADATA                  |                                                                                      |
-| 七彩虹         | Colorful               |                                                                                      |
-| 江波龙         | longsys/FORESEE        | 对于江波龙旗下产品，此处均填 `longsys/FORESEE`（包括内存条产品和固态硬盘产品）     |
-| 西安紫光国芯   | UniIC                  |                                                                                      |
-| 三星           | Samsung                |                                                                                      |
-| 思得/SK海力士  | Solidigm/SK Hynix      | 对于SK海力士旗下产品，此处均填 `Solidigm/SK Hynix`（包括内存条产品和固态硬盘产品） |
-| 铨兴           | Quanxing               |                                                                                      |
-| 美商海盗船     | Corsair                |                                                                                      |
-| 美光/英睿达    | Crucial/Micron         | 对于美光旗下的原厂产品，此处均填 `Crucial/Micron`                                  |
-| 光威           | Gloway                 |                                                                                      |
-| 金百达         | KingBank               |                                                                                      |
-| 裕太微         | Motorcomm              |                                                                                      |
-| 沐创           | MUCSE                  |                                                                                      |
-| 铠侠           | Kioxia                 |                                                                                      |
-| 东芝           | Toshiba                |                                                                                      |
-| 西数(西部数据) | Western Digital        |                                                                                      |
-| 闪迪           | Sandisk                |                                                                                      |
-| 超威半导体     | AMD                    |                                                                                      |
-| 英特尔         | Intel                  |                                                                                      |
-| 英伟达         | NVIDIA                 |                                                                                      |
+| Brand English Name<br />(`brand` value) | Notes                                                                                              |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| ZHITAI/YMTC                               | For the products of YMTC, all the products here are filled with `ZHITAI/YMTC`                    |
+| CXMT                                      |                                                                                                    |
+| JHICC                                     |                                                                                                    |
+| ADATA                                     |                                                                                                    |
+| Colorful                                  |                                                                                                    |
+| longsys/FORESEE                           | For the products of longsys, fill in `longsys/FORESEE` here (including memory sticks and SSDs). |
+| UniIC                                     |                                                                                                    |
+| Samsung                                   |                                                                                                    |
+| Solidigm/SK Hynix                         | For the products of SK Hynix, fill in `Solidigm/SK Hynix` (including memory sticks and SSDs).   |
+| Quanxing                                  |                                                                                                    |
+| Corsair                                   |                                                                                                    |
+| Crucial/Micron                            | For the products of Micron, fill in `Crucial/Micron` here.                                       |
+| Gloway                                    |                                                                                                    |
+| KingBank                                  |                                                                                                    |
+| Motorcomm                                 |                                                                                                    |
+| MUCSE                                     |                                                                                                    |
+| Kioxia                                    |                                                                                                    |
+| Toshiba                                   |                                                                                                    |
+| Western Digital                           |                                                                                                    |
+| Sandisk                                   |                                                                                                    |
+| AMD                                       |                                                                                                    |
+| Intel                                     |                                                                                                    |
+| NVIDIA                                    |                                                                                                    |
 
 ### type
 
-该值填写硬件类型，具体硬件类型按下表所示。
+This value is filled in with the hardware type, which is shown in the table below.
 
-由于硬件种类繁多，该表可能无法做到及时更新，可在该代码找到目前允许收录的最新类型，并填入到 `type` 中：
+Due to the wide variety of hardware types, the table may not be up to date, so you can find the latest types that are currently allowed to be included in this code and fill them into `type`:
 
-| 类型                 | `type` 对应值 | 备注                                                                                                       |
-| -------------------- | --------------- | ---------------------------------------------------------------------------------------------------------- |
-| 内存(UDIMM)          | Memory_UDIMM    | 一般消费级内存条，常见于桌面台式机平台                                                                     |
-| 内存(UDIMM/ECC)      | Memory_UDIMMECC | 一般消费级内存条，但带有 ECC 功能，常见于使用消费级处理器的工作站                                          |
-| 内存(RDIMM)          | Memory_RDIMM    | 包含寄存器的内存条，即 ECC REG，常见于服务器平台                                                           |
-| 内存(SO-DIMM)        | Memory_SODIMM   | 一般消费级内存条，常见于笔记本移动平台                                                                     |
-| 显卡                 | GPU             |                                                                                                            |
-| 有线网卡             | Ethernet        | 此处包含 PCIe 接口网卡和 USB 网卡                                                                         |
-| 无线网卡             | Wireless        | 此处包含 PCIe 接口网卡和 USB 网卡                                                                          |
-| 固态硬盘(SATA)       | SSD_SATA        | 使用 SATA 7+15 接口，外形 2.5 寸的固态硬盘，或使用 M.2 B+M 接口（两个缺口）同时贴纸上有标明 SATA logo 的。 |
-| 固态硬盘(NVMe)       | SSD_NVMe        | 所有其他使用 NVMe 协议的硬盘，不限接口（包含 M.2、U.2、U.3、E1.S、E3.S、E1.L 等接口）                      |
-| 机械硬盘(SATA)       | HDD_SATA        | 使用 SATA 7+15 接口，外形 2.5 寸或 3.5 寸的机械硬盘，此处不包含使用 SAS 接口的产品                         |
-| 其他存储类设备(SATA) | Storage_SATA    | 使用 SATA 7+15 接口的其他存储设备，例如光驱、磁带机等                                                      |
-| 键盘                 | Keyboard        |                                                                                                            |
-| 鼠标                 | Mouse           |                                                                                                            |
-| 手柄控制器           | Gamepad         | 各类游戏手柄                                                                                               |
-| 打印机               | Printer         | 此处仅表示单打印功能的打印机                                                                               |
-| 扫描仪               | Scanner         | 此处仅表示单扫描功能的扫描仪                                                                               |
-| 打印复印一体机       | Printer_AIO     | 此处仅表示支持打印、复印、扫描、传真等功能的多功能一体机                                                   |
-| PCIe 扩展卡          | PCIe_Card       | 所有除以上硬件类型外的其他**使用 PCIe 接口**的硬件归属于此，例如 HBA 卡                              |
-| USB 设备             | USB_Device      | 所有除以上硬件类型外的其他**使用 USB 接口**的硬件归属于此                                            |
+| Type             | `type` value | Notes                                                                                                   |
+| ------------------ | --------------- | ---------------------------------------------------------------------------------------------------------- |
+| Memory UDIMM       | Memory_UDIMM    | General consumer-grade memory sticks, commonly found on desktop platforms. |
+| Memory UDIMM/ECC   | Memory_UDIMMECC | Generic consumer-grade memory sticks, but with ECC functionality, commonly found in workstations with consumer-grade or server-grade processors. |
+| Memory RDIMM       | Memory_RDIMM    | Memory sticks containing registers, known as ECC REG, are commonly found in server platforms. |
+| Memory SO-DIMM     | Memory_SODIMM   | General consumer-grade memory sticks, commonly found in laptop platforms. |
+| Graphics Card      | GPU             |                                                                                                            |
+| Ethernet           | Ethernet        | PCIe NICs and USB NICs are included here.                      |
+| Wireless           | Wireless        | PCIe NICs and USB NICs are included here.                                 |
+| SATA SSD           | SSD_SATA        | SSDs that use the SATA 7+15 interface in a 2.5” form factor, or use the M.2 B+M key (two notches) with the SATA logo on the sticker. |
+| NVMe SSD           | SSD_NVMe        | All other hard disks using the NVMe protocol, regardless of interface (including M.2, U.2, U.3, E1.S, E3.S, E1.L interfaces). |
+| SATA HDD           | HDD_SATA        | HDD in a 2.5“ or 3.5” form factor using the SATA 7+15 interface, excluding products using the SAS. |
+| SATA Storage       | Storage_SATA    | Other storage devices using the SATA 7+15 interface, such as optical drives, tape drives, etc. |
+| Keyboard           | Keyboard        |                                                                                                            |
+| Mouse              | Mouse           |                                                                                                            |
+| Gamepad            | Gamepad         | Various gamepads.                                                                              |
+| Printer            | Printer         | This represents only printers with a single printing function. |
+| Scanner            | Scanner         | This represents only scanners with a single scanning function                  |
+| All-in-One Printer | Printer_AIO     | This only means MFPs that support printing, copying, scanning, faxing, etc. |
+| PCIe Card          | PCIe_Card       | All hardware types other than those listed above **that use the PCIe** fall under this category, such as HBA cards. |
+| USB Devices        | USB_Device      | All hardware types other than those listed above **that use the USB** fall under this category. |
 
 ### status
 
-填写该硬件目前的兼容状态，此处均为整数（不是字符串），数值与对应关系如下表所示：
+Fill in the current compatibility status of the hardware, here are integers (not strings), the value and the corresponding relationship as shown in the table below:
 
-| 数字 | 对应值     |
-| ---- | ---------- |
-| 0    | 未知       |
-| 1    | 兼容       |
-| 2    | 有限兼容   |
-| 3    | 新世界可用 |
-| -1   | 不兼容     |
+| Number | Equivalent value    |
+| ------ | ------------------- |
+| 0      | Unknown             |
+| 1      | Compatible          |
+| 2      | Partial Support     |
+| 3      | New-world Available |
+| -1     | Unsupported         |
 
 ### notes
 
-该硬件需要注意的简短备注信息，可以将中文产品信息填写在此处。
+A short note of information to note about this hardware.
 
-对于其他类型的硬件设备，则需要在此备注硬件类型，例如光驱、HBA卡、采集卡等，未来可能会对此进行细分。
+It can be filled in here with the Chinese product information.
 
-过长的内容或有必要通过长文进行解释的请编写为文档，并在 `link` 中填写文档地址。
+**Please note that the keys here only support Chinese, if you need to write in other languages here (e.g. English), please add the additional key `notes_en` here.**
+
+For other types of hardware devices, you need to note the type of hardware here, such as optical drives, HBA cards, capture cards, etc., which may be subdivided in the future.
+
+If the content is too long, or if it is necessary to explain in a long text, please write it as a document and fill in the document address in the `link`.
 
 ### link
 
-若该硬件需要正式文档以说明兼容情况，请在 `/docs/hardwares/` 下存放 Markdown 文件。
+If the hardware requires formal documentation for compatibility, please store the Markdown file under `/docs/hardwares/`.
 
-对于硬件，我们建议使用其在 Linux 下的内核模块的名称来命名，例如现代 Intel 无线卡，则命名为 `iwlwifi.md`。
+For hardware, we recommend naming it after its kernel module under Linux, e.g. a modern Intel wireless card would be named `iwlwifi.md`.
 
-然后该值的填写格式如下（**请注意文件名不能使用中文，请使用全英文**）。
+**Please note that the key here only supports pointing to Chinese documents, if you need to point to documents written in other languages (e.g. English), please add the additional key `link_en` here.**
+
+The value is then filled out in the following format (**Please note that the file name cannot be in Chinese, please use full English**):
 
 ```yaml
-/hardwares/<所写的markdown文件名>
+/hardwares/<markdown file name>
 ```
 
-之后根据[此处](#external-docs)的指示将文档展示在指定位置。
+The document is then displayed in the specified location as directed [here](#external-docs).
 
-### 最后的文件命名和存放位置
+### Final file naming and storage location
 
-对于文件命名和存放位置，请参考以下表格：
+For file naming and locations, please refer to the table below:
 
-| 硬件类型             | 命名方式                                                                                                                                                                                            | 存放位置         |
+| Hardware type | Nomenclature                                                                                                                                                                               | Location  |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| 内存(所有接口类型)   | `<在产品本身提供的贴纸信息上的具体型号>.yml`，与 `model` 值相同。                                                                                                                               | `Memory`       |
-| 显卡                 | `<硬件型号简写>.yml`，例如对于 `Radeon RX 6400`，仅需命名 `rx6400.yml` 即可。                                                                                                                 | `GPU`          |
-| 有线网卡             | `<硬件具体型号>.yml`                                                                                                                                                                              | `Ethernet`     |
-| 无线网卡             | `<硬件型号简写>.yml`，例如对于 `Intel AX210网卡`，仅需命名 `ax210.yml` 即可。                                                                                                                 | `Wireless`     |
-| 固态硬盘(SATA)       | `<厂商对该硬件的对外宣传型号的简写>.yml`，例如 `ZHITAI SC001 Active`，仅需命名 `sc001.yml` 即可，若前缀相同则需要补充多余后缀以区分，例如 `ZHITAI SC001 XT`，则需命名为 `sc001xt.yml`。 | `SSD_SATA`     |
-| 固态硬盘(NVMe)       | `<厂商对该硬件的对外宣传型号的简写>.yml `，例如 `Western Digital SN750 `，仅需命名 `sn750.yml `即可，其他注意事项同 `固态硬盘(SATA)`。                                                     | `SSD_NVME`     |
-| 机械硬盘(SATA)       | `<厂商对该硬件在官方文档中所示的型号>.yml`，例如 `Seagate ST4000DM004`，则需命名 `ST4000DM004.yml`，与 `model` 值相同。                                                                    | `HDD_SATA`     |
-| 其他存储类设备(SATA) | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `Storage_SATA` |
-| 键盘                 | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `Keyboard`     |
-| 鼠标                 | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `Mouse`        |
-| 手柄控制器           | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `Gamepad`      |
-| 打印机               | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `Printer`      |
-| 扫描仪               | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `Scanner`      |
-| 打印复印一体机       | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `Printer_AIO`  |
-| PCIe 扩展卡          | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `PCIe_Card`    |
-| USB 设备             | `<厂商对该硬件的对外宣传型号>.yml`，与 `model` 值相同。                                                                                                                                         | `USB_Device`   |
+| Memory (All Interface Types) | The specific model number on the sticker information provided on the product itself, `<model>.yml`，same value as `model`. | `Memory`       |
+| Graphics card     | `<model abbreviation>.yml`. For example, for `Radeon RX 6400`, simply name `rx6400.yml`.                                | `GPU`          |
+| Ethernet     | `<model abbreviation>.yml`                                                                                                                                                            | `Ethernet`     |
+| Wireless     | `<model abbreviation>.yml`，For example, for `Intel Wi-Fi 6 AX210`, simply name `ax210.yml`.             | `Wireless`     |
+| SATA SSD   | A shorthand for the manufacturer's outwardly advertised model number for this hardware, `<model>.yml`, For example, `ZHITAI SC001 Active`, just name `sc001.yml`, if the prefix is the same, then you need to add extra suffix to differentiate, for example, `ZHITAI SC001 XT`, then you need to name `sc001xt.yml`. | `SSD_SATA`     |
+| NVMe SSD   | A shorthand for the manufacturer's outwardly advertised model number for this hardware, `<model>.yml`, For example, `Western Digital SN750 `, simply name it `sn750.yml `, with the same caveats as for `SATA SSD`. | `SSD_NVME`     |
+| SATA HDD    | A shorthand for the manufacturer's outwardly advertised model number for this hardware, `<model>.yml`, For example, `Seagate ST4000DM004`, you need to name `ST4000DM004.yml` with the same value as `model`. | `HDD_SATA`     |
+| SATA Storage | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`. | `Storage_SATA` |
+| Keyboard         | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `Keyboard`     |
+| Mouse            | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `Mouse`        |
+| Gamepad    | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `Gamepad`      |
+| Printer        | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `Printer`      |
+| Scanner        | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `Scanner`      |
+| All-in-One Printer | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `Printer_AIO`  |
+| PCIe Card       | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `PCIe_Card`    |
+| USB Devices       | Manufacturer's externally advertised model number for this hardware, `<model>.yml`, same value as `model`.                                                                   | `USB_Device`   |
 
 ## LAT
 
-### 开始
+### Start
 
-复制模板文件 `template_lat.yml` 到 `/docs/data/lat` 下，根据软件的英文首字母存放，若开头为数字则存放到 `0to9` 文件夹下。
+Copy the template file `template_lat.yml` to `/docs/data/lat` and store it according to the first letter of the software, or in the `0to9` folder if it starts with a number.
 
-这是一份模板文件的内容：
+This is the content of a template file:
 
 ```yaml
-name:  #软件名称
-version:  #软件版本号
-lat_version:   #LAT 版本号
-latx_or_lata:   #LATX 或 LATA
-date:   #更新日期
-status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=已有原生龙架构版本无需 LAT
-notes:  #备注
-link:   #链接
+name: 
+version: 
+lat_version: 
+latx_or_lata: 
+date: 
+status: 
+notes: 
+link: 
 ```
 
 ### name
 
-此处填写软件名称，语言不限
+Fill in the name of the software here, in any language.
 
 ### version
 
-此处填写软件的运行版本
+Fill in the running version of the software here.
 
 ### lat_version
 
-此处填写运行该软件时使用的 LAT 运行库版本，填写范例为：
+Fill in here the version of the LAT runtime library used to run the software, an example is:
 
 ```yaml
 1.5.2-rc1
 ```
 
-若该软件为 Windows 软件，还需要填写 Wine 运行库版本，填写范例为：
+If the software is from Windows, you also need to fill in the Wine runtime library version, for example:
 
 ```yaml
 1.5.2-rc1 + wine-9.9-staging
@@ -215,121 +223,129 @@ link:   #链接
 
 ### latx_or_lata
 
-软件运行使用的运行库，需参考软件当前的架构，若为 x86 版本则填写 `LATX`，若为 ARM 版本则填写 `LATA`。
+The runtime library used to run the software should refer to the current architecture of the software, `LATX` if it is the x86 version, `LATA` if it is the ARM version.
 
 ### date
 
-软件的更新日期。
+The update date of the software.
 
 ### status
 
-填写该软件目前的兼容状态，此处均为整数（不是字符串），数值与对应关系如下表所示：
+Fill in the current compatibility status of the software, here are integers (not strings), the value and the corresponding relationship as shown in the table below:
 
-| 数字 | 对应值   |
-| ---- | -------- |
-| 0    | 未知     |
-| 1    | 兼容     |
-| 2    | 有限兼容 |
-| 3    | 原生可用 |
-| -1   | 不兼容   |
+| Number | Equivalent value |
+| ------ | ---------------- |
+| 0      | Unknown          |
+| 1      | Compatible       |
+| 2      | Partial Support  |
+| 3      | Native Available |
+| -1     | Unsupported      |
 
 ### notes
 
-该软件需要注意的简短备注信息。
+A short note about the software that requires attention.
 
-过长的内容或有必要通过长文进行解释的请编写为文档，并在 `link` 中填写文档地址。
+**Please note that the keys here only support Chinese, if you need to write in other languages here (e.g. English), please add the additional key `notes_en` here.**
+
+If the content is too long, or if it is necessary to explain it in a long text, please write it as a document and put the address of the document in the `link` field.
 
 ### link
 
-若该软件需要正式文档以说明兼容情况，请在 `/docs/lat/` 下存放 Markdown 文件。
+If the software requires formal documentation for compatibility, store Markdown files under `/docs/lat/`.
 
-该值的填写格式如下（**请注意文件名不能使用中文，请使用全英文**）：
+**Please note that the key here only supports pointing to Chinese documents, if you need to point to documents written in other languages (e.g. English), please add the additional key `link_en` here.**
+
+The value should be filled in the following format (**Please note that the file name cannot be in Chinese, please use full English**):
 
 ```yaml
-/lat/<所写的markdown文件名>
+/lat/<markdown file name>
 ```
 
-之后根据[此处](#external-docs)的指示将文档展示在指定位置。
+The document is then displayed in the specified location as directed [here](#external-docs).
 
 ## LibLoL
 
-### 开始
+### Start
 
-复制模板文件 `template_linlol.yml` 到 `/docs/data/liblol` 下，根据软件的英文首字母存放，若开头为数字则存放到 `0to9` 文件夹下。
+Copy the template file `template_liblol.yml` to `/docs/data/liblol` and store it according to the first letter of the software, or under the `0to9` folder if it starts with a number.
 
-这是一份模板文件的内容：
+This is the content of a template file:
 
 ```yaml
-id:    #软件ID
-name:  #软件名称
-version:  #软件版本号
-liblol_version:   #libLoL 版本号
-date:   #更新日期
-status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=新世界可用
-notes:  #备注
-link:   #链接
+id: 
+name: 
+version: 
+liblol_version: 
+date: 
+status: 
+notes: 
+link: 
 ```
 
 ### id
 
-此处是软件的ID，若来自龙芯应用合作社请填写在龙芯应用合作社的ID，若非来自龙芯应用合作社则从10001开始
+Here is the ID of the software, if from LoongApps(app.loongapps.cn), please fill in the ID of it, if not from LoongApps, then start from 10001.
 
 ### name
 
-此处填写软件名称，语言不限
+Fill in the name of the software here, in any language.
 
 ### version
 
-此处填写软件的运行版本
+Fill in the running version of the software here.
 
 ### liblol_version
 
-此处填写运行该软件时使用的 LibLoL 运行库版本，填写范例为：`0.1.5`
+Fill in here the version of LibLoL runtime library used to run the software, the example is: `0.1.5`.
 
 ### date
 
-软件的更新日期，若不知道确切时间仅需写年月日即可 (YYYY-MM-DD)。
+The date the software was updated, if you don't know the exact time just write the year, month and day (YYYY-MM-DD).
 
 ### status
 
-填写该软件目前的兼容状态，此处均为整数（不是字符串），数值与对应关系如下表所示：
+Fill in the current compatibility status of the software, here are integers (not strings), the value and the corresponding relationship as shown in the table below:
 
-| 数字 | 对应值     |
-| ---- | ---------- |
-| 0    | 未知       |
-| 1    | 兼容       |
-| 2    | 有限兼容   |
-| 3    | 新世界可用 |
-| -1   | 不兼容     |
+| Number | Equivalent value    |
+| ------ | ------------------- |
+| 0      | Unknown             |
+| 1      | Compatible          |
+| 2      | Partial Support     |
+| 3      | New-world Available |
+| -1     | Unsupported         |
 
 ### notes
 
-该软件需要注意的简短备注信息。
+Short note information to note about this software.
 
-**若该应用是从龙芯应用合作社获取的软件请在此备注：`来自龙芯应用合作社`**
+**If the application is obtained from LoongApps, please note here: `From LoongApps`**.
 
-过长的内容或有必要通过长文进行解释的请编写为文档，并在 `link` 中填写文档地址。
+**Please note that the keys here only support Chinese, if you need to write in other languages here (e.g. English), please add the additional key `notes_en` here.**
+
+If the content is too long or needs to be explained in a long text, please write it as a document and fill in the document address in `link`.
 
 ### link
 
-若该软件需要正式文档以说明兼容情况，请在 `/docs/liblol/` 下存放 Markdown 文件。
+If the software requires formal documentation for compatibility, please store Markdown files under `/docs/liblol/`.
 
-该值的填写格式如下（**请注意文件名不能使用中文，请使用全英文**）：
+Please note that the key here only supports pointing to Chinese documents, if you need to point to documents written in other languages (e.g. English), please add the additional key `link_en` here.
+
+The value should be filled in the following format (**Please note that the file name cannot be in Chinese, please use full English**):
 
 ```yaml
-/liblol/<所写的markdown文件名>
+/liblol/<markdown file name>
 ```
 
-之后根据[此处](#external-docs)的指示将文档展示在指定位置。
+The document is then displayed in the specified location as directed [here](#external-docs).
 
-## 额外内容
+## External Documents
 
-若硬件或软件需要正式文档以说明兼容情况，请根据以下内容修改文件：
+If the hardware or software requires formal documentation for compatibility, please modify the file according to the following:
 
-首先请根据类型到 `/docs/.vitepress/config_files/sidebar_<hardwares/lat/liblol>.js` 下填写链接地址和文档标题，范例如下：
+First go to `/docs/.vitepress/config_files/sidebar_<hardwares|lat|liblol>.js` and fill in the link address and title of the document according to the type, an example is shown below:
 
 ```js
-{ text: '<文档标题>', link: '<文档地址>' }
+{ text: '<Document Title>', link: '<Document Link>' }
 ```
 
-其中 `link` 的值与 `.yml` 文件下的 `link` 相同。
+where `link` has the same value as `link` in the `.yml` file.

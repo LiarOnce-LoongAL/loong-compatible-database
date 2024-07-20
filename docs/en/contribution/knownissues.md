@@ -3,12 +3,12 @@ layout: doc
 sidebar: false
 outline: 'deep'
 ---
-# 常见问题
+# Known Issues
 
-## 硬件
+## Hardware
 
-### 为什么没有部分硬件类型 {#why-are-some-hardware-types-not-available}
+### Why are some hardware types not available {#why-are-some-hardware-types-not-available}
 
-如果你所需要提交的硬件不包含在已知类型中，若为 USB 接口或 PCIe 接口的，请先归类到相应的类型后提交，若非这两种接口，则可以提出 issue 经过讨论后加入。
+If the hardware you need to submit is not included in the known types, then if it's USB or PCIe, please submit it after categorizing it to the corresponding type, if it's not these two types of interfaces, then you can raise an issue and add it after discussion.
 
-对于类型为机械硬盘的硬件，请注意我们不会接受 SAS 接口的机械硬盘的数据，因为目前龙芯平台并未提供 SAS 接口的主板，并且我们认为 SAS 接口硬盘的支持应该取决于磁盘阵列卡和 HBA 卡而不是平台本身。
+For hardware with HDD, please note that we won't accept data for SAS HDD, as the current LoongArch platform doesn't provide SAS for motherboards, and we believe that support for SAS HDD should be dependent on the RAID card and the HBA card rather than the platform itself.

@@ -7,4 +7,4 @@ next: false
 ---
 # Hardware Info
 
-在左侧查看相关硬件的文档。
+View the documentation for the relevant hardware on the sidebar.
