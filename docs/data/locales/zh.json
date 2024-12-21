@@ -36,7 +36,11 @@
         { "text": "西安紫光国芯(UniIC)", "value": "UniIC" },
         { "text": "西部数据(Western Digital)", "value": "Western Digital" },
         { "text": "小米(Xiaomi)", "value": "Xiaomi" },
-        { "text": "致态/长江存储(ZHITAI/YMTC)", "value": "ZHITAI/YMTC" }
+        { "text": "致态/长江存储(ZHITAI/YMTC)", "value": "ZHITAI/YMTC" },
+        { "text": "中科驭数(Yusur Tech)", "value": "Yusur Tech" },
+        { "text": "沐创(MUCSE)", "value": "MUCSE" },
+        { "text": "北中网芯(BZWX)", "value": "BZWX" },
+        { "text": "格兰菲(Glenfly)", "value": "Glenfly" }
     ],
     "filters_hardware_type": [
         { "text": "内存(UDIMM)", "value": "Memory_UDIMM" },

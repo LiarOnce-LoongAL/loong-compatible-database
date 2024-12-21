@@ -85,7 +85,7 @@ link_en:   #链接文档的英语版本（如果有）
 | 闪迪           | Sandisk                |                                                                                      |
 | 超威半导体     | AMD                    |                                                                                      |
 | 英特尔         | Intel                  |                                                                                      |
-| 英伟达         | NVIDIA                 |                                                                                      |
+| 英伟达         | NVIDIA                 | 由于 Mellanox 已被 NVIDIA 收购，所有 Mellanox 产品均归属于 NVIDIA 下                 |
 
 ### type
 

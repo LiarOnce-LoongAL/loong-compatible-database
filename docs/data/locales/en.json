@@ -36,7 +36,11 @@
         { "text": "UniIC", "value": "UniIC" },
         { "text": "Western Digital", "value": "Western Digital" },
         { "text": "Xiaomi", "value": "Xiaomi" },
-        { "text": "ZHITAI/YMTC", "value": "ZHITAI/YMTC" }
+        { "text": "ZHITAI/YMTC", "value": "ZHITAI/YMTC" },
+        { "text": "Yusur Tech", "value": "Yusur Tech" },
+        { "text": "MUCSE", "value": "MUCSE" },
+        { "text": "BZWX", "value": "BZWX" },
+        { "text": "Glenfly", "value": "Glenfly" }
     ],
     "filters_hardware_type": [
         { "text": "Memory UDIMM", "value": "Memory_UDIMM" },
