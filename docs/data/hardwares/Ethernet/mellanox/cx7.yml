@@ -1,7 +1,7 @@
 model: Mellanox ConnectX-7 Series
 brand: NVIDIA
 type: Ethernet
-status: -1
-notes: 固件问题导致无法兼容
-notes_en: Firmware issues causing incompatibility
+status: 2
+notes: 仅在 7A2000 桥片上可用
+notes_en: Available on 7A2000 chipset only
 link: 
