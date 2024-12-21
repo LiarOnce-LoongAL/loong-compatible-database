@@ -1,0 +1,8 @@
+model: IN200 Series (Hi1822) (SP570/SP580/SP582/SP586)
+brand: Huawei
+type: Ethernet
+status: -1
+notes: 在 Linux 主线中具有 hinic 模块但被限制为仅在 x86 和 ARM64 下启用，解除限制后依然无法被识别，且部分型号无法通过自检（例如 SP582）
+notes_en: The "hinic" module is available in the Linux mainline but is restricted to be enabled only for x86 and ARM64, and still not recognized even after removing the restriction on the compilation conditions, and some models don't pass the self-test (e.g. SP582).
+link: 
+link_en: 
