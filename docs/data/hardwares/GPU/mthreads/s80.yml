@@ -1,6 +1,6 @@
 model: MTT S80
 brand: Moore Threads
 type: GPU 
-status: -1
+status: 2
 notes: 
-link:  
+link: /hardwares/mthreads.html
