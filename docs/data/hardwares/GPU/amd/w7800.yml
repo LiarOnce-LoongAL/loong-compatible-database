@@ -1,6 +1,6 @@
 model: Radeon Pro W7800
 brand: AMD
 type: GPU 
-status: 1 
+status: 3 
 notes: 
 link: /hardwares/amdgpu.html#gcn-4-polaris 
