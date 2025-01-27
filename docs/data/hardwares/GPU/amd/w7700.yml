@@ -1,0 +1,6 @@
+model: Radeon Pro W7700
+brand: AMD
+type: GPU 
+status: 1 
+notes: 
+link: /hardwares/amdgpu.html#gcn-4-polaris 

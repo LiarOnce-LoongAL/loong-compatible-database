@@ -1,6 +1,6 @@
-model: Radeon RX 6750 GRE
+model: Radeon RX 6750 GRE (10GB/12GB)
 brand: AMD
 type: GPU 
 status: 3 
 notes: 
-link:  
+link: /hardwares/amdgpu.html#rdna
