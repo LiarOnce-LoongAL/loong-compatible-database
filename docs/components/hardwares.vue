@@ -6,7 +6,7 @@
     >
         <el-table-column prop="model" :label="$t('components.model')" width="300" />
         <el-table-column prop="brand" :label="$t('components.brand')" column-key="brand" width="150" sortable 
-            :filters="filter_data[current_lang].filters_hardware_brand" 
+            :filters="filter_data[current_lang].filters_hardware_brand.sort(sortValue)" 
             :filter-method="filterBrand" 
         />
         <el-table-column prop="type" :label="$t('components.type')" width="200" 
@@ -77,13 +77,18 @@ const filterStatus = (value, row) => {
     return row.status === value
 }
 
+const sortValue = (a, b) => {
+    // Convert upper case to sort list
+   return (a.value.toUpperCase() < b.value.toUpperCase()) ? -1 : (a.value.toUpperCase() > b.value.toUpperCase()) ? 1 : 0;
+}
+
 const tableData = databaseJson.hardwares
 
 nextTick(() => {
     // Used for execute switch language after insert "lang" in <html>
     if (typeof window !== "undefined") {
         // Determine if the "window" exists to allow Vite to build smoothly
-        // There's black magic on the front end, too!!!
+        // There's black magic on the frontend, too!!!
         localStorage.setItem('lang', document.documentElement.lang)
         locale.value = localStorage.getItem('lang')
         proxy.$forceUpdate()

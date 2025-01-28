@@ -40,7 +40,9 @@
         { "text": "中科驭数(Yusur Tech)", "value": "Yusur Tech" },
         { "text": "沐创(MUCSE)", "value": "MUCSE" },
         { "text": "北中网芯(BZWX)", "value": "BZWX" },
-        { "text": "格兰菲(Glenfly)", "value": "Glenfly" }
+        { "text": "格兰菲(Glenfly)", "value": "Glenfly" },
+        { "text": "爱科微(AIC/AIC Semiconductor)", "value": "AIC" },
+        { "text": "速通半导体(Senscomm)", "value": "Senscomm" }
     ],
     "filters_hardware_type": [
         { "text": "内存(UDIMM)", "value": "Memory_UDIMM" },

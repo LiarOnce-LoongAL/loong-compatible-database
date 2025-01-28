@@ -1,0 +1,8 @@
+model: AIC8800 Series
+brand: AIC
+type: Wireless
+status: 1
+notes: 含USB网卡和M.2网卡，需自行编译驱动安装，详见安装教程
+notes_en: 
+link: 
+link_en: 
