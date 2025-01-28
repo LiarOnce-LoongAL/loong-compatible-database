@@ -1,0 +1,6 @@
+model: Radeon HD 7730
+brand: AMD
+type: GPU 
+status: 1 
+notes: 
+link: /hardwares/amdgpu.html#gcn-1-gcn-2 

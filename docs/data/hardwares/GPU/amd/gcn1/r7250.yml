@@ -1,0 +1,6 @@
+model: Radeon R7 250
+brand: AMD
+type: GPU 
+status: 1 
+notes: 
+link: /hardwares/amdgpu.html#gcn-1-gcn-2 

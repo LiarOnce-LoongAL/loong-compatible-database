@@ -1,0 +1,6 @@
+model: Radeon HD 7770 GHz Edition
+brand: AMD
+type: GPU 
+status: 1 
+notes: 
+link: /hardwares/amdgpu.html#gcn-1-gcn-2 
