@@ -4,5 +4,5 @@ type: Wireless
 status: 1
 notes: 需自行编译驱动安装，详见安装教程
 notes_en: 
-link: 
+link: /hardwares/senscomm
 link_en: 

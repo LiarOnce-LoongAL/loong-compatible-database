@@ -2,5 +2,5 @@ model: Radeon HD 7990
 brand: AMD
 type: GPU 
 status: 0
-notes: 
+notes: 双芯卡难以确认兼容性
 link: /hardwares/amdgpu.html#gcn-1-gcn-2 

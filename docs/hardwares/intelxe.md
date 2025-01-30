@@ -4,8 +4,10 @@ prev: false
 next: false
 ---
 # Intel 显卡
-
-## Xe 独显 (DG1) {#xe-dg1}
+::: warning 注意
+目前 Intel 独显的支持仍处于初步阶段，请关注上游后续更新。
+:::
+## Xe 独显 (DG1)
 
 若在龙芯平台使用 Linux 6.8 以上内核版本的新世界发行版（例如 AOSC OS， ArchLinux for Loong），那么则可以在系统层面中使用 Intel Xe 架构的独立显卡。
 
@@ -36,6 +38,6 @@ i915.force_probe=!4905 xe.force_probe=4905
 | Arc A750 | 56a1   |
 | Arc A770 | 56a0   |
 
-## Arc A 系列独显 (DG2) {#arc-dg2}
+## Arc A 系列独显 (DG2)
 
 目前龙芯平台使用 Arc 系列独显有严重的性能劣化（例如 glmark2 分数仅200分左右），请配合 `xe` 内核模块酌情使用。

@@ -6,8 +6,15 @@ next: false
 # 摩尔线程显卡
 
 ## MTT S70 / MTT S80
+:::danger 警告
+本教程仅适用于旧世界发行版，新世界发行版请等待厂商的后续更新。  
+本教程仅作为搬运整理，请酌情使用。
+:::
 
-**本教程仅作为搬运整理，请酌情使用。**
+:::warning 注意
+来自教程来源的提醒：  
+与loongnix+dde桌面是冲突的，安装dde桌面在安装这个特定内核会循环登出，初步怀疑是麒麟内核防止竟品使用。
+:::
 
 教程来源: [https://www.bilibili.com/opus/868705187717447689](https://www.bilibili.com/opus/868705187717447689)
 
@@ -28,5 +35,3 @@ apt install linux-image-5.4.18-101-generic linux-modules-5.4.18-101-generic linu
 ```bash
 apt install musa
 ```
-
-**注意：与loongnix+dde桌面是冲突的，安装dde桌面在安装这个特定内核会循环登出，初步怀疑是麒麟内核防止竟品使用。**
