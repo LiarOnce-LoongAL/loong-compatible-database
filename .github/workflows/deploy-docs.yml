@@ -27,7 +27,7 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           run_install: true
-          version: 9
+          # version: 9
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
