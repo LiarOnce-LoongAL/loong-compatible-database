@@ -9,3 +9,4 @@ notes_en: |
   Poor compatibility with Nouveau drivers. 
   Due to the large number of models, can be found at the documentation.
 link: /hardwares/nvidia.html#maxwell-pascal
+link_en: /en/hardwares/nvidia.html#maxwell-pascal

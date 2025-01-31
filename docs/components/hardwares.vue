@@ -55,9 +55,12 @@
         </el-table-column>
         <el-table-column prop="link" :label="$t('components.link')" width="60">
             <template #default="scope">
-                <span v-if="scope.row.link"
-                    ><a :href="scope.row.link">{{ $t("components.doc_link") }}</a></span
-                >
+                <span v-if="current_lang == 'en' && scope.row.link_en">
+                    <a :href="scope.row.link_en">{{ $t("components.doc_link") }}</a>
+                </span>
+                <span v-else-if="scope.row.link">
+                    <a :href="scope.row.link">{{ $t("components.doc_link") }}</a>
+                </span>
             </template>
         </el-table-column>
     </el-table>

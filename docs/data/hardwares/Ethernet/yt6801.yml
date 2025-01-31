@@ -2,6 +2,7 @@ model: YT6801
 brand: Motorcomm
 type: Ethernet 
 status: 1 
-notes: 在新世界可能需自行编译驱动安装
-notes_en: It maybe necessary to compile and install drivers by oneself in new-world distributions
-link: 
+notes: 在新世界发行版需自行编译驱动安装
+notes_en: It necessary to compile and install drivers by oneself in new-world distributions
+link: /hardwares/motorcomm#yt6801
+link_en: /en/hardwares/motorcomm#yt6801

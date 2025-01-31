@@ -5,3 +5,4 @@ status: 3
 notes: 需使用 xe 内核模块
 notes_en: Requires "xe" kernel module
 link: /hardwares/intelxe.html#xe-dg1
+link_en: /en/hardwares/intelxe.html#xe-dg1
