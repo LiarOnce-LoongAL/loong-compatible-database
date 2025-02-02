@@ -1,4 +1,4 @@
-model: Radeon R9 380
+model: Radeon R9 380 (GCN 3.0)
 brand: AMD
 type: GPU 
 status: 1 

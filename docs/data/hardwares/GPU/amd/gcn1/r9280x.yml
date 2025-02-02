@@ -1,4 +1,4 @@
-model: Radeon R9 280X
+model: Radeon R9 280X (GCN 1.0)
 brand: AMD
 type: GPU 
 status: 1 

@@ -1,4 +1,4 @@
-model: Radeon R7 240
+model: Radeon R7 240 (GCN 1.0)
 brand: AMD
 type: GPU 
 status: 1 

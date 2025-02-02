@@ -1,4 +1,4 @@
-model: Radeon RX 580 (2048SP)
+model: Radeon RX 580 (2048SP) (GCN 4.0)
 brand: AMD
 type: GPU 
 status: 1 

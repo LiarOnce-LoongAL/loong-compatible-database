@@ -1,4 +1,4 @@
-model: Radeon R7 250X / R7 250XE
+model: Radeon R7 250X / R7 250XE (GCN 1.0)
 brand: AMD
 type: GPU 
 status: 1 

@@ -2,7 +2,7 @@ model: N10G-X2-DC
 brand: MUCSE
 type: Ethernet
 status: 2
-notes: 根据公开信息仅适配旧世界，无法确定新世界发行版情况
-notes_en: According to the public information, it only works with the old-world distros, it isn't possible to determine the status of the new-world distros.
+notes: 目前仅支持 Linux 4.19-6.1 版本内核安装驱动
+notes_en: Currently, only Linux 4.19-6.1 kernel are supported for driver installation.
 link: 
 link_en: 

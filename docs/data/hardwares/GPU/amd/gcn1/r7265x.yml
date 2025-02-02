@@ -1,4 +1,4 @@
-model: Radeon R7 265X
+model: Radeon R7 265X (GCN 1.0)
 brand: AMD
 type: GPU 
 status: 1 
