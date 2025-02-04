@@ -1,0 +1,8 @@
+model: WX1820 Series
+brand: NetSwift
+type: Ethernet
+status: 2
+notes: 目前仅支持 Linux 4.19-6.8 版本内核安装驱动
+notes_en: Currently, only Linux 4.19-6.8 kernel are supported for driver installation.
+link: /hardwares/netswift#wx1820
+link_en: /en/hardwares/netswift#wx1820

@@ -42,7 +42,8 @@
         { "text": "北中网芯(BZWX)", "value": "BZWX" },
         { "text": "格兰菲(Glenfly)", "value": "Glenfly" },
         { "text": "爱科微(AIC/AIC Semiconductor)", "value": "AIC" },
-        { "text": "速通半导体(Senscomm)", "value": "Senscomm" }
+        { "text": "速通半导体(Senscomm)", "value": "Senscomm" },
+        { "text": "网迅科技(NetSwift)", "value": "NetSwift" }
     ],
     "filters_hardware_type": [
         { "text": "内存(UDIMM)", "value": "Memory_UDIMM" },

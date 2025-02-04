@@ -7,7 +7,8 @@ const sidebar_hardwares = [
     { text: 'Intel Wireless (iwlwifi)', link: '/en/hardwares/iwlwifi' },
     { text: 'AIC Wireless', link: '/en/hardwares/aicsemi' },
     { text: 'Senscomm Wireless', link: '/en/hardwares/senscomm' },
-    { text: 'Motorcomm Ethernet', link: '/en/hardwares/motorcomm' }
+    { text: 'Motorcomm Ethernet', link: '/en/hardwares/motorcomm' },
+    { text: 'NetSwift Ethernet', link: '/en/hardwares/netswift' }
 ]
 
 export { sidebar_hardwares }
