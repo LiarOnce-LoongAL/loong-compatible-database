@@ -43,7 +43,7 @@
         { "text": "格兰菲(Glenfly)", "value": "Glenfly" },
         { "text": "爱科微(AIC/AIC Semiconductor)", "value": "AIC" },
         { "text": "速通半导体(Senscomm)", "value": "Senscomm" },
-        { "text": "网迅科技(NetSwift)", "value": "NetSwift" }
+        { "text": "网迅科技(Wangxun/NetSwift)", "value": "Wangxun/NetSwift" }
     ],
     "filters_hardware_type": [
         { "text": "内存(UDIMM)", "value": "Memory_UDIMM" },

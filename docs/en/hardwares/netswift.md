@@ -3,11 +3,17 @@ outline: deep
 prev: false
 next: false
 ---
-# NetSwift Ethernet 
+# Wangxun/NetSwift Ethernet 
 
-:::danger
-This tutorial currently only applies to Linux kernel versions 4.19-6.8. Linux kernels above 6.8 may fail to compile and install the driver due to header file issues. If you encounter compilation or installation issues, please switch to other hardware or wait for upstream updates.
+## Linux 6.1 and Above
+
+:::tip
+Starting from Linux 6.1, the NIC products from Wangxun have been integrated into the Linux kernel mainline, and there is no longer a need to install the driver source code separately.  
 :::
+
+If the hardware is not recognized, simply execute `modprobe txgbe` (for 10 Gigabit NIC products) or `modprobe ngbe` (for Gigabit NIC products).
+
+**If the kernel version of your current distribution is below 6.1, please continue reading the following content:**
 
 ## WX1820 Series {#wx1820}
 
@@ -38,7 +44,7 @@ sudo modprobe txgbe
 
 ## WX1860 Series {#wx1860}
 
-This series is a 1 Gigabit Ethernet network controller chip, including the following chip products and hardware products:
+This series is a Gigabit Ethernet network controller chip, including the following chip products and hardware products:
 
 | Network Chip  | Hardware Adapter |
 | ------------- | ---------------- |

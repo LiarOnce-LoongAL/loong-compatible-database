@@ -43,7 +43,7 @@
         { "text": "Glenfly", "value": "Glenfly" },
         { "text": "AIC/AIC Semiconductor", "value": "AIC" },
         { "text": "Senscomm", "value": "Senscomm" },
-        { "text": "NetSwift", "value": "NetSwift" }
+        { "text": "Wangxun/NetSwift", "value": "Wangxun/NetSwift" }
     ],
     "filters_hardware_type": [
         { "text": "Memory UDIMM", "value": "Memory_UDIMM" },

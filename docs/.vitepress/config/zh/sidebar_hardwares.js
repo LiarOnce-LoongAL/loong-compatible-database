@@ -8,7 +8,7 @@ const sidebar_hardwares = [
     { text: '爱科微(AIC)无线网卡', link: '/hardwares/aicsemi' },
     { text: '苏州速通半导体(Senscomm)无线网卡', link: '/hardwares/senscomm' },
     { text: '裕太微电子(Motorcomm)有线网卡', link: '/hardwares/motorcomm' },
-    { text: '网迅科技 (NetSwift) 有线网卡', link: '/hardwares/netswift' }
+    { text: '网迅科技 (Wangxun/NetSwift) 有线网卡', link: '/hardwares/netswift' }
 ]
 
 export { sidebar_hardwares }
