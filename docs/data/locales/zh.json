@@ -34,6 +34,8 @@
         { "text": "三星(Samsung)", "value": "Samsung" },
         { "text": "思得/SK海力士(Solidigm/SK Hynix)", "value": "Solidigm/SK Hynix" },
         { "text": "西安紫光国芯(UniIC)", "value": "UniIC" },
+        { "text": "希捷(Seagate)", "value": "Seagate" },
+        { "text": "东芝(Toshiba)", "value": "Toshiba" },
         { "text": "西部数据(Western Digital)", "value": "Western Digital" },
         { "text": "小米(Xiaomi)", "value": "Xiaomi" },
         { "text": "致态/长江存储(ZHITAI/YMTC)", "value": "ZHITAI/YMTC" },

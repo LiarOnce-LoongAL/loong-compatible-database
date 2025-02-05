@@ -34,6 +34,8 @@
         { "text": "Samsung", "value": "Samsung" },
         { "text": "Solidigm/SK Hynix", "value": "Solidigm/SK Hynix" },
         { "text": "UniIC", "value": "UniIC" },
+        { "text": "Seagate", "value": "Seagate" },
+        { "text": "Toshiba", "value": "Toshiba" },
         { "text": "Western Digital", "value": "Western Digital" },
         { "text": "Xiaomi", "value": "Xiaomi" },
         { "text": "ZHITAI/YMTC", "value": "ZHITAI/YMTC" },
