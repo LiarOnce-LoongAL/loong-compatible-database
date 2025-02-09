@@ -1,5 +1,5 @@
 <template>
-    <el-button @click="clearFilter">重置筛选</el-button>
+    <el-button @click="clearFilter">{{ $t("components.clear_filter") }}</el-button>
     <el-table
         ref="tableRef"
         row-key="name"
@@ -7,23 +7,23 @@
         border
         :default-sort="{ prop: 'name', order: 'ascending' }"
     >
-        <el-table-column prop="name" label="名称" width="200" />
-        <el-table-column prop="vendor" label="厂商" width="160" />
-        <el-table-column prop="version" label="软件版本号" width="120">
-            <template #defacurrent_langt="scope">
-                <span v-if="scope.row.version === 1">多个版本</span>
+        <el-table-column prop="name" :label="$t('components.name')" width="200" />
+        <el-table-column prop="vendor" :label="$t('components.vendor')" width="160" />
+        <el-table-column prop="version" :label="$t('components.soft_version')" width="120">
+            <template #default="scope">
+                <span v-if="scope.row.version === 1">{{ $t('components.multi_version') }}</span>
             </template>
         </el-table-column>
-        <el-table-column prop="lat_version" label="LAT 版本号" width="100" />
-        <el-table-column prop="latx_or_lata" label="LATX 或 LATA" width="120" />
-        <el-table-column prop="date" label="更新日期" width="140">
+        <el-table-column prop="lat_version" :label="$t('components.lat_version')" width="100" />
+        <el-table-column prop="latx_or_lata" :label="$t('components.latx_or_lata')" width="120" />
+        <el-table-column prop="date" :label="$t('components.uptimedate')" width="140">
             <template #default="scope">
-                <span v-if="scope.row.date === 1">详见文档</span>
+                <span v-if="scope.row.date === 1">{{ $t('components.seeindoc') }}</span>
             </template>
         </el-table-column>
         <el-table-column
             prop="status"
-            label="兼容状态"
+            :label="$t('components.status')"
             width="120"
             :filters="filter_data[current_lang]?.filters_status_lat || 'zh'"
             :filter-method="filterStatus"
@@ -37,8 +37,8 @@
                 <Unsupported v-if="scope.row.status == -1" />
             </template>
         </el-table-column>
-        <el-table-column prop="notes" label="备注" min-width="300" />
-        <el-table-column prop="link" label="链接" width="60" />
+        <el-table-column prop="notes" :label="$t('components.notes')" min-width="300" />
+        <el-table-column prop="link" :label="$t('components.link')" width="60" />
     </el-table>
 </template>
 

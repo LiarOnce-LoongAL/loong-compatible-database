@@ -9,11 +9,14 @@
         "link": "链接",
         "doc_link": "文档",
         "name": "名称",
-        "soft_version": "版本",
-        "liblol_version": "LibLoL 版本",
+        "vendor": "厂商",
+        "soft_version": "软件版本号",
+        "multi_version": "多个版本",
         "lat_version": "LAT 版本",
         "latx_or_lata": "LATX 或 LATA",
-        "uptimedate": "更新日期"
+        "uptimedate": "更新日期",
+        "seeindoc": "详见文档",
+        "liblol_version": "LibLoL 版本"
     },
     "status": {
         "unknown": "未知",
@@ -29,5 +32,13 @@
         "partial": "该硬件可以在功能不完整的情况下兼容龙架构平台，且有可能兼容旧世界和新世界系统或仅兼容旧世界系统",
         "new_world": "该硬件可以兼容龙架构平台，但仅在新世界系统可用",
         "unsupported": "该硬件不兼容龙架构平台，且不兼容任何世界系统"
+    },
+    "status_taginfo_software": {
+        "unknown": "尚未测试该应用程序",
+        "compatible": "应用程序的功能均可正常使用，尚未发现功能异常",
+        "partial": "应用程序可以运行，但已知部分功能不可用或存在问题",
+        "native": "应用程序已经提供原生支持 LoongArch 版本或提供了源代码，无需使用 LAT 转译",
+        "new_world": "应用程序已经提供新世界 ABI 版本或提供了源代码，无需使用旧世界上的软件包",
+        "unsupported": "应用程序完全无法正常使用"
     }
 }

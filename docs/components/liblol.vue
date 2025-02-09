@@ -1,29 +1,29 @@
 <template>
-    <el-button @click="clearFilter">重置筛选</el-button>
+    <el-button @click="clearFilter">{{ $t("components.clear_filter") }}</el-button>
     <el-table ref="tableRef" row-key="name" :data="tableData" border :default-sort="{ prop: 'id', order: 'ascending' }">
         <el-table-column prop="id" label="ID" width="70" />
-        <el-table-column prop="name" label="名称" width="210" />
-        <el-table-column prop="version" label="软件版本号" width="180" />
-        <el-table-column prop="liblol_version" label="LibLoL 版本号" width="80" />
-        <el-table-column prop="date" label="更新日期" width="180" />
+        <el-table-column prop="name" :label="$t('components.name')" width="210" />
+        <el-table-column prop="version" :label="$t('components.soft_version')" width="180" />
+        <el-table-column prop="liblol_version" :label="$t('components.liblol_version')" width="80" />
+        <el-table-column prop="date" :label="$t('components.uptimedate')" width="180" />
         <el-table-column
             prop="status"
-            label="兼容状态"
+            :label="$t('components.status')"
             width="110"
             :filters="filter_data[current_lang]?.filters_status || 'zh'"
             :filter-method="filterStatus"
             filter-placement="bottom-end"
         >
             <template #default="scope">
-                <el-tag v-if="scope.row.status == 0" type="info">未知</el-tag>
-                <el-tag v-if="scope.row.status == 1" type="success">兼容</el-tag>
-                <el-tag v-if="scope.row.status == 2" type="warning">有限兼容</el-tag>
-                <el-tag v-if="scope.row.status == 3">新世界可用</el-tag>
-                <el-tag v-if="scope.row.status == -1" type="danger">不兼容</el-tag>
+                <Unknown v-if="scope.row.status == 0" />
+                <Compatible v-if="scope.row.status == 1" />
+                <Partial v-if="scope.row.status == 2" />
+                <NewWorld v-if="scope.row.status == 3" />
+                <Unsupported v-if="scope.row.status == -1" />
             </template>
         </el-table-column>
-        <el-table-column prop="notes" label="备注" min-width="200" />
-        <el-table-column prop="link" label="链接" width="60" />
+        <el-table-column prop="notes" :label="$t('components.notes')" min-width="200" />
+        <el-table-column prop="link" :label="$t('components.link')" width="60" />
     </el-table>
 </template>
 
