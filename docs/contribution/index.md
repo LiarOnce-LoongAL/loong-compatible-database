@@ -186,10 +186,10 @@ link_en:   #链接文档的英语版本（如果有）
 
 ```yaml
 name:  #软件名称
+vendor:  #软件厂商
 version:  #软件版本号
 lat_version:   #LAT 版本号
 latx_or_lata:   #LATX 或 LATA
-date:   #更新日期
 status:   #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=已有原生龙架构版本无需 LAT
 notes:  #备注
 link:   #链接
@@ -198,6 +198,10 @@ link:   #链接
 ### name
 
 此处填写软件名称，语言不限
+
+### vendor
+
+此处填写软件厂商，限英语
 
 ### version
 
@@ -223,7 +227,7 @@ link:   #链接
 
 ### date
 
-软件的更新日期。
+软件的更新日期，若有多个版本请填写 `1` 并新建一个 Markdown 文档进行说明。
 
 ### status
 
@@ -266,6 +270,7 @@ link:   #链接
 ```yaml
 id:    #软件ID
 name:  #软件名称
+vendor:  #软件厂商
 version:  #软件版本号
 liblol_version:   #libLoL 版本号
 date:   #更新日期
@@ -282,6 +287,10 @@ link:   #链接
 
 此处填写软件名称，语言不限
 
+### vendor
+
+此处填写软件厂商，限英语
+
 ### version
 
 此处填写软件的运行版本
@@ -292,7 +301,7 @@ link:   #链接
 
 ### date
 
-软件的更新日期，若不知道确切时间仅需写年月日即可 (YYYY-MM-DD)。
+软件的更新日期，若不知道确切时间仅需写年月日即可 (YYYY-MM-DD)，若有多个版本请填写 `1`。
 
 ### status
 

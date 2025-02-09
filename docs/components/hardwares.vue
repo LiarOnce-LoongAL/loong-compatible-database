@@ -40,11 +40,11 @@
             filter-placement="bottom-end"
         >
             <template #default="scope">
-                <el-tag v-if="scope.row.status == 0" type="info">{{ $t("status.unknown") }}</el-tag>
-                <el-tag v-if="scope.row.status == 1" type="success">{{ $t("status.compatible") }}</el-tag>
-                <el-tag v-if="scope.row.status == 2" type="warning">{{ $t("status.partial") }}</el-tag>
-                <el-tag v-if="scope.row.status == 3">{{ $t("status.new_world") }}</el-tag>
-                <el-tag v-if="scope.row.status == -1" type="danger">{{ $t("status.unsupported") }}</el-tag>
+                <Unknown v-if="scope.row.status == 0" />
+                <Compatible v-if="scope.row.status == 1" />
+                <Partial v-if="scope.row.status == 2" />
+                <NewWorld v-if="scope.row.status == 3" />
+                <Unsupported v-if="scope.row.status == -1" />
             </template>
         </el-table-column>
         <el-table-column prop="notes" :label="$t('components.notes')" min-width="200">

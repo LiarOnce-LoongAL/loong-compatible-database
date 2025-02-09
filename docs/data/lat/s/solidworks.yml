@@ -1,0 +1,11 @@
+name: SolidWorks
+vendor: Dassault Systemes
+version: 1
+lat_version: 1.5.3-rc1 + wine-9.14
+latx_or_lata: LATX
+date: 1
+status: 2
+notes: 有多个兼容或不兼容版本，详见文档
+notes_en: 
+link: 
+link_en: 

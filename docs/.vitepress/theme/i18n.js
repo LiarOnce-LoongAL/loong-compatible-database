@@ -8,8 +8,8 @@ if (typeof window !== "undefined") {
 }
 
 const i18n = createI18n({
-    // locale: document.documentElement.lang || "zh",
-    locale: current_lang,
+    locale: document.documentElement.lang || "zh",
+    // locale: current_lang,
     globalInjection: true,
     silentTranslationWarn: true,
     missingWarn: false,

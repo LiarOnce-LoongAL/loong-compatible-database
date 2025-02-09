@@ -6,6 +6,13 @@
         { "text": "New-world Available", "value": 3 },
         { "text": "Unsupported", "value": -1 }
     ],
+    "filters_status_lat": [
+        { "text": "Unknown", "value": 0 },
+        { "text": "Compatible", "value": 1 },
+        { "text": "Partial Support", "value": 2 },
+        { "text": "Native Available", "value": 3 },
+        { "text": "Unsupported", "value": -1 }
+    ],
     "filters_hardware_brand": [
         { "text": "8BitDo", "value": "8BitDo" },
         { "text": "ADATA", "value": "ADATA" },

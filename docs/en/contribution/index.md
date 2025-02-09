@@ -190,6 +190,7 @@ This is the content of a template file:
 
 ```yaml
 name: 
+vendor: 
 version: 
 lat_version: 
 latx_or_lata: 
@@ -202,6 +203,10 @@ link:
 ### name
 
 Fill in the name of the software here, in any language.
+
+### vendor
+
+Fill in the name of the vendor here, **only English**.
 
 ### version
 
@@ -228,6 +233,8 @@ The runtime library used to run the software should refer to the current archite
 ### date
 
 The update date of the software.
+
+If there is more than one version please fill in `1` and create a new Markdown document to describe it.
 
 ### status
 
@@ -274,6 +281,7 @@ This is the content of a template file:
 ```yaml
 id: 
 name: 
+vendor: 
 version: 
 liblol_version: 
 date: 
@@ -289,6 +297,10 @@ Here is the ID of the software, if from LoongApps(app.loongapps.cn), please fill
 ### name
 
 Fill in the name of the software here, in any language.
+
+### vendor
+
+Fill in the name of the vendor here, **only English**.
 
 ### version
 
