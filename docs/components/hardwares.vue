@@ -75,6 +75,10 @@
     import databaseJson from "../data/datas.min.json";
     import filter_data from "../data/locales.min.json";
     const current_lang = document.documentElement.lang;
+    // let current_lang;
+    // if (typeof document !== "undefined") {
+    //     current_lang = document.documentElement.lang;
+    // }
 
     // let filtersJson
 

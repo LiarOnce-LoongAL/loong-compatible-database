@@ -5,7 +5,12 @@ outline: false
 # LAT 兼容性
 
 <latTagsInfo />
-<latList />
+
+::: raw
+<ClientOnly>
+    <latList />
+</ClientOnly>
+:::
 
 <script setup>
     import latTagsInfo from "./components/tags/lat_tagsinfo.vue"

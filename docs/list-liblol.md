@@ -5,7 +5,12 @@ outline: false
 # LibLoL 兼容性
 
 <liblolTagsInfo />
-<liblolList />
+
+::: raw
+<ClientOnly>
+    <liblolList />
+</ClientOnly>
+:::
 
 <script setup>
     import liblolTagsInfo from "./components/tags/liblol_tagsinfo.vue"

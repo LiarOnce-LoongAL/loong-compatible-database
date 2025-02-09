@@ -44,5 +44,10 @@ export const shared = defineConfig({
                 include: [path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../i18n/**")]
             }),
         ],
+        build: {
+            rollupOptions: {
+                external: ['document'],
+            },
+        }
     },
 });

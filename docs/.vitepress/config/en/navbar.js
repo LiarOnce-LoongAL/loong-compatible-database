@@ -1,5 +1,4 @@
 const navbar = [
-    { text: "Home", link: "/" },
     {
         text: "Compatibility Lists",
         items: [

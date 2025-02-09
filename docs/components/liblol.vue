@@ -6,9 +6,12 @@
         <el-table-column prop="version" label="软件版本号" width="180" />
         <el-table-column prop="liblol_version" label="LibLoL 版本号" width="80" />
         <el-table-column prop="date" label="更新日期" width="180" />
-        <el-table-column prop="status" label="兼容状态" width="110" 
-            :filters="filtersJson.filtersStatus" 
-            :filter-method="filterStatus" 
+        <el-table-column
+            prop="status"
+            label="兼容状态"
+            width="110"
+            :filters="filter_data[current_lang]?.filters_status || 'zh'"
+            :filter-method="filterStatus"
             filter-placement="bottom-end"
         >
             <template #default="scope">
@@ -25,20 +28,37 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import databaseJson from '../data/datas.min.json'
-import * as filtersJson from './filters' 
+    import { nextTick, ref, getCurrentInstance, onMounted } from "vue";
+    const { proxy } = getCurrentInstance();
+    import { useI18n } from "vue-i18n";
+    const { locale } = useI18n();
 
-const tableRef = ref()
-const clearFilter = () => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    tableRef.value.clearFilter()
-}
+    import databaseJson from "../data/datas.min.json";
+    import filter_data from "../data/locales.min.json";
+    const current_lang = document.documentElement.lang;
+    // let current_lang;
+    // if (typeof document !== "undefined") {
+    //     current_lang = document.documentElement.lang;
+    // }
 
-const filterStatus = (value, row) => {
-    return row.status === value
-}
+    const tableRef = ref();
+    const clearFilter = () => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        tableRef.value.clearFilter();
+    };
 
-const tableData = databaseJson.liblol
+    const filterStatus = (value, row) => {
+        return row.status === value;
+    };
+
+    const tableData = databaseJson.liblol;
+
+    nextTick(() => {
+        if (typeof window !== "undefined") {
+            localStorage.setItem("lang", document.documentElement.lang);
+            locale.value = localStorage.getItem("lang");
+            proxy.$forceUpdate();
+        }
+    });
 </script>
