@@ -4,6 +4,7 @@ import { navbar } from "./navbar";
 import { sidebar_hardwares } from "./sidebar_hardwares";
 import { sidebar_lat } from "./sidebar_lat";
 import { sidebar_liblol } from "./sidebar_liblol";
+import { sidebar_contribution } from "./sidebar_contribution";
 
 export const zh = defineConfig({
     lang: "zh",
@@ -31,6 +32,12 @@ export const zh = defineConfig({
                 {
                     text: "LibLoL 相关",
                     items: sidebar_liblol,
+                },
+            ],
+            "/contribution/": [
+                {
+                    text: "参与贡献",
+                    items: sidebar_contribution,
                 },
             ],
         }

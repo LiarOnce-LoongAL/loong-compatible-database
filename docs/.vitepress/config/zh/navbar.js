@@ -16,13 +16,7 @@ const navbar = [
             { text: "LibLoL 相关", link: "/liblol" }
         ],
     },
-    {
-        text: "参与贡献",
-        items: [
-            { text: "参与贡献", link: "/contribution/" },
-            { text: "常见问题", link: "/contribution/knownissues" }
-        ],
-    },
+    { text: "参与贡献", link: "/contribution/" }
 ]
 
 export { navbar }

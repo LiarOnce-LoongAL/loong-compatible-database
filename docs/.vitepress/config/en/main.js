@@ -4,6 +4,7 @@ import { navbar } from "./navbar";
 import { sidebar_hardwares } from "./sidebar_hardwares";
 import { sidebar_lat } from "./sidebar_lat";
 import { sidebar_liblol } from "./sidebar_liblol";
+import { sidebar_contribution } from "./sidebar_contribution";
 
 export const en = defineConfig({
     lang: "en",
@@ -31,6 +32,12 @@ export const en = defineConfig({
                 {
                     text: "LibLoL Info",
                     items: sidebar_liblol,
+                },
+            ],
+            "/en/contribution/": [
+                {
+                    text: "Contribution",
+                    items: sidebar_contribution,
                 },
             ],
         }

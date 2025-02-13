@@ -1,5 +1,6 @@
 ---
-layout: doc
-sidebar: false
-outline: 'deep'
+outline: deep
+prev: false
+next: false
+
 ---

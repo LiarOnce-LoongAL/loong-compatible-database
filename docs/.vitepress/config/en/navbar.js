@@ -15,13 +15,7 @@ const navbar = [
             { text: "LibLoL Info", link: "/en/liblol" }
         ],
     },
-    {
-        text: "Contribution",
-        items: [
-            { text: "Contribution", link: "/en/contribution/" },
-            { text: "Known Issues", link: "/en/contribution/knownissues" }
-        ],
-    },
+    { text: "Contribution", link: "/en/contribution/" }
 ]
 
 export { navbar }

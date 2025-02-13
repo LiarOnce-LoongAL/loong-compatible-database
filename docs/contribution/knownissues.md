@@ -1,7 +1,8 @@
 ---
-layout: doc
-sidebar: false
-outline: 'deep'
+outline: deep
+prev: false
+next: false
+
 ---
 # 常见问题
 
