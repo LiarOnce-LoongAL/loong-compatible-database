@@ -9,13 +9,22 @@ hero:
     - theme: brand
       text: 参与贡献
       link: /contribution
-    - theme: alt
-      text: 硬件兼容性
-      link: /list-hardwares
-    - theme: alt
-      text: LAT 兼容性
-      link: /list-lat
-    - theme: alt
-      text: LibLoL 兼容性
-      link: /list-liblol
+
+features:
+  - icon: 
+      src: /assets/loongson3.png
+    title: 硬件兼容性
+    details: 点击这里可以查看 LoongArch 平台已测试后的硬件兼容性情况
+    link: /list-hardwares
+  - icon: 
+      src: /assets/loongson.png
+      height: 48px
+    title: LAT 兼容性
+    details: 点击这里可以查看 LoongArch 平台二进制转译层 (LAT) 的兼容性情况
+    link: /list-lat
+  - icon: 
+      src: /assets/liblol.svg
+    title: LibLoL 兼容性
+    details: 点击这里可以查看 LoongArch 平台新旧世界兼容运行时 (LibLoL) 的兼容性情况
+    link: /list-liblol
 ---

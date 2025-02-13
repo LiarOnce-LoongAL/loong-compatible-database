@@ -9,13 +9,22 @@ hero:
     - theme: brand
       text: Contribution
       link: /en/contribution
-    - theme: alt
-      text: Hardware Compatibility
-      link: /en/list-hardwares
-    - theme: alt
-      text: LAT Compatibility
-      link: /en/list-lat
-    - theme: alt
-      text: LibLoL Compatibility
-      link: /en/list-liblol
+
+features:
+  - icon: 
+      src: /assets/loongson3.png
+    title: Hardwares Compatibility
+    details: Click here to view the tested hardware compatibility of the LoongArch platform.
+    link: /list-hardwares
+  - icon: 
+      src: /assets/loongson.png
+      height: 48px
+    title: LAT Compatibility
+    details: Click here to view LoongArch Translation Layer (LAT) compatibility.
+    link: /list-lat
+  - icon: 
+      src: /assets/liblol.svg
+    title: LibLoL Compatibility
+    details: Click here to view the LoongArch platform's Old World and New World Runtime (LibLoL) compatibility.
+    link: /list-liblol
 ---

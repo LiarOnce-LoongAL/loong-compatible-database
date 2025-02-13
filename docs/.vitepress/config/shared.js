@@ -11,6 +11,10 @@ import { search_locales_zh } from "./zh/main";
 export const shared = defineConfig({
     i18nRouting: true,
     themeConfig: {
+        footer: {
+            message: 'CC BY-SA 4.0 International',
+            copyright: 'Copyright © 2013-2025 <a href="https://github.com/LiarOnce" target="_blank">LiarOnce</a>'
+        },
         search: {
             provider: "local",
             options: {
@@ -27,7 +31,7 @@ export const shared = defineConfig({
         ],
     },
     markdown: {
-        config: (md) => {},
+        config: (md) => { },
     },
     vite: {
         ssr: {

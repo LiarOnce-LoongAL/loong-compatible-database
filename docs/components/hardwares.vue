@@ -67,20 +67,11 @@
 </template>
 
 <script setup>
-    import { nextTick, ref, getCurrentInstance, onMounted } from "vue";
-    const { proxy } = getCurrentInstance();
-    import { useI18n } from "vue-i18n";
-    const { locale } = useI18n();
+    import { ref } from "vue";
 
     import databaseJson from "../data/datas.min.json";
     import filter_data from "../data/locales.min.json";
     const current_lang = document.documentElement.lang;
-    // let current_lang;
-    // if (typeof document !== "undefined") {
-    //     current_lang = document.documentElement.lang;
-    // }
-
-    // let filtersJson
 
     const tableRef = ref();
 
@@ -117,16 +108,4 @@
     };
 
     const tableData = databaseJson.hardwares;
-
-    nextTick(() => {
-        // Used for execute switch language after insert "lang" in <html>
-        if (typeof window !== "undefined") {
-            // Determine if the "window" exists to allow Vite to build smoothly
-            // There's black magic on the frontend, too!!!
-            localStorage.setItem("lang", document.documentElement.lang);
-            locale.value = localStorage.getItem("lang");
-            proxy.$forceUpdate();
-            // console.log(proxy)
-        }
-    });
 </script>
