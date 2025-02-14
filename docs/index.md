@@ -12,18 +12,18 @@ hero:
 
 features:
   - icon: 
-      src: /assets/loongson3.png
+      src: /images/loongson3.png
     title: 硬件兼容性
     details: 点击这里可以查看 LoongArch 平台已测试后的硬件兼容性情况
     link: /list-hardwares
   - icon: 
-      src: /assets/loongson.png
+      src: /images/loongson.png
       height: 48px
     title: LAT 兼容性
     details: 点击这里可以查看 LoongArch 平台二进制转译层 (LAT) 的兼容性情况
     link: /list-lat
   - icon: 
-      src: /assets/liblol.svg
+      src: /images/liblol.svg
     title: LibLoL 兼容性
     details: 点击这里可以查看 LoongArch 平台新旧世界兼容运行时 (LibLoL) 的兼容性情况
     link: /list-liblol

@@ -12,18 +12,18 @@ hero:
 
 features:
   - icon: 
-      src: /assets/loongson3.png
+      src: /images/loongson3.png
     title: Hardwares Compatibility
     details: Click here to view the tested hardware compatibility of the LoongArch platform.
     link: /list-hardwares
   - icon: 
-      src: /assets/loongson.png
+      src: /images/loongson.png
       height: 48px
     title: LAT Compatibility
     details: Click here to view LoongArch Translation Layer (LAT) compatibility.
     link: /list-lat
   - icon: 
-      src: /assets/liblol.svg
+      src: /images/liblol.svg
     title: LibLoL Compatibility
     details: Click here to view the LoongArch platform's Old World and New World Runtime (LibLoL) compatibility.
     link: /list-liblol
