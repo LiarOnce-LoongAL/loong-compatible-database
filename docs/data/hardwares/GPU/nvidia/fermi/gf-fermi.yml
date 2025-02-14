@@ -1,8 +1,6 @@
 model: | 
   GeForce GTX 5 Series
   GeForce GTX 4 Series
-  GeForce GT 7 Series
-  GeForce GT 6 Series
   GeForce GT 5 Series
   GeForce GT 4 Series (Fermi)
 brand: NVIDIA

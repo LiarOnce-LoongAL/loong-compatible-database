@@ -1,6 +1,4 @@
-model: | 
-  GeForce GTX 9 Series
-  GeForce GTX 7 Series (Maxwell)
+model: (Maxwell) GeForce GTX 9 Series
 brand: NVIDIA
 type: GPU 
 status: -1

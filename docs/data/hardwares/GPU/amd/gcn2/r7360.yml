@@ -1,4 +1,4 @@
-model: Radeon R7 360 (GCN 2.0)
+model: (GCN 2.0) Radeon R7 360
 brand: AMD
 type: GPU 
 status: 1 
