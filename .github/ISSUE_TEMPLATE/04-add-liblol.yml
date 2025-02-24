@@ -7,69 +7,77 @@ body:
     attributes:
       value: |
         请务必在标题填写需要提交的软件名称
-        在提交 LibLoL 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#liblol
+        在提交 LibLoL 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/liblol
+        Be sure to fill in the title with the name of the software to be submitted.
+        Before submitting LibLoL information, please read the matter of participating in the contribution: https://loongarch.liaronce.com/en/contribution/liblol
 
   - type: input
     attributes:
-      label: 软件名称
-      description: 此处填写软件名称，语言不限
+      label: 软件名称 / Software Name
+      description: 此处填写软件名称，语言不限 / The value to fill in the software name, in any language
     validations:
       required: true
 
   - type: input
     attributes:
-      label: 软件厂商
-      description: 此处填写软件厂商，限英语
+      label: 软件厂商 / Software Vendor
+      description: 此处填写软件厂商，限英语 / This value is only filled in by the manufacturer to which the hardware belongs, and **only in English**.
     validations:
       required: true
 
   - type: input
     attributes:
-      label: 软件版本号
-      description: 此处填写软件的运行版本，若有多个版本请填写 `1` 并在 `更多信息` 处说明。
+      label: 软件版本号 / Software Version
+      description: |
+        此处填写软件的运行版本，若有多个版本请填写 `1` 并在`更多信息`处进行说明。 / 
+        Fill in the running version of the software here, if there is more than one version fill in `1` and specify it in the `More Information` section.
     validations:
       required: true
 
   - type: input
     attributes:
-      label: libLoL 版本号
+      label: libLoL 版本号 / libLoL Version
       description: |
         此处填写运行该软件时使用的 LibLoL 运行库版本，如无特别说明，请填写 `0.1.5`。
+        Fill in the version of LibLoL runtime library used to run the software here, if not specified, please fill in `0.1.5`.
     validations:
       required: true
 
   - type: input
     attributes:
-      label: 更新日期
+      label: 更新日期 / Upgrade Date
       description: |
-        软件的更新日期，若不知道确切时间仅需写年月日即可 (YYYY-MM-DD)，若有多个版本请填写 `1`。
+        软件的更新日期，若有多个版本请填写 `1` 并在`更多信息`处进行说明。 / 
+        The update date of the software. If there is more than one version please fill in `1` and specify it in the `More Information` section.
     validations:
       required: true
 
   - type: dropdown
     attributes:
-      label: 兼容状态
-      description: 填写该软件目前的兼容状态
+      label: 兼容状态 / Compatibility Status
+      description: 填写该软件目前的兼容状态 / Fill in the current compatibility status of the software
       options:
-        - 未知
-        - 兼容
-        - 有限兼容
-        - 新世界可用
-        - 不兼容
+        - 未知 / Unknown
+        - 兼容 / Compatible
+        - 有限兼容 / Partial Support
+        - 新世界可用 / New-world Available
+        - 不兼容 / Unsupported
       default: 0
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: 证实软件运行状态的信息
-      description: 请在此说明软件的运行状态，例如实拍图片和系统内运行的截图
+      label: 证实软件运行状态的信息 / Information confirming the operational status of the software
+      description: |
+        请在此说明软件的运行状态，请提供运行截图。/ 
+        Please indicate here the running status of the software, please provide running screenshots.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: 更多信息
-      description: 如果该软件需要以文档的方式进行说明，请从这里开始
+      label: 更多信息 / More Information
+      description: 如果该软件需要以文档的方式进行说明，请从这里开始  / If this software needs to be described in a documented way, start here.
     validations:
       required: false

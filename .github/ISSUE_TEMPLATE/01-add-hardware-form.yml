@@ -1,60 +1,67 @@
 name: (Form) 添加硬件信息 / Add Hardware Info
 title: "[Add Hardware] "
-description: 如果需要添加硬件信息请在这里填写模板
+description: 如果需要添加硬件信息请在这里填写模板 / If you need to add hardware information please fill out the template here
 
 body:
   - type: markdown
     attributes:
       value: |
-        请务必在标题填写需要提交的硬件名称
-        在提交硬件信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#hardwares
-        如果不知道该如何填写该表单，希望提交 linux-hardware.org URL，请更换为 Markdown 模板
+        请务必在标题填写需要提交的硬件名称。
+        在提交硬件信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/hardwares
+        如果不知道该如何填写该表单，希望提交 linux-hardware.org URL，请更换为 Markdown 模板。
+        Be sure to fill in the title with the name of the hardware to be submitted.
+        Before submitting hardware information, please read the matter of participating in the contribution: https://loongarch.liaronce.com/en/contribution/hardwares
+        If you do not know how to fill out this form and wish to submit the linux-hardware.org URL, please use Markdown template instead.
 
   - type: input
     attributes:
-      label: 硬件型号
-      description: 填写硬件具体型号，语言不限
+      label: 硬件型号 / Hardware Model
+      description: 填写硬件具体型号，语言不限 / The value to fill in the hardware specific model, in any language
     validations:
       required: true
     
   - type: input
     attributes:
-      label: 厂商
-      description: 填写硬件所属厂商，**均需使用英语填写**。
+      label: 厂商 / Manufacturer
+      description: |
+        填写硬件所属厂商，**均需使用英语填写**。 /
+        This value is only filled in by the manufacturer to which the hardware belongs, and **all must be filled in using English**.
     validations:
       required: true
 
   - type: input
     attributes:
-      label: 硬件类型
-      description: 填写硬件类型，请参考上述链接
+      label: 硬件类型 / Hardware Type
+      description: 填写硬件类型，请参考上述链接 / Fill in the hardware type, please refer to the above link
     validations:
       required: true
 
   - type: dropdown
     attributes:
-      label: 兼容状态
-      description: 填写该硬件目前的兼容状态
+      label: 兼容状态 / Compatibility Status
+      description: 填写该硬件目前的兼容状态 / Fill in the current compatibility status of the hardware
       options:
-        - 未知
-        - 兼容
-        - 有限兼容
-        - 新世界可用
-        - 不兼容
+        - 未知 / Unknown
+        - 兼容 / Compatible
+        - 有限兼容 / Partial Support
+        - 新世界可用 / New-world Available
+        - 不兼容 / Unsupported
       default: 0
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: 证实硬件运行状态的信息
-      description: 请在此说明硬件的运行状态，例如实拍图片和系统内运行的截图
+      label: 证实硬件运行状态的信息 / Information confirming the operational status of the hardware
+      description: |
+        请在此说明硬件的运行状态，例如实拍图片和系统内运行的截图 /
+        Please indicate here the operational status of the hardware, e.g. actual pictures and screenshots of it running in the system.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: 更多信息
-      description: 如果该硬件需要以文档的方式进行说明，请从这里开始
+      label: 更多信息 / More Information
+      description: 如果该硬件需要以文档的方式进行说明，请从这里开始 / If this hardware needs to be described in a documented way, start here.
     validations:
       required: false

@@ -1,48 +1,54 @@
-name: (Form) 添加 LAT 运行的软件兼容信息 / Add LAT 
+name: (Form) 添加 LAT 运行的软件兼容信息 / Add software compatibility information for LAT operation
 title: "[Add LAT] "
-description: 如果需要添加通过 LAT 转译层的兼容性情况请在这里填写模板
+description: 如果需要添加通过 LAT 转译层的兼容性情况请在这里填写模板 / If you need to add a compatibility case through the LAT please fill out the template here.
 
 body:
   - type: markdown
     attributes:
       value: |
-        请务必在标题填写需要提交的软件名称
-        提交 LAT 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#lat
+        请务必在标题填写需要提交的软件名称。
+        提交 LAT 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/lat
+        Be sure to fill in the title with the name of the software to be submitted.
+        Before submitting LAT information, please read the matter of participating in the contribution: https://loongarch.liaronce.com/en/contribution/lat
 
   - type: input
     attributes:
-      label: 软件名称
-      description: 此处填写软件名称，语言不限
+      label: 软件名称 / Software Name
+      description: 此处填写软件名称，语言不限 / The value to fill in the software name, in any language
     validations:
       required: true
 
   - type: input
     attributes:
-      label: 软件厂商
-      description: 此处填写软件厂商，限英语
+      label: 软件厂商 / Software Vendor
+      description: 此处填写软件厂商，限英语 / This value is only filled in by the manufacturer to which the hardware belongs, and **only in English**.
     validations:
       required: true
 
   - type: input
     attributes:
-      label: 软件版本号
-      description: 此处填写软件的运行版本，若有多个版本请填写 `1` 并在`更多信息`处进行说明。
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: LAT 版本号
+      label: 软件版本号 / Software Version
       description: |
-        此处填写运行该软件时使用的 LAT 运行库版本，如无特别说明，请填写 `1.5.3-rc1`。若该软件为 Windows 软件，还需要填写 Wine 运行库版本，例如： `1.5.3-rc1 + wine-9.9-staging`
+        此处填写软件的运行版本，若有多个版本请填写 `1` 并在`更多信息`处进行说明。 / 
+        Fill in the running version of the software here, if there is more than one version fill in `1` and specify it in the `More Information` section.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: LAT 版本号 / LAT Version
+      description: |
+        此处填写运行该软件时使用的 LAT 运行库版本，如无特别说明，请填写 `1.5.3-rc1`。若该软件为 Windows 软件，还需要填写 Wine 运行库版本，例如： `1.5.3-rc1 + wine-9.9-staging` / 
+        Fill in the version of the LAT runtime library used to run the software here, if not specified, please fill in `1.5.3-rc1`. If the software is Windows software, you also need to fill in the Wine runtime version, e.g.: `1.5.3-rc1 + wine-9.9-staging`.
     validations:
       required: true
 
   - type: dropdown
     attributes:
-      label: LATX 或 LATA
+      label: LATX 或 LATA / LATX or LATA
       description: |
-        此处请选择软件运行使用的运行库，需参考软件当前的架构。若为 x86 版本则选择 `LATX`，若为 ARM 版本则选择 `LATA`。
+        此处请选择软件运行使用的运行库，需参考软件当前的架构。若为 x86 版本则选择 `LATX`，若为 ARM 版本则选择 `LATA`。 / 
+        The runtime library used to run the software should refer to the current architecture of the software, `LATX` if it is the x86 version, `LATA` if it is the ARM version.
       options:
         - LATX
         - LATA
@@ -52,35 +58,39 @@ body:
 
   - type: input
     attributes:
-      label: 更新日期
-      description: 软件的更新日期，若有多个版本请填写 `1` 并在`更多信息`处进行说明。
+      label: 更新日期 / Upgrade Date
+      description: |
+        软件的更新日期，若有多个版本请填写 `1` 并在`更多信息`处进行说明。 / 
+        The update date of the software. If there is more than one version please fill in `1` and specify it in the `More Information` section.
     validations:
       required: true
 
   - type: dropdown
     attributes:
-      label: 兼容状态
-      description: 填写该软件目前的兼容状态
+      label: 兼容状态 / Compatibility Status
+      description: 填写该软件目前的兼容状态 / Fill in the current compatibility status of the software
       options:
-        - 未知
-        - 兼容
-        - 有限兼容
-        - 原生可用
-        - 不兼容
+        - 未知 / Unknown
+        - 兼容 / Compatible
+        - 有限兼容 / Partial Support
+        - 原生可用 / Native Available
+        - 不兼容 / Unsupported
       default: 0
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: 证实软件运行状态的信息
-      description: 请在此说明软件的运行状态，例如实拍图片和系统内运行的截图
+      label: 证实软件运行状态的信息 / Information confirming the operational status of the software
+      description: |
+        请在此说明软件的运行状态，请提供运行截图，**如果同时使用了 Wine 兼容层请特别说明** / 
+        Please indicate here the running status of the software, please provide running screenshots, **specifically if Wine is used at the same time**.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: 更多信息
-      description: 如果该软件需要以文档的方式进行说明，请从这里开始
+      label: 更多信息 / More Information
+      description: 如果该软件需要以文档的方式进行说明，请从这里开始  / If this software needs to be described in a documented way, start here.
     validations:
       required: false
