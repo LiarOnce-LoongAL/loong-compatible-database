@@ -8,11 +8,40 @@ body:
       value: |
         请务必在标题填写需要提交的硬件名称
         在提交硬件信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#hardwares
+        如果不知道该如何填写该表单，希望提交 linux-hardware.org URL，请更换为 Markdown 模板
 
-  - type: textarea
+  - type: input
     attributes:
-      label: 硬件信息
-      description: 在此提交 YAML 模板内容或 linux-hardware.org 的提交 URL
+      label: 硬件型号
+      description: 填写硬件具体型号，语言不限
+    validations:
+      required: true
+    
+  - type: input
+    attributes:
+      label: 厂商
+      description: 填写硬件所属厂商，**均需使用英语填写**。
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: 硬件类型
+      description: 填写硬件类型，请参考上述链接
+    validations:
+      required: true
+
+    - type: dropdown
+    attributes:
+      label: 兼容状态
+      description: 填写该硬件目前的兼容状态
+      options:
+        - 未知
+        - 兼容
+        - 有限兼容
+        - 新世界可用
+        - 不兼容
+      default: 0
     validations:
       required: true
 

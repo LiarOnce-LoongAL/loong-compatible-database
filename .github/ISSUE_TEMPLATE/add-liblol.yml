@@ -1,13 +1,13 @@
-name: (Form) 添加 LAT 运行的软件兼容信息 / Add LAT 
-title: "[Add LAT] "
-description: 如果需要添加通过 LAT 转译层的兼容性情况请在这里填写模板
+name: (Form) 添加 LibLoL 运行的软件兼容信息 / Add LibLoL 
+title: "[Add LibLoL] "
+description: 如果需要添加通过 LibLoL 兼容层的兼容性情况请在这里填写模板
 
 body:
   - type: markdown
     attributes:
       value: |
         请务必在标题填写需要提交的软件名称
-        提交 LAT 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#lat
+        在提交 LibLoL 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#liblol
 
   - type: input
     attributes:
@@ -26,34 +26,23 @@ body:
   - type: input
     attributes:
       label: 软件版本号
-      description: 此处填写软件的运行版本，若有多个版本请填写 `1` 并在`更多信息`处进行说明。
+      description: 此处填写软件的运行版本，若有多个版本请填写 `1` 并在 `更多信息` 处说明。
     validations:
       required: true
 
   - type: input
     attributes:
-      label: LAT 版本号
+      label: libLoL 版本号
       description: |
-        此处填写运行该软件时使用的 LAT 运行库版本，如无特别说明，请填写 `1.5.3-rc1`。若该软件为 Windows 软件，还需要填写 Wine 运行库版本，例如： `1.5.3-rc1 + wine-9.9-staging`
-    validations:
-      required: true
-
-  - type: dropdown
-    attributes:
-      label: LATX 或 LATA
-      description: |
-        此处请选择软件运行使用的运行库，需参考软件当前的架构。若为 x86 版本则选择 `LATX`，若为 ARM 版本则选择 `LATA`。
-      options:
-        - LATX
-        - LATA
-      default: 0
+        此处填写运行该软件时使用的 LibLoL 运行库版本，如无特别说明，请填写 `0.1.5`。
     validations:
       required: true
 
   - type: input
     attributes:
       label: 更新日期
-      description: 软件的更新日期，若有多个版本请填写 `1` 并在`更多信息`处进行说明。
+      description: |
+        软件的更新日期，若不知道确切时间仅需写年月日即可 (YYYY-MM-DD)，若有多个版本请填写 `1`。
     validations:
       required: true
 
@@ -65,7 +54,7 @@ body:
         - 未知
         - 兼容
         - 有限兼容
-        - 原生可用
+        - 新世界可用
         - 不兼容
       default: 0
     validations:

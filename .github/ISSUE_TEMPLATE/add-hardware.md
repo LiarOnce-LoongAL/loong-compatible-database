@@ -10,14 +10,7 @@ assignees: ''
 **在提交硬件信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#hardwares**
 
 **硬件信息**
-```yaml
-model: 
-brand: 
-type: 
-status: 
-notes: 
-link: 
-```
+模板信息或 linux-hardware.org 的 URL
 
 **证实硬件运行状态的信息**
 请在此说明硬件的运行状态，例如实拍图片和系统内运行的截图
