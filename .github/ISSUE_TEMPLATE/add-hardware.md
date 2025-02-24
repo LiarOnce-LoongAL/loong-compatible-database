@@ -1,5 +1,5 @@
 ---
-name: Add Hardware 添加硬件信息
+name: (Markdown) 添加硬件信息 / Add Hardware Info
 about: 如果需要添加硬件信息请在这里填写模板
 title: "[Add Hardware]"
 labels: ''

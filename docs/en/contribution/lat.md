@@ -40,13 +40,13 @@ Fill in the running version of the software here.
 Fill in here the version of the LAT runtime library used to run the software, an example is:
 
 ```yaml
-1.5.2-rc1
+1.5.3-rc1
 ```
 
 If the software is from Windows, you also need to fill in the Wine runtime library version, for example:
 
 ```yaml
-1.5.2-rc1 + wine-9.9-staging
+1.5.3-rc1 + wine-9.9-staging
 ```
 
 ## latx_or_lata

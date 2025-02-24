@@ -1,0 +1,31 @@
+name: (Form) 添加硬件信息 / Add Hardware Info
+title: "[Add Hardware] "
+description: 如果需要添加硬件信息请在这里填写模板
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请务必在标题填写需要提交的硬件名称
+        在提交硬件信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/#hardwares
+
+  - type: textarea
+    attributes:
+      label: 硬件信息
+      description: 在此提交 YAML 模板内容或 linux-hardware.org 的提交 URL
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 证实硬件运行状态的信息
+      description: 请在此说明硬件的运行状态，例如实拍图片和系统内运行的截图
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 更多信息
+      description: 如果该硬件需要以文档的方式进行说明，请从这里开始
+    validations:
+      required: false

@@ -2,7 +2,6 @@
 outline: deep
 prev: false
 next: false
-
 ---
 # LAT 信息
 
@@ -40,19 +39,16 @@ link:   #链接
 此处填写运行该软件时使用的 LAT 运行库版本，填写范例为：
 
 ```yaml
-1.5.2-rc1
+1.5.3-rc1
 ```
 
 若该软件为 Windows 软件，还需要填写 Wine 运行库版本，填写范例为：
 
 ```yaml
-1.5.2-rc1 + wine-9.9-staging
+1.5.3-rc1 + wine-9.9-staging
 ```
 
-## layout: doc
-
-sidebar: false
-outline: 'deep'latx_or_lata
+## latx_or_lata
 
 软件运行使用的运行库，需参考软件当前的架构，若为 x86 版本则填写 `LATX`，若为 ARM 版本则填写 `LATA`。
 
