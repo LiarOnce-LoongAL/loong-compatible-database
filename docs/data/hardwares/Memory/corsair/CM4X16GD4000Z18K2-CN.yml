@@ -1,0 +1,6 @@
+model: CM4X16GD4000Z18K2-CN
+brand: Corsair
+type: Memory_UDIMM
+status: 2
+notes: 由于 XA61200 不支持 XMP，只能跑到 2600 MT/s，BIOS 中手动设置频率为 3200 也无效
+link: 
