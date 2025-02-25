@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="158.75mm"
+   height="103.6mm"
+   viewBox="0 0 158.75 103.6"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter15-11-48"
+       x="0"
+       y="0"
+       width="1.019685"
+       height="1.019685">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="1.000000"
+         flood-color="rgb(230,0,18)"
+         id="feFlood14-5-8" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="0.000000"
+         id="feGaussianBlur14-9-89" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="2.000000"
+         dy="2.000000"
+         id="feOffset14-8-7" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite14-48-7" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite15-1-6" />
+    </filter>
+  </defs>
+  <g
+     id="g157"
+     transform="translate(369.90353,-363.50895)">
+    <circle
+       style="fill:#ac1116;fill-opacity:1;stroke-width:0.294097;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers;filter:url(#filter15-11-48)"
+       id="path1-0-3"
+       cx="-296.60941"
+       cy="414.30896"
+       r="50.799999" />
+    <path
+       style="font-weight:bold;font-size:41.5427px;line-height:0.8;font-family:MiSans;-inkscape-font-specification:'MiSans Bold';fill:#e60012;stroke-width:0.354058;stroke-linejoin:round;paint-order:stroke fill markers"
+       d="m -283.91144,444.2529 -7.72694,2.45317 v -25.59031 l -9.01476,2.86203 v -7.22843 l 25.75647,-8.17723 v 7.22843 l -9.01477,2.86203 z"
+       id="path3-4-0" />
+    <text
+       xml:space="preserve"
+       style="font-size:41.5427px;line-height:0.8;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';text-decoration-color:#000000;fill:#ffffff;fill-opacity:1;stroke-width:0.354058;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       x="-315.99881"
+       y="311.96927"
+       id="text1-8-9-9-7"
+       transform="skewY(-17.61373)"><tspan
+         id="tspan1-8-2-4-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.5427px;line-height:0.8;font-family:MiSans;-inkscape-font-specification:'MiSans Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.354058"
+         x="-315.99881"
+         y="311.96927">LA</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.5222px;line-height:0.8;font-family:MiSans;-inkscape-font-specification:'MiSans Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.354058"
+         x="-315.99881"
+         y="345.20343"
+         id="tspan12-9-5"><tspan
+           id="tspan15-0-4"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.5427px;line-height:0.8;font-family:MiSans;-inkscape-font-specification:'MiSans Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.354058"> <tspan
+   style="letter-spacing:-2.64583px"
+   id="tspan14-9-8">T</tspan><tspan
+   style="font-size:23.9889px;letter-spacing:-2.64583px"
+   id="tspan13-1-1">∞</tspan></tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.304213;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+       id="rect3-1-0"
+       width="164.27541"
+       height="6.9969153"
+       x="-484.16364"
+       y="304.56302"
+       transform="rotate(-17.535162)" />
+    <g
+       id="g7-7-5"
+       transform="translate(-363.91008,346.46768)"
+       style="fill:#ac1116;fill-opacity:1">
+      <g
+         id="g6-5-9"
+         style="fill:#ac1116;fill-opacity:1">
+        <path
+           id="rect3-3-962-4"
+           style="fill:#ac1116;fill-opacity:1;stroke-width:0.304213;stroke-linejoin:round;paint-order:stroke fill markers"
+           d="m 115.38764,51.461876 14.62017,-4.612634 2.12644,6.7298 -14.94973,4.657909 z" />
+      </g>
+      <g
+         id="g5-1-6"
+         style="fill:#ac1116;fill-opacity:1">
+        <path
+           style="fill:#ac1116;fill-opacity:1;stroke-width:0.264583;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+           id="path4-78-9"
+           d="m 31.641955,-36.337209 -18.987102,-7.41054 -18.9871015,-7.41054 15.9112666,-12.738042 15.9112669,-12.738043 3.075835,20.148583 z"
+           transform="matrix(0.29429691,0.38629552,-0.38629552,0.29429691,100.6592,60.367411)" />
+      </g>
+    </g>
+  </g>
+</svg>
