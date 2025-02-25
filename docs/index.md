@@ -17,7 +17,7 @@ features:
     details: 点击这里可以查看 LoongArch 平台已测试后的硬件兼容性情况
     link: /list-hardwares
   - icon: 
-      src: /images/loongson.png
+      src: /images/lat.svg
       height: 48px
     title: LAT 兼容性
     details: 点击这里可以查看 LoongArch 平台二进制转译层 (LAT) 的兼容性情况

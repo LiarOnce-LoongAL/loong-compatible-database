@@ -17,7 +17,7 @@ features:
     details: Click here to view the tested hardware compatibility of the LoongArch platform.
     link: /list-hardwares
   - icon: 
-      src: /images/loongson.png
+      src: /images/lat.svg
       height: 48px
     title: LAT Compatibility
     details: Click here to view LoongArch Translation Layer (LAT) compatibility.
