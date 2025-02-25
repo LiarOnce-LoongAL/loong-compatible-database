@@ -1,6 +1,7 @@
-name: (Form) 添加 LibLoL 运行的软件兼容信息 / Add LibLoL 
+name: (Form) 添加 LibLoL 运行的软件兼容信息 / Add software compatibility information for LibLoL 
 title: "[Add LibLoL] "
 description: 如果需要添加通过 LibLoL 兼容层的兼容性情况请在这里填写模板
+labels: ["liblol"]
 
 body:
   - type: markdown

@@ -1,6 +1,7 @@
-name: (Form) 添加 LAT 运行的软件兼容信息 / Add software compatibility information for LAT operation
+name: (Form) 添加 LAT 运行的软件兼容信息 / Add software compatibility information for LAT
 title: "[Add LAT] "
 description: 如果需要添加通过 LAT 转译层的兼容性情况请在这里填写模板 / If you need to add a compatibility case through the LAT please fill out the template here.
+labels: ["lat"]
 
 body:
   - type: markdown
