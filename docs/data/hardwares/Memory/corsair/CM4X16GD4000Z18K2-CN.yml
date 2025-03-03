@@ -3,4 +3,6 @@ brand: Corsair
 type: Memory_UDIMM
 status: 2
 notes: 由于 XA61200 不支持 XMP，只能跑到 2600 MT/s，BIOS 中手动设置频率为 3200 也无效
+notes_en: Since XA61200 doesn't support XMP, it can only run up to 2600 MT/s, and manually setting the frequency to 3200 in BIOS is not effective.
 link: 
+link_en: 

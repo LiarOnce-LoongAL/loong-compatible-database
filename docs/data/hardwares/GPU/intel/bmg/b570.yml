@@ -1,8 +1,8 @@
 model: (Battlemage) Arc B570
 brand: Intel
 type: GPU 
-status: 0
-notes: 
-notes_en: 
+status: 3
+notes: Linux 6.13 开始支持
+notes_en: Supported since Linux 6.13+
 link: 
 link_en: 
