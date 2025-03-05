@@ -46,10 +46,21 @@ const locale_template = {
     en: {}
 }
 
+const vendor_template = {
+    zh: {},
+    en: {}
+}
+
 // Generate locales
 // Add new locale code here like:
 locale_template.zh = JSON.parse(fs.readFileSync(__dirname + "/locales/zh.json"))
 locale_template.en = JSON.parse(fs.readFileSync(__dirname + "/locales/en.json"))
+// End
+
+// Generate locales for vendors
+// Add new locale code here like:
+vendor_template.zh = JSON.parse(fs.readFileSync(__dirname + "/vendors/zh.json"))
+vendor_template.en = JSON.parse(fs.readFileSync(__dirname + "/vendors/en.json"))
 // End
 
 // console.log(json_template)
@@ -60,3 +71,4 @@ if(fs.existsSync(__dirname + "/datas.json") || fs.existsSync(__dirname + "/datas
 fs.writeFileSync(__dirname + "/datas.json", JSON.stringify(json_template, null, "\t"))
 fs.writeFileSync(__dirname + "/datas.min.json", JSON.stringify(json_template))
 fs.writeFileSync(__dirname + "/locales.min.json", JSON.stringify(locale_template))
+fs.writeFileSync(__dirname + "/vendors.min.json", JSON.stringify(vendor_template))

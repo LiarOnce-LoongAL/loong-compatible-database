@@ -14,7 +14,7 @@
             column-key="brand"
             width="150"
             sortable
-            :filters="filter_data[current_lang].filters_hardware_brand.sort(sortValue)"
+            :filters="filert_vendors[current_lang].filters_hardware_brand.sort(sortValue)"
             :filter-method="filterBrand"
         />
         <el-table-column
@@ -71,6 +71,7 @@
 
     import databaseJson from "../data/datas.min.json";
     import filter_data from "../data/locales.min.json";
+    import filert_vendors from "../data/vendors.min.json"
     const current_lang = document.documentElement.lang;
 
     const tableRef = ref();
