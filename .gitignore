@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 datas*.json
 locales*.json
+vendors*.json
 
 node_modules
 .DS_Store
