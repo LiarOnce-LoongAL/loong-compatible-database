@@ -14,7 +14,7 @@
             column-key="brand"
             width="150"
             sortable
-            :filters="filert_vendors[current_lang].filters_hardware_brand.sort(sortValue)"
+            :filters="filert_vendors[current_lang].sort(sortValue)"
             :filter-method="filterBrand"
         />
         <el-table-column
