@@ -1,0 +1,7 @@
+model: (GCN 1.0) Radeon R9 370
+brand: AMD
+type: GPU 
+status: 1 
+notes: 
+link: /hardwares/amdgpu.html#gcn-1-gcn-2
+link_en: /en/hardwares/amdgpu.html#gcn-1-gcn-2
