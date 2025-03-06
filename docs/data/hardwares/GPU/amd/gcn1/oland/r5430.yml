@@ -1,4 +1,4 @@
-model: (GCN 1.0) Radeon R7 340
+model: (GCN 1.0) Radeon R5 430 (OEM)
 brand: AMD
 type: GPU 
 status: 1 

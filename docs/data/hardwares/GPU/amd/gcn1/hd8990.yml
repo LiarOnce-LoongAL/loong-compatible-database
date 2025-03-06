@@ -1,0 +1,8 @@
+model: (GCN 1.0) Radeon HD 8990 (OEM)
+brand: AMD
+type: GPU 
+status: 0
+notes: 双芯卡难以确认兼容性
+notes_en: Dual-GPUs cards are difficult to confirm compatibility
+link: /hardwares/amdgpu.html#gcn-1-gcn-2
+link_en: /en/hardwares/amdgpu.html#gcn-1-gcn-2

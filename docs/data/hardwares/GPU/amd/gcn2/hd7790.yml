@@ -1,4 +1,4 @@
-model: (GCN 1.0) Radeon R7 265X
+model: (GCN 2.0) Radeon HD 7790
 brand: AMD
 type: GPU 
 status: 1 
