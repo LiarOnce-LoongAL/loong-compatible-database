@@ -1,5 +1,10 @@
 <template>
-    <el-button @click="clearFilter">{{ $t("components.clear_filter") }}</el-button>
+    <el-row :gutter="20">
+        <el-col :span="16"><SearchBar @search="handleSearch" /></el-col>
+        <el-col :span="4">
+            <el-button @click="clearFilter">{{ $t("components.clear_filter") }}</el-button>
+        </el-col>
+    </el-row>
     <el-table
         ref="tableRef"
         row-key="name"
@@ -45,7 +50,7 @@
     <el-pagination
         style="justify-content: center"
         background
-        layout="total, prev, pager, next, jumper"
+        layout="total, sizes, prev, pager, next, jumper"
         :total="filteredTableData.length"
         :page-size="pageSize"
         :current-page="currentPage"
@@ -57,6 +62,7 @@
 <script setup>
     import { ref, computed, watch } from "vue";
     import { sortValue } from "./utils/sortUtils";
+    import SearchBar from "./SearchBar.vue";
 
     import databaseJson from "../data/datas.min.json";
     import filter_data from "../data/locales.min.json";
@@ -68,6 +74,7 @@
     const currentPage = ref(1); // 当前页码
     const pageSize = ref(10); // 每页显示条数
     const selectedData = ref(null);
+    const searchData = ref("");
 
     const clearFilter = () => {
         tableRef.value.clearFilter();
@@ -77,6 +84,12 @@
 
     const filterStatus = (value, row) => {
         return row.status === value;
+    };
+
+    // 处理搜索
+    const handleSearch = (query) => {
+        searchData.value = query;
+        currentPage.value = 1;
     };
 
     // 使用 sortValue 对 tableData 进行大小写排序
@@ -91,13 +104,14 @@
         if (filters.status) {
             selectedData.value = filters.status.length > 0 ? filters.status[0] : null;
         }
-        currentPage.value = 1; // 重置为第一页
+        currentPage.value = 1;
     };
 
     // 计算过滤后的数据
     const filteredTableData = computed(() => {
         return sortedTableData.value.filter(row => {
-            return (!selectedData.value || row.status === selectedData.value);
+            return (!searchData.value || row.name.toLowerCase().includes(searchData.value.toLowerCase())) &&
+                   (!selectedData.value || row.status === selectedData.value);
         });
     });
 
@@ -119,7 +133,7 @@
     // 处理每页显示条数变化的包装函数
     const handleSizeChange = size => {
         pageSize.value = size;
-        currentPage.value = 1; // 重置为第一页
+        currentPage.value = 1;
     };
 
     // 处理页码变化的包装函数

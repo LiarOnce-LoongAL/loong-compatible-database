@@ -1,29 +1,21 @@
 <template>
-    <el-row :gutter="4" class="search_bar">
-        <el-col :span="18">
-            <el-input v-model="search_name" placeholder="仅支持搜索型号/名称 (功能不完善，请先忽略)" />
-        </el-col>
-        <el-col :span="2">
-            <el-button type="primary">搜索</el-button>
-        </el-col>
-    </el-row>
-   
+    <el-input
+        v-model="searchName"
+        placeholder="搜索..."
+        style="margin-bottom: 20px;"
+        @input="handleSearch"
+        clearable
+    />
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
-let search_name = ref("")
-const tableRef = ref()
+const searchName = ref('');
 
-// const resetDateFilter = () => {
-//     tableRef.value.clearFilter(['date'])
-// }
+const emit = defineEmits(['search']);
 
+const handleSearch = () => {
+    emit('search', searchName.value);
+};
 </script>
-
-<style scoped>
-.search_bar {
-    margin: 10px 0;
-}
-</style>

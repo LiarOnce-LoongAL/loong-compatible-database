@@ -1,5 +1,10 @@
 <template>
-    <el-button @click="clearFilter">{{ $t("components.clear_filter") }}</el-button>
+    <el-row :gutter="20">
+        <el-col :span="16"><SearchBar @search="handleSearch" /></el-col>
+        <el-col :span="4">
+            <el-button @click="clearFilter">{{ $t("components.clear_filter") }}</el-button>
+        </el-col>
+    </el-row>
     <el-table
         ref="tableRef"
         row-key="model"
@@ -70,7 +75,7 @@
     <el-pagination
         style="justify-content: center"
         background
-        layout="total, prev, pager, next, jumper"
+        layout="total, sizes, prev, pager, next, jumper"
         :total="filteredTableData.length"
         :page-size="pageSize"
         :current-page="currentPage"
@@ -82,6 +87,7 @@
 <script setup>
     import { ref, computed, watch } from "vue";
     import { sortValue } from "./utils/sortUtils";
+    import SearchBar from "./SearchBar.vue";
 
     import databaseJson from "../data/datas.min.json";
     import filter_data from "../data/locales.min.json";
@@ -99,6 +105,7 @@
         type: null,
         status: null
     });
+    const searchData = ref("");
 
     const clearFilter = () => {
         tableRef.value.clearFilter();
@@ -125,6 +132,12 @@
         });
     });
 
+    // 处理搜索
+    const handleSearch = (query) => {
+        searchData.value = query;
+        currentPage.value = 1;
+    };
+
     // 处理筛选条件变化
     const handleFilterChange = filters => {
         if (filters.brand) {
@@ -136,13 +149,14 @@
         if (filters.status) {
             selectedData.value.status = filters.status.length > 0 ? filters.status[0] : null;
         }
-        currentPage.value = 1; // 重置为第一页
+        currentPage.value = 1;
     };
 
     // 计算过滤后的数据
     const filteredTableData = computed(() => {
         return sortedTableData.value.filter(row => {
-            return (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
+            return (!searchData.value || row.model.toLowerCase().includes(searchData.value.toLowerCase())) &&
+                   (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
                    (!selectedData.value.type || row.type === selectedData.value.type) &&
                    (!selectedData.value.status || row.status === selectedData.value.status);
         });
@@ -166,7 +180,7 @@
     // 处理每页显示条数变化的包装函数
     const handleSizeChange = size => {
         pageSize.value = size;
-        currentPage.value = 1; // 重置为第一页
+        currentPage.value = 1;
     };
 
     // 处理页码变化的包装函数
