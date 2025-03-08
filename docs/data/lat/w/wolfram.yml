@@ -1,0 +1,11 @@
+name: Wolfram
+vendor: Wolfram #软件厂商
+version: 14.2 #软件版本号
+lat_version: 1.5.3-rc1  #LAT 版本号
+latx_or_lata: LATX  #LATX 或 LATA
+date: 2025.1  #更新日期或1
+status: 2  #兼容状态 -1=不兼容 0=未知 1=兼容  2=有限兼容 3=已有原生龙架构版本无需 LAT
+notes: 需要修改启动脚本添加loongarch64架构判断, 但Wolfram Notebook无法启动(QT库报错). 
+notes_en: Boot scripts need to be modified to recognize the loongarch64 architecture, and Wolfram Notebook still unable to launch (QT lib errors). 
+link:  #链接
+link_en: 
