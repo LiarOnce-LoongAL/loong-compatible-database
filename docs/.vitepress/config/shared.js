@@ -13,7 +13,7 @@ export const shared = defineConfig({
     themeConfig: {
         footer: {
             message: 'CC BY-SA 4.0 International',
-            copyright: 'Copyright © 2013-2025 <a href="https://github.com/LiarOnce" target="_blank">LiarOnce</a>'
+            copyright: 'Copyright © 2023-2025 <a href="https://github.com/LiarOnce" target="_blank">LiarOnce</a>'
         },
         search: {
             provider: "local",

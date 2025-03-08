@@ -3,9 +3,10 @@
     <el-table
         ref="tableRef"
         row-key="model"
-        :data="tableData"
+        :data="paginatedTableData"
         border
         :default-sort="{ prop: 'brand', order: 'ascending' }"
+        @filter-change="handleFilterChange"
     >
         <el-table-column prop="model" :label="$t('components.model')" width="300" />
         <el-table-column
@@ -14,12 +15,13 @@
             column-key="brand"
             width="150"
             sortable
-            :filters="filert_vendors[current_lang].sort(sortValue)"
+            :filters="filter_vendors[current_lang].sort(sortValue)"
             :filter-method="filterBrand"
         />
         <el-table-column
             prop="type"
             :label="$t('components.type')"
+            column-key="type"
             width="200"
             :filters="filter_data[current_lang].filters_hardware_type"
             :filter-method="filterType"
@@ -34,6 +36,7 @@
         <el-table-column
             prop="status"
             :label="$t('components.status')"
+            column-key="status"
             width="170"
             :filters="filter_data[current_lang].filters_status"
             :filter-method="filterStatus"
@@ -64,20 +67,43 @@
             </template>
         </el-table-column>
     </el-table>
+    <el-pagination
+        style="justify-content: center"
+        background
+        layout="total, prev, pager, next, jumper"
+        :total="filteredTableData.length"
+        :page-size="pageSize"
+        :current-page="currentPage"
+        @size-change="handleSizeChange"
+        @current-change="handlePageChange"
+    />
 </template>
 
 <script setup>
-    import { ref } from "vue";
+    import { ref, computed, watch } from "vue";
+    import { sortValue } from "./utils/sortUtils";
 
     import databaseJson from "../data/datas.min.json";
     import filter_data from "../data/locales.min.json";
-    import filert_vendors from "../data/vendors.min.json"
+    import filter_vendors from "../data/vendors.min.json";
     const current_lang = document.documentElement.lang;
 
+    const tableData = ref(databaseJson.hardwares); // 初始化 tableData
+
     const tableRef = ref();
+    const currentPage = ref(1); // 当前页码
+    const pageSize = ref(10); // 每页显示条数
+    const selectedData = ref({
+        // 获取当前选中的筛选条件
+        brand: null,
+        type: null,
+        status: null
+    });
 
     const clearFilter = () => {
         tableRef.value.clearFilter();
+        selectedData.value = { brand: null, type: null, status: null }; // 清空筛选条件
+        currentPage.value = 1; // 重置为第一页
     };
 
     const filterBrand = (value, row) => {
@@ -92,21 +118,59 @@
         return row.status === value;
     };
 
-    const sortValue = (a, b) => {
-        // Convert upper case to sort list
-        const upperA = a.value.toUpperCase();
-        const upperB = b.value.toUpperCase();
+    // 使用 sortValue 对 tableData 进行大小写排序
+    const sortedTableData = computed(() => {
+        return tableData.value.slice().sort((a, b) => {
+            return sortValue({ value: a.brand }, { value: b.brand });
+        });
+    });
 
-        let result;
-        if (upperA < upperB) {
-            result = -1;
-        } else if (upperA > upperB) {
-            result = 1;
-        } else {
-            result = 0;
+    // 处理筛选条件变化
+    const handleFilterChange = filters => {
+        if (filters.brand) {
+            selectedData.value.brand = filters.brand.length > 0 ? filters.brand[0] : null;
         }
-        return result;
+        if (filters.type) {
+            selectedData.value.type = filters.type.length > 0 ? filters.type[0] : null;
+        }
+        if (filters.status) {
+            selectedData.value.status = filters.status.length > 0 ? filters.status[0] : null;
+        }
+        currentPage.value = 1; // 重置为第一页
     };
 
-    const tableData = databaseJson.hardwares;
+    // 计算过滤后的数据
+    const filteredTableData = computed(() => {
+        return sortedTableData.value.filter(row => {
+            return (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
+                   (!selectedData.value.type || row.type === selectedData.value.type) &&
+                   (!selectedData.value.status || row.status === selectedData.value.status);
+        });
+    });
+
+    // 监听 filteredTableData 的变化，动态调整 currentPage
+    watch(filteredTableData, newVal => {
+        const totalPages = Math.ceil(newVal.length / pageSize.value);
+        if (currentPage.value > totalPages) {
+            currentPage.value = totalPages > 0 ? totalPages : 1;
+        }
+    });
+    
+    // 计算当前页的数据
+    const paginatedTableData = computed(() => {
+        const start = (currentPage.value - 1) * pageSize.value;
+        const end = start + pageSize.value;
+        return filteredTableData.value.slice(start, end);
+    });
+
+    // 处理每页显示条数变化的包装函数
+    const handleSizeChange = size => {
+        pageSize.value = size;
+        currentPage.value = 1; // 重置为第一页
+    };
+
+    // 处理页码变化的包装函数
+    const handlePageChange = page => {
+        currentPage.value = page;
+    };
 </script>
