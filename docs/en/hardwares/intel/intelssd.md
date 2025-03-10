@@ -19,3 +19,17 @@ Including these models：
 | SSDPEKKF256G7 | 256GB    |
 | SSDPEKKF512G7 | 512GB    |
 | SSDPEKKF010T7 | 1TB      |
+
+## Intel 760p Series
+
+## Intel Pro 7600p Series 
+
+Including these models：
+
+| Models        | Capacity |
+| ------------- | -------- |
+| SSDPEKKF128G8 | 128GB    |
+| SSDPEKKF256G8 | 256GB    |
+| SSDPEKKF512G8 | 512GB    |
+| SSDPEKKF010T8 | 1TB      |
+| SSDPEKKF020T8 | 2TB      |
