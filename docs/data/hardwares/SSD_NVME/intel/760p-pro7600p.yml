@@ -1,0 +1,8 @@
+model: Intel 760p / Pro 7600p
+brand: Intel
+type: SSD_NVMe 
+status: 1 
+notes: 在文档内有具体型号
+notes_en: Specific models are available in the documentation
+link: /hardwares/intel/intelssd
+link_en: /en/hardwares/intel/intelssd
