@@ -1,8 +1,8 @@
-model: (DG2) Arc A380
+model: (Alchemist) Arc A380
 brand: Intel
 type: GPU 
 status: 3
 notes: 需使用 xe 内核模块，且目前有明显的性能问题。
 notes_en: Requires "xe" kernel module, and currently has serious performance degradation issues.
-link: /hardwares/intel/intelxe.html#arc-dg2
-link_en: /en/hardwares/intel/intelxe.html#arc-dg2
+link: /hardwares/intel/intelxe.html#alchemist-dg2
+link_en: /en/hardwares/intel/intelxe.html#alchemist-dg2

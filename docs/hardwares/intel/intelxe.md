@@ -38,6 +38,6 @@ i915.force_probe=!4905 xe.force_probe=4905
 | Arc A750 | 56a1   |
 | Arc A770 | 56a0   |
 
-## Arc A 系列独显 (DG2) {#arc-dg2}
+## Arc A 系列独显 (Alchemist / DG2) {#alchemist-dg2}
 
-目前龙芯平台使用 Arc 系列独显有严重的性能劣化（例如 glmark2 分数仅200分左右），请配合 `xe` 内核模块酌情使用。
+目前龙芯平台使用 Arc A 系列独显有严重的性能劣化（例如 glmark2 分数仅200分左右），请配合 `xe` 内核模块酌情使用。

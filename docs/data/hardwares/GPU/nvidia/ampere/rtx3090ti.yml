@@ -1,0 +1,8 @@
+model: (Ampere) GeForce RTX 3090 Ti
+brand: NVIDIA
+type: GPU 
+status: 3
+notes: 更新 MultiArchUefiPkg 固件后可配合 nouveau 内核模块使用
+notes_en: Updated MultiArchUefiPkg firmware for use with nouveau kernel module.
+link: 
+link_en: 

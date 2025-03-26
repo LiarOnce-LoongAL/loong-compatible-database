@@ -1,0 +1,8 @@
+model: (Fermi) GeForce GT 530
+brand: NVIDIA
+type: GPU 
+status: 0
+notes: 可尝试使用 Nouveau 驱动测试。
+notes_en: Try using the Nouveau driver test. 
+link: 
+link_en: 

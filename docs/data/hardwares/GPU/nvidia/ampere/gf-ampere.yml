@@ -1,8 +1,0 @@
-model: (Ampere) GeForce RTX 30 Series
-brand: NVIDIA
-type: GPU 
-status: -1
-notes: 在开源版本驱动达到可用之前均标记为不兼容（除 RTX3060 外）
-notes_en: Before the open-source version of the driver becomes available, these hardware are marked as incompatible (except RTX 3060)
-link: /hardwares/nvidia.html#open-source-driver
-link_en: /en/hardwares/nvidia.html#open-source-driver

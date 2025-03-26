@@ -40,6 +40,6 @@ Here are the corresponding PCI IDs for the graphics cards:
 | Arc A750      | 56a1   |
 | Arc A770      | 56a0   |
 
-## Arc A Series Graphics (DG2) {#arc-dg2}
+## Arc A Series Graphics (Alchemist / DG2) {#alchemist-dg2}
 
 Currently, there is significant performance degradation when using Arc A-Series GPUs on the LoongArch platform (e.g., glmark2 scores around 200). Please use them with caution in conjunction with the `xe` kernel module.

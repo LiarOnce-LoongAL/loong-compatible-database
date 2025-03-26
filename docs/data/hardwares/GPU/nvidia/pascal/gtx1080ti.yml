@@ -1,0 +1,8 @@
+model: (Pascal) GeForce GTX 1080 Ti
+brand: NVIDIA
+type: GPU 
+status: -1
+notes: 使用 Nouveau 驱动兼容性不佳。
+notes_en: Poor compatibility with Nouveau drivers. 
+link: 
+link_en: 
