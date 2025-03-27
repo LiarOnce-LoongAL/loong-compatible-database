@@ -1,7 +1,8 @@
 model: (RDNA 4.0) Radeon RX 9070
 brand: AMD
 type: GPU 
-status: 0
-notes: 
+status: 3
+notes: Linux 6.14 开始支持
+notes_en: Supported since Linux 6.14+
 link: /hardwares/amdgpu.html#rdna
 link_en: /en/hardwares/amdgpu.html#rdna
