@@ -1,4 +1,5 @@
-model: ST2000VX017 (2TB) (ST SkyHawk)
+model: ST2000VX017 (2TB)
+arch: ST SkyHawk
 brand: Seagate
 type: HDD_SATA 
 status: 1 

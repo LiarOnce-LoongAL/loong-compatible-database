@@ -1,4 +1,5 @@
-model: HDWD220 (2TB) (P300 Series)
+model: HDWD220 (2TB)
+arch: P300
 brand: Toshiba
 type: HDD_SATA 
 status: 1 

@@ -1,4 +1,5 @@
-model: HDWD240 (4TB) (P300 Series)
+model: HDWD240 (4TB)
+arch: P300
 brand: Toshiba
 type: HDD_SATA 
 status: 1 

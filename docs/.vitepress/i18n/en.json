@@ -2,6 +2,7 @@
     "components": {
         "clear_filter": "Clear Filters",
         "model": "Model",
+        "arch_or_series": "Arch or Series",
         "brand": "Brand",
         "type": "Type",
         "status": "Status",

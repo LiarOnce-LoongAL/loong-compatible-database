@@ -1,4 +1,5 @@
-model: (Hi1822) IN200 Series
+model: IN200 Series
+arch: Hi1822
 brand: Huawei
 type: Ethernet
 status: -1

@@ -13,7 +13,8 @@
         :default-sort="{ prop: 'brand', order: 'ascending' }"
         @filter-change="handleFilterChange"
     >
-        <el-table-column prop="model" :label="$t('components.model')" width="300" />
+        <el-table-column prop="model" :label="$t('components.model')" width="250" />
+        <el-table-column prop="arch" :label="$t('components.arch_or_series')" width="100" />
         <el-table-column
             prop="brand"
             :label="$t('components.brand')"
@@ -155,7 +156,8 @@
     // 计算过滤后的数据
     const filteredTableData = computed(() => {
         return sortedTableData.value.filter(row => {
-            return (!searchData.value || row.model.toLowerCase().includes(searchData.value.toLowerCase())) &&
+            return (!searchData.value || row.model.toLowerCase().includes(searchData.value.toLowerCase())) || 
+                    row.arch.toLowerCase().includes(searchData.value.toLowerCase()) &&
                    (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
                    (!selectedData.value.type || row.type === selectedData.value.type) &&
                    (!selectedData.value.status || row.status === selectedData.value.status);

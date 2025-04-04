@@ -1,4 +1,5 @@
-model: ST4000VX013 (4TB) (ST SkyHawk)
+model: ST4000VX013 (4TB)
+arch: ST SkyHawk
 brand: Seagate
 type: HDD_SATA 
 status: 1 

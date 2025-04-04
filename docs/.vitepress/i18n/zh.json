@@ -2,6 +2,7 @@
     "components": {
         "clear_filter": "重置筛选",
         "model": "型号",
+        "arch_or_series": "架构或系列",
         "brand": "品牌",
         "type": "类型",
         "status": "兼容状态",
