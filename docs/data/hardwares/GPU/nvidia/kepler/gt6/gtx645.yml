@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GTX 645
+model: GeForce GTX 645
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

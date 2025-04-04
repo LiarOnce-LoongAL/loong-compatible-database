@@ -1,4 +1,5 @@
-model: (GCN 1.0) Radeon R5 340X (OEM)
+model: Radeon R5 340X OEM
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

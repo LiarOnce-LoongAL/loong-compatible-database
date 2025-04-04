@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GTX 770
+model: GeForce GTX 770
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

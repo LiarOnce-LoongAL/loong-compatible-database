@@ -38,5 +38,7 @@
     { "text": "AIC/AIC Semiconductor", "value": "AIC" },
     { "text": "Senscomm", "value": "Senscomm" },
     { "text": "Wangxun/NetSwift", "value": "Wangxun/NetSwift" },
-    { "text": "Sietium", "value": "Sietium" }
+    { "text": "Sietium", "value": "Sietium" },
+    { "text": "Chelsio", "value": "Chelsio" },
+    { "text": "ASIX", "value": "ASIX" }
 ]

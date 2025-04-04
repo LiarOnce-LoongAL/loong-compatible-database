@@ -1,4 +1,5 @@
-model: (GCN 4.0) Radeon RX 640 (OEM)
+model: Radeon RX 640 OEM
+arch: GCN 4.0
 brand: AMD
 type: GPU 
 status: 1 

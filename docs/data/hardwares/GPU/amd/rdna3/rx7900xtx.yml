@@ -1,4 +1,5 @@
-model: (RDNA 3.0) Radeon RX 7900 XTX
+model: Radeon RX 7900 XTX
+arch: RDNA 3.0
 brand: AMD
 type: GPU 
 status: 3 

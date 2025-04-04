@@ -1,4 +1,5 @@
-model: (Ampere) GeForce RTX 3080 Ti
+model: GeForce RTX 3080 Ti
+arch: Ampere
 brand: NVIDIA
 type: GPU 
 status: 3

@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GTX 560 SE
+model: GeForce GTX 560 SE
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

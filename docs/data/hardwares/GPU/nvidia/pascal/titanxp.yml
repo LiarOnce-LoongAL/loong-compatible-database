@@ -1,4 +1,5 @@
-model: (Pascal) TITAN Xp / TITAN Xp Collector's Edition
+model: TITAN Xp / TITAN Xp Collector's Edition
+arch: Pascal
 brand: NVIDIA
 type: GPU 
 status: -1

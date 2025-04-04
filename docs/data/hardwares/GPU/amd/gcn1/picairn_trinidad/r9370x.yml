@@ -1,4 +1,5 @@
-model: (GCN 1.0) Radeon R9 370X
+model: Radeon R9 370X
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

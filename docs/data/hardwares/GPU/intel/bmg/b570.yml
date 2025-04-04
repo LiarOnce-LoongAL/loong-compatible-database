@@ -1,4 +1,5 @@
-model: (Battlemage) Arc B570
+model: Arc B570
+arch: Battlemage
 brand: Intel
 type: GPU 
 status: 3

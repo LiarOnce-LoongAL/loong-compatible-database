@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GT 730
+model: GeForce GT 730
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

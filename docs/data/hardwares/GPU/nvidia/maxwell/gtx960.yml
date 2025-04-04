@@ -1,4 +1,5 @@
-model: (Maxwell) GeForce GTX 960
+model: GeForce GTX 960
+arch: Maxwell
 brand: NVIDIA
 type: GPU 
 status: -1

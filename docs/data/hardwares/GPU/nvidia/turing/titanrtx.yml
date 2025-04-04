@@ -1,4 +1,5 @@
-model: (Turing) TITAN RTX
+model: TITAN RTX
+arch: Turing
 brand: NVIDIA
 type: GPU 
 status: -1

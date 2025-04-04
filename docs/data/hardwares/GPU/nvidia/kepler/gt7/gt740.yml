@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GT 740
+model: GeForce GT 740
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

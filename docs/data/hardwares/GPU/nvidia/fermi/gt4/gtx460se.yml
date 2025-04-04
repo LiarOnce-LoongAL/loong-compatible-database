@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GTX 460 SE
+model: GeForce GTX 460 SE
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

@@ -1,4 +1,5 @@
-model: (RDNA 2.0) Radeon RX 6700
+model: Radeon RX 6700
+arch: RDNA 2.0
 brand: AMD
 type: GPU 
 status: 3 

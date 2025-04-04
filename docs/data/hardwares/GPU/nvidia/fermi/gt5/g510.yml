@@ -1,4 +1,5 @@
-model: (Fermi) GeForce 510
+model: GeForce 510
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

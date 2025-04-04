@@ -1,4 +1,5 @@
-model: (GCN 1.0) FirePro W5000
+model: FirePro W5000
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

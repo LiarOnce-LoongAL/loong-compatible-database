@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GTX 660
+model: GeForce GTX 660
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

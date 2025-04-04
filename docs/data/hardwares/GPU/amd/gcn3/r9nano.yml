@@ -1,4 +1,5 @@
-model: (GCN 3.0) Radeon R9 Nano
+model: Radeon R9 Nano
+arch: GCN 3.0
 brand: AMD
 type: GPU 
 status: 1 

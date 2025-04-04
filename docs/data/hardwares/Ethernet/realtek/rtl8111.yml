@@ -1,4 +1,4 @@
-model: RTL8111 Series
+model: RTL8111/RTL8168/RTL8169 Series
 brand: Realtek
 type: Ethernet 
 status: 1 

@@ -1,4 +1,5 @@
-model: (RDNA 2.0) Radeon Pro W6600
+model: Radeon Pro W6600
+arch: RDNA 2.0
 brand: AMD
 type: GPU 
 status: 3 

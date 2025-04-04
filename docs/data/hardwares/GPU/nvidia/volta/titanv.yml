@@ -1,4 +1,5 @@
-model: (Volta) TITAN V / V CEO Edition
+model: TITAN V / V CEO Edition
+arch: Volta
 brand: NVIDIA
 type: GPU 
 status: -1

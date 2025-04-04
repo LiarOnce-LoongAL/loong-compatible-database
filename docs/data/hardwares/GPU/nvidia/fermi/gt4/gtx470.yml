@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GTX 470
+model: GeForce GTX 470
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

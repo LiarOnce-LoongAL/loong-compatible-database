@@ -1,4 +1,5 @@
-model: (Alchemist) Arc A770
+model: Arc A770
+arch: Alchemist
 brand: Intel
 type: GPU 
 status: 3

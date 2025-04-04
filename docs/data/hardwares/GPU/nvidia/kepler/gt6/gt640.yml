@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GT 640
+model: GeForce GT 640
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

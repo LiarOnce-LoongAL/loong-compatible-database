@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 645
+model: GeForce GT 645
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

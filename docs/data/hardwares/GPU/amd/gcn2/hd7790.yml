@@ -1,4 +1,5 @@
-model: (GCN 2.0) Radeon HD 7790
+model: Radeon HD 7790
+arch: GCN 2.0
 brand: AMD
 type: GPU 
 status: 1 

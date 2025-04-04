@@ -1,4 +1,5 @@
-model: (RDNA 1.0) Radeon Pro W5700X
+model: Radeon Pro W5700X
+arch: RDNA 1.0
 brand: AMD
 type: GPU 
 status: 3 

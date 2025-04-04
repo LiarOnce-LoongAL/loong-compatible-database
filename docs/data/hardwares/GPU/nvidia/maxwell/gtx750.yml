@@ -1,4 +1,5 @@
-model: (Maxwell) GeForce GTX 750
+model: GeForce GTX 750
+arch: Maxwell
 brand: NVIDIA
 type: GPU 
 status: -1

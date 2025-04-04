@@ -1,4 +1,5 @@
-model: (Fermi) GeForce 605
+model: GeForce 605
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

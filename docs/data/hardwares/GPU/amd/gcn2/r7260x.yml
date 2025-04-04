@@ -1,4 +1,5 @@
-model: (GCN 2.0) Radeon R7 260X
+model: Radeon R7 260X
+arch: GCN 2.0
 brand: AMD
 type: GPU 
 status: 1 

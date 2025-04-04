@@ -1,4 +1,5 @@
-model: (Ampere) GeForce RTX 3070
+model: GeForce RTX 3070
+arch: Ampere
 brand: NVIDIA
 type: GPU 
 status: 3

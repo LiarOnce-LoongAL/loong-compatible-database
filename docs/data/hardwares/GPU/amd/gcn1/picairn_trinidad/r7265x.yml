@@ -1,4 +1,5 @@
-model: (GCN 1.0) Radeon R7 265X (OEM)
+model: Radeon R7 265X OEM
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

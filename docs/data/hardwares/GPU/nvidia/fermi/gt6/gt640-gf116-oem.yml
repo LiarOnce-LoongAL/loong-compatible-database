@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 640 (GF116)
+model: GeForce GT 640 (GF116)
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

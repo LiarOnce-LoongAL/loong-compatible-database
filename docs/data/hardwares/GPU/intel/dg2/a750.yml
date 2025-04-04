@@ -1,4 +1,5 @@
-model: (Alchemist) Arc A750
+model: Arc A750
+arch: Alchemist
 brand: Intel
 type: GPU 
 status: 3

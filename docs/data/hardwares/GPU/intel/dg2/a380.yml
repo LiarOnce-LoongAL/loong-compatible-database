@@ -1,4 +1,5 @@
-model: (Alchemist) Arc A380
+model: Arc A380
+arch: Alchemist
 brand: Intel
 type: GPU 
 status: 3

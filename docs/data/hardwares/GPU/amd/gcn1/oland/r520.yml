@@ -1,4 +1,5 @@
-model: (GCN 1.0) Radeon 520 (OEM)
+model: Radeon 520 OEM
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

@@ -1,4 +1,5 @@
-model: (Pascal) GeForce GTX 1070 Ti
+model: GeForce GTX 1070 Ti
+arch: Pascal
 brand: NVIDIA
 type: GPU 
 status: -1

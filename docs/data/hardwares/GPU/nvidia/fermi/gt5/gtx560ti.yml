@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GTX 560 Ti
+model: GeForce GTX 560 Ti
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

@@ -1,4 +1,5 @@
-model: (Pascal) TITAN X
+model: TITAN X
+arch: Pascal
 brand: NVIDIA
 type: GPU 
 status: -1

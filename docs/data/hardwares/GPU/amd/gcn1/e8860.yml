@@ -1,4 +1,5 @@
-model: (GCN 1.0) Radeon E8860 (Embedded)
+model: Radeon E8860 Embedded
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

@@ -1,0 +1,7 @@
+model: RTL8139/RTL8106 Series
+brand: Realtek
+type: Ethernet 
+status: 1 
+notes: 
+notes_en: 
+link: 

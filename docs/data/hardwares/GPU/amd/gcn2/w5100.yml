@@ -1,4 +1,5 @@
-model: (GCN 2.0) FirePro W5100
+model: FirePro W5100
+arch: GCN 2.0
 brand: AMD
 type: GPU 
 status: 1 

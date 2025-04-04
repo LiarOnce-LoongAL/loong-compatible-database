@@ -1,4 +1,5 @@
-model: (GCN 1.0) Radeon R7 435 (OEM)
+model: Radeon R7 435 OEM
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

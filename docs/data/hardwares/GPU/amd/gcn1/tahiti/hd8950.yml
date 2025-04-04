@@ -1,4 +1,5 @@
-model: (GCN 1.0) Radeon HD 8950 (OEM)
+model: Radeon HD 8950 OEM
+arch: GCN 1.0
 brand: AMD
 type: GPU 
 status: 1 

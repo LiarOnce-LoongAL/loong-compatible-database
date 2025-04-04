@@ -1,4 +1,5 @@
-model: (Maxwell) GeForce GTX 980 Ti
+model: GeForce GTX 980 Ti
+arch: Maxwell
 brand: NVIDIA
 type: GPU 
 status: -1

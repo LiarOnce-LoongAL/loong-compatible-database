@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 705
+model: GeForce GT 705
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

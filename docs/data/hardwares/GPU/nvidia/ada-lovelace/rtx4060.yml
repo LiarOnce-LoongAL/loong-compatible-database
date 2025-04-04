@@ -1,4 +1,5 @@
-model: (Ada Lovelace) GeForce RTX 4060
+model: GeForce RTX 4060
+arch: Ada Lovelace
 brand: NVIDIA
 type: GPU 
 status: -1

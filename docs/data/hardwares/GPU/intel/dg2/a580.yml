@@ -1,4 +1,5 @@
-model: (Alchemist) Arc A580
+model: Arc A580
+arch: Alchemist
 brand: Intel
 type: GPU 
 status: 3

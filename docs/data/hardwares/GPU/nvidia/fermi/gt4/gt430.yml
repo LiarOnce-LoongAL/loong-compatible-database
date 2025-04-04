@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 430
+model: GeForce GT 430
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

@@ -1,4 +1,5 @@
-model: (RDNA 4.0) Radeon RX 9070
+model: Radeon RX 9070
+arch: RDNA 4.0
 brand: AMD
 type: GPU 
 status: 3

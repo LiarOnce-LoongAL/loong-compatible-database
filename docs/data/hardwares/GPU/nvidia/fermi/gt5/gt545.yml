@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 545
+model: GeForce GT 545
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

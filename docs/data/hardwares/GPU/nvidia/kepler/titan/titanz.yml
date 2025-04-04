@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GTX TITAN Z
+model: GeForce GTX TITAN Z
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

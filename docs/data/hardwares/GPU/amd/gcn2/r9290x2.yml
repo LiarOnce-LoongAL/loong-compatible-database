@@ -1,4 +1,5 @@
-model: (GCN 2.0) Radeon R9 290X2
+model: Radeon R9 290X2
+arch: GCN 2.0
 brand: AMD
 type: GPU 
 status: 0

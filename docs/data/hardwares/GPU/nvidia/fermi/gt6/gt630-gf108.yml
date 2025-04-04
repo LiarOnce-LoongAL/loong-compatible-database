@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 630 (GF108)
+model: GeForce GT 630 (GF108)
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

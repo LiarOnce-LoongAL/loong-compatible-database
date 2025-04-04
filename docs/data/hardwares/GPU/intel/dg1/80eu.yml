@@ -1,4 +1,5 @@
-model: (DG1) Xe MAX (80EU)
+model: Xe MAX (80EU)
+arch: DG1
 brand: Intel
 type: GPU 
 status: 3

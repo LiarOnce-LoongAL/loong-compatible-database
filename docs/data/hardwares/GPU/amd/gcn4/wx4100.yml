@@ -1,4 +1,5 @@
-model: (GCN 4.0) Radeon Pro WX 4100
+model: Radeon Pro WX 4100
+arch: GCN 4.0
 brand: AMD
 type: GPU 
 status: 1 

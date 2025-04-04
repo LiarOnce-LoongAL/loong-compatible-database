@@ -1,4 +1,5 @@
-model: (Maxwell) GeForce GTX TITAN X
+model: GeForce GTX TITAN X
+arch: Maxwell
 brand: NVIDIA
 type: GPU 
 status: -1

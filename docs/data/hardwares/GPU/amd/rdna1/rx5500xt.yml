@@ -1,4 +1,5 @@
-model: (RDNA 1.0) Radeon RX 5500 XT
+model: Radeon RX 5500 XT
+arch: RDNA 1.0
 brand: AMD
 type: GPU 
 status: 3 

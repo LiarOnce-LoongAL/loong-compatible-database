@@ -1,4 +1,5 @@
-model: (Turing) GeForce RTX 2080 Ti
+model: GeForce RTX 2080 Ti
+arch: Turing
 brand: NVIDIA
 type: GPU 
 status: -1

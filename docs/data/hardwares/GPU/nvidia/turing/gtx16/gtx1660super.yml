@@ -1,4 +1,5 @@
-model: (Turing) GeForce GTX 1660 Super
+model: GeForce GTX 1660 Super
+arch: Turing
 brand: NVIDIA
 type: GPU 
 status: -1

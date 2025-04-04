@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GTX TITAN BLACK
+model: GeForce GTX TITAN BLACK
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

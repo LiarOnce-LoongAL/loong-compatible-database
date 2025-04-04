@@ -1,4 +1,5 @@
-model: (Alchemist) Arc A310
+model: Arc A310
+arch: Alchemist
 brand: Intel
 type: GPU 
 status: 3

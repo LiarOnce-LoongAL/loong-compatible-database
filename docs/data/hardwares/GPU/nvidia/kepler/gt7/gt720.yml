@@ -1,4 +1,5 @@
-model: (Kepler) GeForce GT 720
+model: GeForce GT 720
+arch: Kepler
 brand: NVIDIA
 type: GPU 
 status: 0

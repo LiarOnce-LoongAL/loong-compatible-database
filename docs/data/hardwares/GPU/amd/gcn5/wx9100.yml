@@ -1,4 +1,5 @@
-model: (GCN 5.0) Radeon Pro WX 9100
+model: Radeon Pro WX 9100
+arch: GCN 5.0
 brand: AMD
 type: GPU 
 status: 0

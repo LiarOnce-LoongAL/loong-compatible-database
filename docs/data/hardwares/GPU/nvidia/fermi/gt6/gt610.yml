@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 610
+model: GeForce GT 610
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

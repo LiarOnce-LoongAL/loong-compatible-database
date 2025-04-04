@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GTX 580
+model: GeForce GTX 580
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

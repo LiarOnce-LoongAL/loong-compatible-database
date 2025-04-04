@@ -1,4 +1,5 @@
-model: (Ada Lovelace) GeForce RTX 4070 Super
+model: GeForce RTX 4070 Super
+arch: Ada Lovelace
 brand: NVIDIA
 type: GPU 
 status: -1

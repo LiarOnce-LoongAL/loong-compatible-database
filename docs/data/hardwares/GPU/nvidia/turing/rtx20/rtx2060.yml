@@ -1,4 +1,5 @@
-model: (Turing) GeForce RTX 2060 (6GB/12GB)
+model: GeForce RTX 2060 (6GB/12GB)
+arch: Turing
 brand: NVIDIA
 type: GPU 
 status: -1

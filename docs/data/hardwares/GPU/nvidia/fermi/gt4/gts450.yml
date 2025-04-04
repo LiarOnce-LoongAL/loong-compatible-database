@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GTS 450
+model: GeForce GTS 450
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 620
+model: GeForce GT 620
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0

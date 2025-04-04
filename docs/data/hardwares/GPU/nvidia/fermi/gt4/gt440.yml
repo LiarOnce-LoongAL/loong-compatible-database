@@ -1,4 +1,5 @@
-model: (Fermi) GeForce GT 440
+model: GeForce GT 440
+arch: Fermi
 brand: NVIDIA
 type: GPU 
 status: 0
