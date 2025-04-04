@@ -156,8 +156,12 @@
     // 计算过滤后的数据
     const filteredTableData = computed(() => {
         return sortedTableData.value.filter(row => {
-            return (!searchData.value || row.model.toLowerCase().includes(searchData.value.toLowerCase())) || 
-                    row.arch.toLowerCase().includes(searchData.value.toLowerCase()) &&
+            const ignoreSpace = /\s+/g
+            const searchQuery = searchData.value.toLowerCase().replace(ignoreSpace, '');
+            const model = (row.model.toLowerCase()).replace(ignoreSpace, '');
+            const arch = (row.arch?.toLowerCase() || '').replace(ignoreSpace, '');
+
+            return (!searchData.value || model.includes(searchQuery)) || arch.includes(searchQuery) &&
                    (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
                    (!selectedData.value.type || row.type === selectedData.value.type) &&
                    (!selectedData.value.status || row.status === selectedData.value.status);
