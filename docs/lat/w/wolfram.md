@@ -68,17 +68,19 @@ Copyright 1988-2024 Wolfram Research, Inc.
 In[1]:=   
 ```
 
-## 兼容问题
-
-### Wolfram Notebook 无法运行
-
-运行 `WolframNB` 或 `wolframnb` 即可启动 Wolfram Notebook. 但是在打开 Notebook 界面时报错, 详见 https://github.com/deuso/latx-build/issues/25 .
+在将 LATX 更新至 1.6 版本后, 可以在命令行终端里运行 `WolframNB` 运行启动 Wolfram Notebook. 
 
 ## 兼容情况
 
 此处仅列出我测试过的版本
 
-| 版本  | 发布/更新日期 | 兼容情况        | 备注                                              |
-| ----- | ------------ | -------------- | ------------------------------------------------- |
-| 14.2  | 2025.1.23    | <Compatible /> | cli模式可正常使用, Wolfram Notebook 无法启动        |
-| 14.0  | 2024.1.9     | <Compatible /> | cli模式可正常使用, Wolfram Notebook 未测试          |
+| 版本  | 发布/更新日期 | 兼容情况        | 备注                                                           |
+| ----- | ------------ | -------------- | ---------------------------------------------------------------- |
+| 14.2  | 2025.1.23    | <Compatible /> | cli模式可正常使用, 使用 LATX 1.6 可以启动 Wolfram Notebook       |
+| 14.0  | 2024.1.9     | <Compatible /> | cli模式可正常使用, Wolfram Notebook 未测试                       |
+
+## 注记
+
+### Wolfram 自带 Java 二进制文件
+
+在 Wolfram 安装目录下的 `SystemFiles` 文件夹中有一个 `Java` 文件夹, 其中包含一个 `Linux-x86-64` 文件夹, 这是一个完整的 x86_64 的 JDK21. 您可以用龙芯原生的 OpenJDK-21 将其替换, 但注意要将文件夹命名为 `Linux-x86-64`. 此做法可以将部分任务的性能提升大约10%. 
