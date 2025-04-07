@@ -68,11 +68,7 @@ Copyright 1988-2024 Wolfram Research, Inc.
 In[1]:=   
 ```
 
-## Problems 
-
-### Wolfram Notebook
-
-Run `WolframNB` or `wolframnb` in your console to launch Wolfram Notebook. But it meets problem when opening a new notebook, details are in https://github.com/deuso/latx-build/issues/25 .
+After updated your LATX to version 1.6, you could run `WolframNB` or `wolframnb` in your console to launch Wolfram Notebook. 
 
 ## Compatibility
 
@@ -80,5 +76,9 @@ Only listing tested versions.
 
 | Version  | Release/Upgrade Date | Compatibility        | Notes                                                                |
 | -------- | -------------------- | -------------------- | -------------------------------------------------------------------- |
-| 14.2     | 2025.1.23            | <Compatible />       | Can't run Wolfram Notebook normally.                                 |
+| 14.2     | 2025.1.23            | <Compatible />       | Wolfram Notebook runs normally with LATX 1.6.                        |
 | 14.0     | 2024.1.9             | <Compatible />       | Cli interface runs normally, Wolfram Notebook wasn't been tested.    |
+
+## Notices
+
+Under the installation path of your Wolfram, at the same level of `Executables`, there's a folder called `SystemFiles`, find a folder called `Java` inside of it, and you'll see a folder called `Linux-x86-64`, it's a JDK21 binary package for x86_64. You could replace it with the Loongarch native version of OpenJDK-21, remember to rename the folder to `Linux-x86-64`. By which you will gain around 10% of performance boost.
