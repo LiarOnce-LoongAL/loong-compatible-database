@@ -8,9 +8,9 @@ body:
     attributes:
       value: |
         请务必在标题填写需要提交的软件名称。
-        提交 LAT 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/lat
+        提交 LAT 信息之前，请先阅读参与贡献的事项：https://loong123.cn/contribution/lat
         Be sure to fill in the title with the name of the software to be submitted.
-        Before submitting LAT information, please read the matter of participating in the contribution: https://loongarch.liaronce.com/en/contribution/lat
+        Before submitting LAT information, please read the matter of participating in the contribution: https://loong123.cn/en/contribution/lat
 
   - type: input
     attributes:

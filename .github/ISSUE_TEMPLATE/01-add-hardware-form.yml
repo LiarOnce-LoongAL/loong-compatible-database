@@ -8,10 +8,10 @@ body:
     attributes:
       value: |
         请务必在标题填写需要提交的硬件名称。
-        在提交硬件信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/hardwares
+        在提交硬件信息之前，请先阅读参与贡献的事项：https://loong123.cn/contribution/hardwares
         如果不知道该如何填写该表单，希望提交 linux-hardware.org URL，请更换为 Markdown 模板。
         Be sure to fill in the title with the name of the hardware to be submitted.
-        Before submitting hardware information, please read the matter of participating in the contribution: https://loongarch.liaronce.com/en/contribution/hardwares
+        Before submitting hardware information, please read the matter of participating in the contribution: https://loong123.cn/en/contribution/hardwares
         If you do not know how to fill out this form and wish to submit the linux-hardware.org URL, please use Markdown template instead.
 
   - type: input

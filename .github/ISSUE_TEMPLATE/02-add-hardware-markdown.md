@@ -6,9 +6,9 @@ labels: ["hardware"]
 ---
 
 <!--
-在提交硬件信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/hardwares
+在提交硬件信息之前，请先阅读参与贡献的事项：https://loong123.cn/contribution/hardwares
 
-Before submitting hardware information, please read the matter of participating in the contribution: https://loongarch.liaronce.com/en/contribution/hardwares
+Before submitting hardware information, please read the matter of participating in the contribution: https://loong123.cn/en/contribution/hardwares
 -->
 
 **硬件信息 / Hardware Info**

@@ -8,9 +8,9 @@ body:
     attributes:
       value: |
         请务必在标题填写需要提交的软件名称
-        在提交 LibLoL 信息之前，请先阅读参与贡献的事项：https://loongarch.liaronce.com/contribution/liblol
+        在提交 LibLoL 信息之前，请先阅读参与贡献的事项：https://loong123.cn/contribution/liblol
         Be sure to fill in the title with the name of the software to be submitted.
-        Before submitting LibLoL information, please read the matter of participating in the contribution: https://loongarch.liaronce.com/en/contribution/liblol
+        Before submitting LibLoL information, please read the matter of participating in the contribution: https://loong123.cn/en/contribution/liblol
 
   - type: input
     attributes:
