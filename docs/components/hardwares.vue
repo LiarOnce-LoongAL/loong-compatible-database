@@ -160,11 +160,16 @@
             const searchQuery = searchData.value.toLowerCase().replace(ignoreSpace, "");
             const model = row.model.toLowerCase().replace(ignoreSpace, "");
             const arch = (row.arch?.toLowerCase() || "").replace(ignoreSpace, "");
+            const brand = row.brand.toLowerCase().replace(ignoreSpace, "");
 
             return (
-                (!searchData.value || model.includes(searchQuery) || arch.includes(searchQuery)) &&
-                   (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
-                   (!selectedData.value.type || row.type === selectedData.value.type) &&
+                (!searchData.value || 
+                    model.includes(searchQuery) ||
+                    arch.includes(searchQuery) ||
+                    brand.includes(searchQuery)
+                ) &&
+                (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
+                (!selectedData.value.type || row.type === selectedData.value.type) &&
                 (!selectedData.value.status || row.status === selectedData.value.status)
             );
         });
