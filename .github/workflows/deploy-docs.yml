@@ -64,4 +64,4 @@ jobs:
             -H "Content-Type: application/json" \
             -H "X-Hub-Signature-256: $SIG" \
             -d '{"ref":"refs/heads/pages"}' \
-            "$MESSAGE_URL/hooks/github-deploy" 2>&1 | tee curl.log
+            "$MESSAGE_URL"
