@@ -58,11 +58,10 @@ jobs:
           MESSAGE_SECRET: ${{ secrets.MESSAGE_SECRET }}
           MESSAGE_URL: ${{ secrets.MESSAGE_URL }}
         run: |
-          PAYLOAD='{"ref":"${{ github.ref }}","repository":{"full_name":"${{ github.repository }}"},"head_commit":{"id":"${{ github.sha }}"}}'
-          SIG=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$MESSAGE_SECRET" -binary | xxd -p -c 256 | sed 's/^/sha256=/')
+          SIG=$(echo -n '{"ref":"refs/heads/pages"}' | openssl dgst -sha256 -hmac "$MESSAGE_SECRET" -binary | xxd -p -c 256 | sed 's/^/sha256=/')
           
-          curl -v -X POST \
+          curl -X POST \
             -H "Content-Type: application/json" \
             -H "X-Hub-Signature-256: $SIG" \
-            -d "$PAYLOAD" \
+            -d '{"ref":"refs/heads/pages"}' \
             "$MESSAGE_URL/hooks/github-deploy" 2>&1 | tee curl.log
