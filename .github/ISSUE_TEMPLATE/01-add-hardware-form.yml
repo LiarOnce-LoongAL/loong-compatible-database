@@ -20,6 +20,13 @@ body:
       description: 填写硬件具体型号，语言不限 / The value to fill in the hardware specific model, in any language
     validations:
       required: true
+
+  - type: input
+    attributes:
+      label: 硬件架构名称或所属系列 / Hardware architecture name or series name
+      description: 填写硬件架构名称或该硬件所属的系列，如无可不填 / Fill in the name of the hardware architecture or the series to which the hardware belongs, or leave it blank if there is none.
+    validations:
+      required: false
     
   - type: input
     attributes:
