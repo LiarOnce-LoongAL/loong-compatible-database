@@ -44,25 +44,25 @@ jobs:
           branch: pages
           folder: docs/.vitepress/dist
           
-  # deploy-azure:
-  #   needs: deploy-pages
-  #   runs-on: ubuntu-latest
-  #   name: Deploy to azure
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #       with:
-  #         ref: pages
+  send-to-myserver:
+    needs: deploy-pages
+    runs-on: ubuntu-latest
+    name: Send message to my server
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: pages
           
-  #     - name: Package And Deploy
-  #       id: builddeploy
-  #       uses: Azure/static-web-apps-deploy@v1
-  #       with:
-  #         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_CLIFF_0F2544E00 }}
-  #         repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-  #         action: "upload"
-  #         ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-  #         # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-  #         app_location: "./" # App source code path
-  #         api_location: "" # Api source code path - optional
-  #         output_location: "." # Built app content directory - optional
-  #         ###### End of Repository/Build Configurations ######
+      - name: Send message
+        env:
+          MESSAGE_SECRET: ${{ secrets.MESSAGE_SECRET }}
+          MESSAGE_URL: ${{ secrets.MESSAGE_URL }}
+        run: |
+          PAYLOAD='{"ref":"${{ github.ref }}","repository":{"full_name":"${{ github.repository }}"},"head_commit":{"id":"${{ github.sha }}"}}'
+          SIG=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$MESSAGE_SECRET" -binary | xxd -p -c 256 | sed 's/^/sha256=/')
+          
+          curl -v -X POST \
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature-256: $SIG" \
+            -d "$PAYLOAD" \
+            "$MESSAGE_URL/hooks/github-deploy" 2>&1 | tee curl.log
