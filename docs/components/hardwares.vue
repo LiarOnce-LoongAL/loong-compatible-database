@@ -155,42 +155,43 @@
 
     // 计算过滤后的数据
     const filteredTableData = computed(() => {
-        return sortedTableData.value.filter(row => {
-            const ignoreSpace = /\s+/g
-            const searchQuery = searchData.value.toLowerCase().replace(ignoreSpace, '');
-            const model = (row.model.toLowerCase()).replace(ignoreSpace, '');
-            const arch = (row.arch?.toLowerCase() || '').replace(ignoreSpace, '');
+        return sortedTableData.value.filter((row) => {
+            const ignoreSpace = /\s+/g;
+            const searchQuery = searchData.value.toLowerCase().replace(ignoreSpace, "");
+            const model = row.model.toLowerCase().replace(ignoreSpace, "");
+            const arch = (row.arch?.toLowerCase() || "").replace(ignoreSpace, "");
 
-            return (!searchData.value || model.includes(searchQuery)) || arch.includes(searchQuery) &&
+            return (
+                (!searchData.value || model.includes(searchQuery) || arch.includes(searchQuery)) &&
                    (!selectedData.value.brand || row.brand === selectedData.value.brand) &&
                    (!selectedData.value.type || row.type === selectedData.value.type) &&
-                   (!selectedData.value.status || row.status === selectedData.value.status);
+                (!selectedData.value.status || row.status === selectedData.value.status)
+            );
         });
     });
 
     // 监听 filteredTableData 的变化，动态调整 currentPage
-    watch(filteredTableData, newVal => {
+    watch(filteredTableData, (newVal) => {
         const totalPages = Math.ceil(newVal.length / pageSize.value);
-        if (currentPage.value > totalPages) {
-            currentPage.value = totalPages > 0 ? totalPages : 1;
+        if (currentPage.value > totalPages && totalPages > 0) {
+            currentPage.value = totalPages;
+        } else if (newVal.length === 0) {
+            currentPage.value = 1; // 如果没有数据，重置为第一页
         }
     });
-    
-    // 计算当前页的数据
+
     const paginatedTableData = computed(() => {
         const start = (currentPage.value - 1) * pageSize.value;
         const end = start + pageSize.value;
         return filteredTableData.value.slice(start, end);
     });
 
-    // 处理每页显示条数变化的包装函数
-    const handleSizeChange = size => {
+    const handleSizeChange = (size) => {
         pageSize.value = size;
         currentPage.value = 1;
     };
 
-    // 处理页码变化的包装函数
-    const handlePageChange = page => {
+    const handlePageChange = (page) => {
         currentPage.value = page;
     };
 </script>
