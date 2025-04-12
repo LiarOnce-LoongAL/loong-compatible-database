@@ -1,5 +1,6 @@
 model: YCT4U3000E16081C 
-brand: Gloway
+arch: GLOWAY
+brand: POWEV
 type: Memory_UDIMM
 status: 2
 notes: 3000MHz 跑2400（升级5634版固件两条正常使用）

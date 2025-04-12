@@ -7,6 +7,10 @@ outline: false
 
 <HardwaresTagsInfo />
 
+## 注意事项
+
+1. 嘉合劲威(POWEV)旗下品牌有：光威(GLOWAY)、阿斯加特(Asgard)、酷兽(CUSO)、神可(SINKER)，该数据库则将这些品牌全部归类于嘉合劲威(POWEV)下，不同品牌则会在`架构或系列`中注明。
+
 ::: raw
 <ClientOnly>
     <HardwaresList />

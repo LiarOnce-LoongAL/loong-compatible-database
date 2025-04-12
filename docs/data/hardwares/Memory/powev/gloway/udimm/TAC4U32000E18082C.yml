@@ -1,5 +1,6 @@
 model: TAC4U32000E18082C
-brand: Gloway
+arch: GLOWAY
+brand: POWEV
 type: Memory_UDIMM 
 status: 2 
 notes: 3200MHz，但仅能运行在 2400 MHz 频率下

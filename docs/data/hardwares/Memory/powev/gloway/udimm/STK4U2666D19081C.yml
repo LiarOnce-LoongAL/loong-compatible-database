@@ -1,5 +1,6 @@
 model: STK4U2666D19081C
-brand: Gloway
+arch: GLOWAY
+brand: POWEV
 type: Memory_UDIMM 
 status: 1 
 notes:
