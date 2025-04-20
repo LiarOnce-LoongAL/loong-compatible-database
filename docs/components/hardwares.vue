@@ -14,12 +14,12 @@
         @filter-change="handleFilterChange"
     >
         <el-table-column prop="model" :label="$t('components.model')" width="250" />
-        <el-table-column prop="arch" :label="$t('components.arch_or_series')" width="100" />
+        <el-table-column prop="arch" :label="$t('components.arch_or_series')" width="110" />
         <el-table-column
             prop="brand"
             :label="$t('components.brand')"
             column-key="brand"
-            width="150"
+            width="140"
             sortable
             :filters="filter_vendors[current_lang].sort(sortValue)"
             :filter-method="filterBrand"
@@ -28,7 +28,7 @@
             prop="type"
             :label="$t('components.type')"
             column-key="type"
-            width="200"
+            width="180"
             :filters="filter_data[current_lang].filters_hardware_type"
             :filter-method="filterType"
             filter-placement="bottom-end"
@@ -43,7 +43,7 @@
             prop="status"
             :label="$t('components.status')"
             column-key="status"
-            width="170"
+            width="165"
             :filters="filter_data[current_lang].filters_status"
             :filter-method="filterStatus"
             filter-placement="bottom-end"
