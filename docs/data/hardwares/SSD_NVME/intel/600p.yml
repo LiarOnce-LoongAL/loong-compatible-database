@@ -1,0 +1,13 @@
+model: |
+  SSDPEKKW128G7 (128GB)
+  SSDPEKKW256G7 (256GB)
+  SSDPEKKW512G7 (512GB)
+  SSDPEKKW010T7 (1TB)
+arch: Intel 600p
+brand: Intel
+type: SSD_NVMe 
+status: -1 
+notes: 
+notes_en: 
+link: 
+link_en: 

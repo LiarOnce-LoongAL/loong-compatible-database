@@ -2,8 +2,7 @@ const sidebar_hardwares = [
     { text: '首页', link: '/hardwares/index' },
     { text: 'Intel 产品', collapsed: true, items: [
         { text: 'Intel Xe 显卡 (i915/xe)', link: '/hardwares/intel/intelxe' },
-        { text: 'Intel 无线网卡 (iwlwifi)', link: '/hardwares/intel/iwlwifi' },
-        { text: 'Intel 固态硬盘', link: '/hardwares/intel/intelssd' }
+        { text: 'Intel 无线网卡 (iwlwifi)', link: '/hardwares/intel/iwlwifi' }
     ]},
     { text: 'AMD 显卡 (AMDGPU)', link: '/hardwares/amdgpu' },
     { text: 'NVIDIA 显卡', link: '/hardwares/nvidia' },

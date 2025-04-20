@@ -1,0 +1,14 @@
+model: |
+  SSDPEKKW128G8 (128GB)
+  SSDPEKKW256G8 (256GB)
+  SSDPEKKW512G8 (512GB)
+  SSDPEKKW010T8 (1TB)
+  SSDPEKKW020T8 (2TB)
+arch: Intel 760p
+brand: Intel
+type: SSD_NVMe 
+status: 1 
+notes: 
+notes_en: 
+link: 
+link_en: 
