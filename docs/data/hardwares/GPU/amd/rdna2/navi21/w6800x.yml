@@ -1,0 +1,8 @@
+model: Radeon Pro W6800X
+arch: RDNA 2.0 (Navi 21)
+brand: AMD
+type: GPU 
+status: 3 
+notes: 
+link: /hardwares/amdgpu.html#rdna 
+link_en: /en/hardwares/amdgpu.html#rdna

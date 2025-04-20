@@ -1,5 +1,5 @@
 model: Radeon HD 7970 / HD 7970 GHz Edition
-arch: GCN 1.0
+arch: GCN 1.0 (Tahiti)
 brand: AMD
 type: GPU 
 status: 1 

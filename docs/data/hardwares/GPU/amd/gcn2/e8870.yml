@@ -1,5 +1,5 @@
 model: Radeon E8870 Embedded
-arch: GCN 2.0
+arch: GCN 2.0 (Saturn)
 brand: AMD
 type: GPU 
 status: 1 

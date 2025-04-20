@@ -1,5 +1,5 @@
 model: Radeon HD 7730
-arch: GCN 1.0
+arch: GCN 1.0 (Cape Verde)
 brand: AMD
 type: GPU 
 status: 1 

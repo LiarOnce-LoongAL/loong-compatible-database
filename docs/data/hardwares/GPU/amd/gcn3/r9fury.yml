@@ -1,5 +1,5 @@
 model: Radeon R9 Fury
-arch: GCN 3.0
+arch: GCN 3.0 (Fiji)
 brand: AMD
 type: GPU 
 status: 1 

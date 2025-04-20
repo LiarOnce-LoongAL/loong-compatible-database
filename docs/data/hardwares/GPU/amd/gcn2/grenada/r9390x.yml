@@ -1,0 +1,8 @@
+model: Radeon R9 390X
+arch: GCN 2.0 (Grenada)
+brand: AMD
+type: GPU 
+status: 1 
+notes: 
+link: /hardwares/amdgpu.html#gcn-1-gcn-2
+link_en: /en/hardwares/amdgpu.html#gcn-1-gcn-2

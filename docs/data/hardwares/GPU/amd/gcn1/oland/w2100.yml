@@ -1,5 +1,5 @@
 model: FirePro W2100
-arch: GCN 1.0
+arch: GCN 1.0 (Oland)
 brand: AMD
 type: GPU
 status: 1

@@ -1,5 +1,5 @@
 model: Radeon HD 8740 OEM
-arch: GCN 1.0
+arch: GCN 1.0 (Cape Verde)
 brand: AMD
 type: GPU 
 status: 1 

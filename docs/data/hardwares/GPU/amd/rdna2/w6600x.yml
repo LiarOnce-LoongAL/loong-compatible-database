@@ -1,8 +1,0 @@
-model: Radeon Pro W6600X
-arch: RDNA 2.0
-brand: AMD
-type: GPU 
-status: 3 
-notes: 
-link: /hardwares/amdgpu.html#rdna 
-link_en: /en/hardwares/amdgpu.html#rdna

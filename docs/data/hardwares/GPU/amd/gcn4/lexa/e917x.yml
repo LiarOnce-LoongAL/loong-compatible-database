@@ -1,0 +1,13 @@
+model: |
+  Radeon E9171
+  Radeon E9172
+  Radeon E9173
+  Radeon E9174
+  Radeon E9175 (Embedded)
+arch: GCN 4.0 (Lexa)
+brand: AMD
+type: GPU 
+status: 1 
+notes: 
+link: /hardwares/amdgpu.html#gcn-4-polaris
+link_en: /en/hardwares/amdgpu.html#gcn-4-polaris

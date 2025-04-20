@@ -1,8 +1,0 @@
-model: Radeon RX 6750 GRE (10GB/12GB)
-arch: RDNA 2.0
-brand: AMD
-type: GPU 
-status: 3 
-notes: 
-link: /hardwares/amdgpu.html#rdna
-link_en: /en/hardwares/amdgpu.html#rdna

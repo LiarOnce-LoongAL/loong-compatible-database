@@ -1,9 +1,9 @@
 model: Radeon RX 9070 XT
-arch: RDNA 4.0
+arch: RDNA 4.0 (Navi 48)
 brand: AMD
 type: GPU 
 status: 3
-notes: Linux 6.14 开始支持
-notes_en: Supported since Linux 6.14+
+notes: Linux 6.14 开始、Mesa 25.0 开始支持
+notes_en: Supported since Linux 6.14+ and Mesa 25.0+
 link: /hardwares/amdgpu.html#rdna
 link_en: /en/hardwares/amdgpu.html#rdna

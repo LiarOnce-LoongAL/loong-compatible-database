@@ -1,5 +1,5 @@
 model: Radeon HD 7950 / HD 7950 Boost
-arch: GCN 1.0
+arch: GCN 1.0 (Tahiti)
 brand: AMD
 type: GPU 
 status: 1 

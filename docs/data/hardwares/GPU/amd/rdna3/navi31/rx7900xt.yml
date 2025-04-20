@@ -1,0 +1,8 @@
+model: Radeon RX 7900 XT
+arch: RDNA 3.0 (Navi 31)
+brand: AMD
+type: GPU 
+status: 3 
+notes: 
+link: /hardwares/amdgpu.html#rdna
+link_en: /en/hardwares/amdgpu.html#rdna

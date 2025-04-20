@@ -1,8 +1,0 @@
-model: Radeon R9 360 OEM
-arch: GCN 2.0
-brand: AMD
-type: GPU 
-status: 1 
-notes: 
-link: /hardwares/amdgpu.html#gcn-1-gcn-2
-link_en: /en/hardwares/amdgpu.html#gcn-1-gcn-2

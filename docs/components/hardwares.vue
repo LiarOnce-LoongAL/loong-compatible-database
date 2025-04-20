@@ -111,6 +111,7 @@
     const clearFilter = () => {
         tableRef.value.clearFilter();
         selectedData.value = { brand: null, type: null, status: null }; // 清空筛选条件
+        searchData.value = "";
         currentPage.value = 1; // 重置为第一页
     };
 

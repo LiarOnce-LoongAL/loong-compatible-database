@@ -1,0 +1,8 @@
+model: Radeon Pro W5700X
+arch: RDNA 1.0 (Navi 10)
+brand: AMD
+type: GPU 
+status: 3 
+notes: 
+link: /hardwares/amdgpu.html#rdna 
+link_en: /en/hardwares/amdgpu.html#rdna

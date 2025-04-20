@@ -1,0 +1,8 @@
+model: Radeon RX 6400
+arch: RDNA 2.0 (Navi 24)
+brand: AMD
+type: GPU 
+status: 3 
+notes: 
+link: /hardwares/amdgpu.html#rdna
+link_en: /en/hardwares/amdgpu.html#rdna
