@@ -1,5 +1,5 @@
-model: KP260
-arch: KingBank KP260
+model: KP260 Series
+arch: 
 brand: KingBank
 type: SSD_NVMe 
 status: 1 
