@@ -10,6 +10,10 @@ hero:
       text: 参与贡献
       link: /contribution
 
+    - theme: alt
+      text: 其他网站
+      link: /contribution/links
+
 features:
   - icon: 
       src: /images/loongson3.png

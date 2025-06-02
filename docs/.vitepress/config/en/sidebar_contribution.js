@@ -4,7 +4,8 @@ const sidebar_contribution = [
     { text: 'LAT Information', link: '/en/contribution/lat' },
     { text: 'LibLoL Information', link: '/en/contribution/liblol' },
     { text: 'Known Issues', link: '/en/contribution/knownissues' },
-    { text: 'Translation', link: '/en/contribution/translation' }
+    { text: 'Translation', link: '/en/contribution/translation' },
+    { text: 'Other Links', link: '/en/contribution/links' }
 ]
 
 export { sidebar_contribution }

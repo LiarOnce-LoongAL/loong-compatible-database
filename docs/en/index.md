@@ -10,6 +10,10 @@ hero:
       text: Contribution
       link: /en/contribution
 
+    - theme: alt
+      text: Other websites
+      link: /en/contribution/links
+
 features:
   - icon: 
       src: /images/loongson3.png
