@@ -1,0 +1,8 @@
+id: 10001
+name: 北太天元
+version: 4.0.0_dev0
+liblol_version: 0.1.9
+date: '2024-12-10 11:15:30'
+status: 1
+notes: "需将软件自带的 libopenblas.so.0 与 libffi.so.6 删除或移走，使用系统自带的原生库，方可完美运行。"
+link: null
