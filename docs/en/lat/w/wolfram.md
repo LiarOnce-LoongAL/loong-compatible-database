@@ -35,7 +35,7 @@ at the beginning of those scripts
                                 aarch64)
                                         SystemIDList="Linux-ARM64 Linux-ARM";;
                                 loongarch64)
-                                        SYstemIDList="Linux-x86_64 Linux";; 
+                                        SystemIDList="Linux-x86-64 Linux";; 
                                 *)
                                         SystemIDList="Unknown";;
                         esac;;
@@ -58,7 +58,7 @@ add a case for loongarch64, such as
                                 ...
 ```
 
-after checking your `$PATH` includes `/usr/local/bin`, run `math` or `wolfram` in your console to launch Wolfram Cli interface. 
+save it and exit. After checking your `$PATH` includes `/usr/local/bin`, run `math` or `wolfram` in your console to launch Wolfram Cli interface. 
 
 ```bash
 resbi@la464v:~ $ wolfram
@@ -81,4 +81,4 @@ Only listing tested versions.
 
 ## Notices
 
-Under the installation path of your Wolfram, at the same level of `Executables`, there's a folder called `SystemFiles`, find a folder called `Java` inside of it, and you'll see a folder called `Linux-x86-64`, it's a JDK21 binary package for x86_64. You could replace it with the Loongarch native version of OpenJDK-21, remember to rename the folder to `Linux-x86-64`. By which you will gain around 10% of performance boost.
+Under the installation path of your Wolfram, at the same level of `Executables`, there's a folder called `SystemFiles`, find a folder called `Java` inside of it, and you'll see a folder called `Linux-x86-64`, it's a JDK21 binary package for x86_64. You could replace it with the Loongarch native version of OpenJDK-21, remember to rename the folder to `Linux-x86-64`. By which you will gain around 10% of performance boost. But need to notice that this modification might cause the `Export[]` function unable to save files normally (or totally not working).

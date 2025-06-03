@@ -13,7 +13,7 @@ next: false
 
 ## 修改启动脚本
 
-在安装路径下 (如版本 14.2 的默认安装路径`/usr/local/Wolfram/Wolfram/14.2`), 找到 `Executables` 文件夹, 对其中的脚本文件 (`math`, `MathKernel`, `mcc`, `wolfram`, `WolframKernel`, `wolframnb`, `WolframNB`) 做如下相同的更改:
+在 Wolfram 安装路径下 (如版本 14.2 的默认安装路径`/usr/local/Wolfram/Wolfram/14.2`), 找到 `Executables` 文件夹, 对其中的脚本文件 (`math`, `MathKernel`, `mcc`, `wolfram`, `WolframKernel`, `wolframnb`, `WolframNB`) 做如下相同的更改:
 
 在脚本开头处
 
@@ -35,7 +35,7 @@ next: false
                                 aarch64)
                                         SystemIDList="Linux-ARM64 Linux-ARM";;
                                 loongarch64)
-                                        SYstemIDList="Linux-x86_64 Linux";; 
+                                        SystemIDList="Linux-x86-64 Linux";; 
                                 *)
                                         SystemIDList="Unknown";;
                         esac;;
@@ -58,7 +58,7 @@ next: false
                                 ...
 ```
 
-在确保已经将 `/usr/local/bin` 添加到 `$PATH` 环境变量中后, 在终端里运行 `math` 或 `wolfram` 脚本即可启动 Wolfram 的cli交互界面. 
+保存退出. 在确保已经将 `/usr/local/bin` 添加到 `$PATH` 环境变量中后, 在终端里执行 `math` 或 `wolfram` 即可启动 Wolfram 的cli交互界面. 
 
 ```bash
 resbi@la464v:~ $ wolfram
@@ -83,4 +83,4 @@ In[1]:=
 
 ### Wolfram 自带 Java 二进制文件
 
-在 Wolfram 安装目录下的 `SystemFiles` 文件夹中有一个 `Java` 文件夹, 其中包含一个 `Linux-x86-64` 文件夹, 这是一个完整的 x86_64 的 JDK21. 您可以用龙芯原生的 OpenJDK-21 将其替换, 但注意要将文件夹命名为 `Linux-x86-64`. 此做法可以将部分任务的性能提升大约10%. 
+在 Wolfram 安装目录下的 `SystemFiles` 文件夹中有一个 `Java` 文件夹, 其中包含一个 `Linux-x86-64` 文件夹, 这是一个完整的 x86_64 的 JDK21. 您可以用龙芯原生的 OpenJDK-21 将其替换, 但注意要将文件夹命名为 `Linux-x86-64`. 此做法可以将部分任务的性能提升大约10%. 但是这个操作可能会导致程序中的 `Export[]` 函数无法正常保存文件(或是完全无法保存文件). 
