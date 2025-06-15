@@ -2,7 +2,7 @@ model: Radeon Pro WX 8200
 arch: GCN 5.0 (Greenland)
 brand: AMD
 type: GPU 
-status: 0
+status: 3
 notes: 
 link: 
 link_en: 
