@@ -1,0 +1,57 @@
+basic:
+  name: 3A6000-HV
+  series: 3A6000
+  market: 1
+  tops: "240 GFlops"
+
+cpu: 
+  cores: 4
+  threads: 8
+  arch: "LA664"
+  freq: "2.5 GHz"
+  l1_inst_cache: "64 KB"
+  l1_data_cache: "64 KB"
+  l2_cache: "256 KB"
+  l3_cache: "16 MB"
+  voltage: "1.15 V"
+  tpc: "38 W"
+  tdp: "80 W"
+
+gpu:
+  available: 0
+  name: "N/A"
+  opengl: "N/A"
+  opengl_es: "N/A"
+  opencl: "N/A"
+  tops: "N/A"
+
+memory:
+  max: "64 GB"
+  types: "DDR4-3200"
+  channels: 2
+  ecc: 1
+
+exp:
+  name: "HyperTransport 3.0"
+  lanes: 16-Lanes
+  spi: 1
+  uart: 1
+  i2c: 2
+  gpio: 16
+  d2d: 0
+
+package:
+  socket: "FCBGA1190"
+  temperature: "0 - 70℃"
+  t_case: "70℃"
+  t_junction: "85℃"
+  size: "35 mm * 35 mm"
+
+power:
+  shutdown_of_the_clocks: 1
+  frequency_scaling: 1
+  voltage_scaling: 1
+
+technologies:
+  set: "64-Bit"
+  set_extensions: "LSX, LASX"

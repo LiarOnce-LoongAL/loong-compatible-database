@@ -1,0 +1,50 @@
+basic:
+  name: 
+  series: 
+  market: 1 # 1=桌面 2=移动 3=服务器 4=嵌入式
+  tops: ""
+
+cpu: 
+  cores: 
+  threads: 
+  arch: ""
+  freq: ""
+  l1_inst_cache: ""
+  l1_data_cache: ""
+  l2_cache: ""
+  l3_cache: ""
+  voltage: ""
+  tpc: ""
+  tdp: ""
+
+memory:
+  max: ""
+  types: ""
+  channels: 
+  ecc: 1 # 1=支持 0=不支持
+
+exp:
+  name: ""
+  lanes: 
+  spi: 
+  uart: 
+  i2c: 
+  gpio: 
+  d2d: 0
+
+package:
+  socket: ""
+  temperature: ""
+  t_case: "70℃"
+  t_junction: "85℃"
+  size: ""
+
+power:
+  shutdown_of_the_clocks: 1
+  frequency_scaling: 1
+  voltage_scaling: 1
+
+technologies:
+  set: "64-Bit"
+  set_extensions: "LSX, LASX"
+  

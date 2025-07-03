@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+chips*.json
 datas*.json
 locales*.json
 vendors*.json
