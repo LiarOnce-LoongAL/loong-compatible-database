@@ -25,6 +25,7 @@ memory:
 
 exp:
   name: ""
+  rev: ""
   lanes: 
   spi: 
   uart: 

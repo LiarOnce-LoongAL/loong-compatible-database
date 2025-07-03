@@ -12,7 +12,7 @@ const navbar = [
         items: [
             { text: "Hardwares Info", link: "/en/hardwares/" },
             { text: "LAT Info", link: "/en/lat/" },
-            { text: "LibLoL Info", link: "/en/liblol" }
+            { text: "LibLoL Info", link: "/en/liblol/" }
         ],
     },
     { text: "Contribution", link: "/en/contribution/" }

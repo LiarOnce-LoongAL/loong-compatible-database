@@ -2,7 +2,7 @@ basic:
   name: 3A6000-BLL
   series: 3A6000
   market: 1
-  tops: "240 GFlops"
+  tops: "240 GFlops (INT8)"
 
 cpu: 
   cores: 4
@@ -32,7 +32,8 @@ memory:
   ecc: 1
 
 exp:
-  name: "HyperTransport 3.0"
+  name: "HyperTransport"
+  rev: "3.0"
   lanes: 16-Lanes
   spi: 1
   uart: 1

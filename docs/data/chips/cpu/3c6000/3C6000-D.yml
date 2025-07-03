@@ -2,7 +2,7 @@ basic:
   name: 3C6000/D
   series: 3C6000
   market: 3
-  tops: "1612.8 GFlops"
+  tops: "1612.8 GFlops (FP64)"
 
 cpu: 
   cores: 32
@@ -25,6 +25,7 @@ memory:
 
 exp:
   name: "PCI Express"
+  rev: "4.0/3.0"
   lanes: 128-Lanes
   spi: "N/A"
   uart: "N/A"

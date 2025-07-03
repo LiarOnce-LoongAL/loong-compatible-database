@@ -32,7 +32,8 @@ memory:
   ecc: 1
 
 exp:
-  name: "HyperTransport 3.0"
+  name: "HyperTransport"
+  rev: "3.0"
   lanes: 16-Lanes
   spi: 1
   uart: 1
