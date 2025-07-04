@@ -7,9 +7,9 @@
   "scripts": {
     "generate:data": "node ./docs/data/generateDatabase.js",
     "generate:chips": "node ./docs/data/generateChipsDatabase.js",
-    "docs:build": "pnpm run generate:data && vitepress build docs",
+    "docs:build": "pnpm run generate:data && pnpm run generate:chips && vitepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "pnpm run generate:data && vitepress dev docs",
+    "docs:dev": "pnpm run generate:data && pnpm run generate:chips && vitepress dev docs",
     "docs:update-package": "pnpm dlx vp-update",
     "docs:preview": "vitepress preview docs",
     "build:azure": "pnpm run docs:build"
