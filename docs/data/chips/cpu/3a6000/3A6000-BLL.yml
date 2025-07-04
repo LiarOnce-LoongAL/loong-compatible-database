@@ -2,7 +2,7 @@ basic:
   name: 3A6000-BLL
   series: 3A6000
   market: 1
-  tops: "240 GFlops (INT8)"
+  tops: "240 GFlops (FP64)"
 
 cpu: 
   cores: 4

@@ -2,7 +2,7 @@ basic:
   name: 3A6000-i
   series: 3A6000
   market: 4
-  tops: "192 GFlops (INT8)"
+  tops: "192 GFlops (FP64)"
 
 cpu: 
   cores: 4
