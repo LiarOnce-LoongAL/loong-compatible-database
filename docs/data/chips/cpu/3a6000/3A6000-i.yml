@@ -5,7 +5,7 @@ basic:
   tops: "192 GFlops (FP64)"
 
 ext_info: 
-  pic: "/images/chips/cpu/LS3A6000.webp"
+  pic: "/images/chips/cpu/3A6000-i.webp"
   manual: ""
 
 cpu: 

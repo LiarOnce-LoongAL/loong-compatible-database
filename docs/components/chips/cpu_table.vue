@@ -40,7 +40,7 @@
             <el-col :span="10"><div>{{ chipData.cpu.threads }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>架构</div></el-col>
+            <el-col :span="10"><div>微体系结构</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.arch }}</div></el-col>
         </el-row>
         <el-row>
