@@ -16,7 +16,7 @@
             <el-col :span="10"><div>市场定位</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.basic.market == 1">桌面</span>
+                    <span v-if="chipData.basic.market == true">桌面</span>
                     <span v-else-if="chipData.basic.market == 2">移动</span>
                     <span v-else-if="chipData.basic.market == 3">服务器</span>
                     <span v-else-if="chipData.basic.market == 4">嵌入式</span>
@@ -56,11 +56,11 @@
             <el-col :span="10"><div>{{ chipData.cpu.l1_data_cache }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>二级缓存</div></el-col>
+            <el-col :span="10"><div>二级缓存(合计)</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.l2_cache }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>三级缓存</div></el-col>
+            <el-col :span="10"><div>三级缓存(共享)</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.l3_cache }}</div></el-col>
         </el-row>
         <el-row>
@@ -83,8 +83,8 @@
             <el-col :span="10"><div>是否配备 GPU</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.gpu.available == 1">是</span>
-                    <span v-else-if="chipData.gpu.available == 0">否</span>
+                    <span v-if="chipData.gpu.available == true">是</span>
+                    <span v-else-if="chipData.gpu.available == false">否</span>
                 </div>
             </el-col>
         </el-row>
@@ -128,8 +128,8 @@
             <el-col :span="10"><div>ECC 内存</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.memory.ecc == 1">支持</span>
-                    <span v-else-if="chipData.memory.ecc == 0">不支持</span>
+                    <span v-if="chipData.memory.ecc == true">支持</span>
+                    <span v-else-if="chipData.memory.ecc == false">不支持</span>
                 </div>
             </el-col>
         </el-row>
@@ -150,6 +150,22 @@
             <el-col :span="10"><div>{{ chipData.exp.lanes }}</div></el-col>
         </el-row>
         <el-row>
+            <el-col :span="10"><div>USB 3.1 数量</div></el-col>
+            <el-col :span="10"><div>{{ chipData.exp.usb_5gbps }}</div></el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="10"><div>USB 2.0 数量</div></el-col>
+            <el-col :span="10"><div>{{ chipData.exp.usb2 }}</div></el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="10"><div>SATA 3 数量</div></el-col>
+            <el-col :span="10"><div>{{ chipData.exp.sata3 }}</div></el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="10"><div>网口数量</div></el-col>
+            <el-col :span="10"><div>{{ chipData.exp.eth }}</div></el-col>
+        </el-row>
+        <el-row>
             <el-col :span="10"><div>SPI 数量</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.spi }}</div></el-col>
         </el-row>
@@ -166,12 +182,31 @@
             <el-col :span="10"><div>{{ chipData.exp.gpio }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>龙链技术</div></el-col>
+            <el-col :span="10"><div>AVS 数量</div></el-col>
+            <el-col :span="10"><div>{{ chipData.exp.avs }}</div></el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="10"><div>片间互连</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.exp.d2d == 1">支持</span>
-                    <span v-else-if="chipData.exp.d2d == 0">不支持</span>
+                    <span v-if="chipData.exp.d2d == true">支持</span>
+                    <span v-else-if="chipData.exp.d2d == false">不支持</span>
                 </div>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="10"><div>片间互连技术</div></el-col>
+            <el-col :span="10">
+                <div v-if="chipData.exp.d2d_name == 'lcl'">龙链</div>
+                <div v-if="chipData.exp.d2d_name == 'ccnuma'">ccNUMA</div>
+                <div v-else>N/A</div>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="10"><div>其他接口</div></el-col>
+            <el-col :span="10">
+                <div v-if="chipData.exp.other">{{ chipData.exp.other }}</div>
+                <div v-else>N/A</div>
             </el-col>
         </el-row>
     </div>
@@ -206,8 +241,8 @@
             <el-col :span="10"><div>时钟动态关闭</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.power.shutdown_of_the_clocks == 1">支持</span>
-                    <span v-else-if="chipData.power.shutdown_of_the_clocks == 0">不支持</span>
+                    <span v-if="chipData.power.shutdown_of_the_clocks == true">支持</span>
+                    <span v-else-if="chipData.power.shutdown_of_the_clocks == false">不支持</span>
                 </div>
             </el-col>
         </el-row>
@@ -215,8 +250,8 @@
             <el-col :span="10"><div>时钟动态变频</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.power.frequency_scaling == 1">支持</span>
-                    <span v-else-if="chipData.power.frequency_scaling == 0">不支持</span>
+                    <span v-if="chipData.power.frequency_scaling == true">支持</span>
+                    <span v-else-if="chipData.power.frequency_scaling == false">不支持</span>
                 </div>
             </el-col>
         </el-row>
@@ -224,8 +259,8 @@
             <el-col :span="10"><div>主电压域动态调压</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.power.voltage_scaling == 1">支持</span>
-                    <span v-else-if="chipData.power.voltage_scaling == 0">不支持</span>
+                    <span v-if="chipData.power.voltage_scaling == true">支持</span>
+                    <span v-else-if="chipData.power.voltage_scaling == false">不支持</span>
                 </div>
             </el-col>
         </el-row>
