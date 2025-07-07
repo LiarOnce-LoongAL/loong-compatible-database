@@ -4,6 +4,10 @@ basic:
   market: 3
   tops: "1612.8 GFlops (FP64)"
 
+ext_info: 
+  pic: ""
+  manual: ""
+
 cpu: 
   cores: 32
   threads: 64

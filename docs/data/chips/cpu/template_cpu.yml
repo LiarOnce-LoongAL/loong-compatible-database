@@ -4,6 +4,10 @@ basic:
   market: 1 # 1=桌面 2=移动 3=服务器 4=嵌入式
   tops: ""
 
+ext_info: 
+  pic: ""
+  manual: ""
+
 cpu: 
   cores: 
   threads: 

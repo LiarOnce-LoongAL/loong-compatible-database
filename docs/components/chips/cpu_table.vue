@@ -1,5 +1,8 @@
 <template>
-    <div id="cpu_table_basic">
+    <div class="chips-pic" style="margin-top: 20px;">
+        <img :src="chipData.ext_info.pic" />
+    </div>
+    <div id="cpu-table-basic">
         <h3>基本信息</h3>
         <el-row>
             <el-col :span="10"><div>产品名称</div></el-col>
@@ -26,7 +29,7 @@
         </el-row>
     </div>
 
-    <div id="cpu_table_cpuspec">
+    <div id="cpu-table-cpuspec">
         <h3>CPU 规格</h3>
         <el-row>
             <el-col :span="10"><div>核心数</div></el-col>
@@ -74,7 +77,7 @@
         </el-row>
     </div>
 
-    <div id="cpu_table_gpuspec">
+    <div id="cpu-table-gpuspec">
         <h3>GPU 规格</h3>
         <el-row>
             <el-col :span="10"><div>是否配备 GPU</div></el-col>
@@ -107,7 +110,7 @@
         </el-row>
     </div>
 
-    <div id="cpu_table_memoryspec">
+    <div id="cpu-table-memoryspec">
         <h3>内存规格</h3>
         <el-row>
             <el-col :span="10"><div>最大内存大小</div></el-col>
@@ -132,7 +135,7 @@
         </el-row>
     </div>
 
-    <div id="cpu_table_expspec">
+    <div id="cpu-table-expspec">
         <h3>扩展性</h3>
         <el-row>
             <el-col :span="10"><div>I/O 通信接口</div></el-col>
@@ -173,7 +176,7 @@
         </el-row>
     </div>
 
-    <div id="cpu_table_package">
+    <div id="cpu-table-package">
         <h3>封装规格</h3>
         <el-row>
             <el-col :span="10"><div>插槽</div></el-col>
@@ -197,7 +200,7 @@
         </el-row>
     </div>
 
-    <div id="cpu_table_power">
+    <div id="cpu-table-power">
         <h3>功耗管理</h3>
         <el-row>
             <el-col :span="10"><div>时钟动态关闭</div></el-col>
@@ -228,7 +231,7 @@
         </el-row>
     </div>
 
-    <div id="cpu_table_tech">
+    <div id="cpu-table-tech">
         <h3>先进技术</h3>
         <el-row>
             <el-col :span="10"><div>指令集</div></el-col>
@@ -257,14 +260,14 @@
     padding: 20px;
 }
 
-#cpu_table_basic div,
-#cpu_table_cpuspec div,
-#cpu_table_gpuspec div,
-#cpu_table_memoryspec div,
-#cpu_table_expspec div,
-#cpu_table_package div,
-#cpu_table_power div,
-#cpu_table_tech div {
+#cpu-table-basic div,
+#cpu-table-cpuspec div,
+#cpu-table-gpuspec div,
+#cpu-table-memoryspec div,
+#cpu-table-expspec div,
+#cpu-table-package div,
+#cpu-table-power div,
+#cpu-table-tech div {
     height: 40px;
 }
 </style>

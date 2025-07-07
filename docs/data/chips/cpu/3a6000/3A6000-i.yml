@@ -4,6 +4,10 @@ basic:
   market: 4
   tops: "192 GFlops (FP64)"
 
+ext_info: 
+  pic: "/images/chips/cpu/LS3A6000.webp"
+  manual: ""
+
 cpu: 
   cores: 4
   threads: 8

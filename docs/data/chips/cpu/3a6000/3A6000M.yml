@@ -4,6 +4,10 @@ basic:
   market: 2
   tops: "N/A"
 
+ext_info: 
+  pic: "/images/chips/cpu/LS3A6000.webp"
+  manual: ""
+
 cpu: 
   cores: 4
   threads: 8
