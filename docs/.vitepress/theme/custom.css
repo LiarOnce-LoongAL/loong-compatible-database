@@ -1,6 +1,6 @@
 .VPDoc:not(.has-sidebar) .container {
-    margin: 0 !important;
-    max-width: none !important;
+    margin: 0 auto !important;
+    max-width: var(--vp-layout-max-width) !important;
 }
 
 .VPDoc:not(.has-sidebar) .container .content {
