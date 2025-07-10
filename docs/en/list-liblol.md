@@ -14,6 +14,6 @@ Translated with DeepL.com (free version)
 <liblolList />
 
 <script setup>
-    import liblolTagsInfo from "../components/tags/liblol_tagsinfo.vue"
-    import liblolList from "../components/liblol.vue"
+    import liblolTagsInfo from "../.vitepress/theme/components/tags/liblol_tagsinfo.vue"
+    import liblolList from "../.vitepress/theme/components/liblol.vue"
 </script>

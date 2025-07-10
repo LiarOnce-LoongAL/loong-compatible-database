@@ -1,6 +1,7 @@
 ---
 aside: false
 outline: false
+banner: false
 ---
 # LibLoL 兼容性
 
@@ -17,6 +18,6 @@ libLoL (LoongArch on LoongArch) 是一款用于提供旧世界 ABI 兼容性的�
 :::
 
 <script setup>
-    import liblolTagsInfo from "./components/tags/liblol_tagsinfo.vue"
-    import liblolList from "./components/liblol.vue"
+    import liblolTagsInfo from "./.vitepress/theme/components/tags/liblol_tagsinfo.vue"
+    import liblolList from "./.vitepress/theme/components/liblol.vue"
 </script>

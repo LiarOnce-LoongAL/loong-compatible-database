@@ -8,6 +8,6 @@ outline: false
 <latList />
 
 <script setup>
-    import latTagsInfo from "../components/tags/lat_tagsinfo.vue"
-    import latList from "../components/lat.vue"
+    import latTagsInfo from "../.vitepress/theme/components/tags/lat_tagsinfo.vue"
+    import latList from "../.vitepress/theme/components/lat.vue"
 </script>

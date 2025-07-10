@@ -281,7 +281,7 @@
 
 <script setup>
     import { ref } from "vue";
-    import chipsJson from "../../data/chips.min.json";
+    import chipsJson from "../../../../data/chips.min.json";
     const current_lang = document.documentElement.lang;
 
     const props = defineProps({

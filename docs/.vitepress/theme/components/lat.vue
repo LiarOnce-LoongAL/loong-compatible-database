@@ -5,25 +5,34 @@
             <el-button @click="clearFilter">{{ $t("components.clear_filter") }}</el-button>
         </el-col>
     </el-row>
-    <el-table 
+    <el-table
         ref="tableRef"
-        row-key="name" 
-        :data="paginatedTableData" 
-        border 
-        :default-sort="{ prop: 'id', order: 'ascending' }"
+        row-key="name"
+        :data="paginatedTableData"
+        border
+        :default-sort="{ prop: 'name', order: 'ascending' }"
         @filter-change="handleFilterChange"
     >
-        <el-table-column prop="id" label="ID" width="70" />
-        <el-table-column prop="name" :label="$t('components.name')" width="210" />
-        <el-table-column prop="version" :label="$t('components.soft_version')" width="180" />
-        <el-table-column prop="liblol_version" :label="$t('components.liblol_version')" width="80" />
-        <el-table-column prop="date" :label="$t('components.uptimedate')" width="180" />
+        <el-table-column prop="name" :label="$t('components.name')" width="200" />
+        <el-table-column prop="vendor" :label="$t('components.vendor')" width="160" />
+        <el-table-column prop="version" :label="$t('components.soft_version')" width="120">
+            <template #default="scope">
+                <span v-if="scope.row.version === 1">{{ $t('components.multi_version') }}</span>
+            </template>
+        </el-table-column>
+        <el-table-column prop="lat_version" :label="$t('components.lat_version')" width="100" />
+        <el-table-column prop="latx_or_lata" :label="$t('components.latx_or_lata')" width="120" />
+        <el-table-column prop="date" :label="$t('components.uptimedate')" width="140">
+            <template #default="scope">
+                <span v-if="scope.row.date === 1">{{ $t('components.seeindoc') }}</span>
+            </template>
+        </el-table-column>
         <el-table-column
             prop="status"
             :label="$t('components.status')"
             column-key="status"
-            width="110"
-            :filters="filter_data[current_lang]?.filters_status || 'zh'"
+            width="120"
+            :filters="filter_data[current_lang]?.filters_status_lat || 'zh'"
             :filter-method="filterStatus"
             filter-placement="bottom-end"
         >
@@ -31,11 +40,11 @@
                 <Unknown v-if="scope.row.status == 0" />
                 <Compatible v-if="scope.row.status == 1" />
                 <Partial v-if="scope.row.status == 2" />
-                <NewWorld v-if="scope.row.status == 3" />
+                <Native v-if="scope.row.status == 3" />
                 <Unsupported v-if="scope.row.status == -1" />
             </template>
         </el-table-column>
-        <el-table-column prop="notes" :label="$t('components.notes')" min-width="200" />
+        <el-table-column prop="notes" :label="$t('components.notes')" min-width="300" />
         <el-table-column prop="link" :label="$t('components.link')" width="60" />
     </el-table>
     <el-pagination
@@ -52,14 +61,14 @@
 
 <script setup>
     import { ref, computed, watch } from "vue";
-
-    import databaseJson from "../data/datas.min.json";
-    import filter_data from "../data/locales.min.json";
+    import { sortValue } from "./utils/sortUtils";
     import SearchBar from "./SearchBar.vue";
 
+    import databaseJson from "../../../data/datas.min.json";
+    import filter_data from "../../../data/locales.min.json";
     const current_lang = document.documentElement.lang;
 
-    const tableData = ref(databaseJson.liblol);
+    const tableData = ref(databaseJson.lat);
 
     const tableRef = ref();
     const currentPage = ref(1); // 当前页码
@@ -83,6 +92,13 @@
         currentPage.value = 1;
     };
 
+    // 使用 sortValue 对 tableData 进行大小写排序
+    const sortedTableData = computed(() => {
+        return tableData.value.slice().sort((a, b) => {
+            return sortValue({ value: a.name }, { value: b.name });
+        });
+    });
+
     // 处理筛选条件变化
     const handleFilterChange = filters => {
         if (filters.status) {
@@ -93,7 +109,7 @@
 
     // 计算过滤后的数据
     const filteredTableData = computed(() => {
-        return tableData.value.filter(row => {
+        return sortedTableData.value.filter(row => {
             return (!searchData.value || row.name.toLowerCase().includes(searchData.value.toLowerCase())) &&
                    (!selectedData.value || row.status === selectedData.value);
         });

@@ -90,9 +90,9 @@
     import { sortValue } from "./utils/sortUtils";
     import SearchBar from "./SearchBar.vue";
 
-    import databaseJson from "../data/datas.min.json";
-    import filter_data from "../data/locales.min.json";
-    import filter_vendors from "../data/vendors.min.json";
+    import databaseJson from "../../../data/datas.min.json";
+    import filter_data from "../../../data/locales.min.json";
+    import filter_vendors from "../../../data/vendors.min.json";
     const current_lang = document.documentElement.lang;
 
     const tableData = ref(databaseJson.hardwares); // 初始化 tableData

@@ -5,17 +5,20 @@ import 'element-plus/theme-chalk/base.css'
 import 'element-plus/theme-chalk/dark/css-vars.css'
 import { nextTick } from "vue";
 
-import compatibleBadge from '../../components/badges/compatible.vue'
-import partialBadge from '../../components/badges/partial.vue'
-import nativeBadge from '../../components/badges/native.vue'
-import newWorldBadge from '../../components/badges/newWorld.vue'
-import unknownBadge from '../../components/badges/unknown.vue'
-import unsupportedBadge from '../../components/badges/unsupported.vue'
+import compatibleBadge from './components/badges/compatible.vue'
+import partialBadge from './components/badges/partial.vue'
+import nativeBadge from './components/badges/native.vue'
+import newWorldBadge from './components/badges/newWorld.vue'
+import unknownBadge from './components/badges/unknown.vue'
+import unsupportedBadge from './components/badges/unsupported.vue'
 
 import i18n from "./i18n";
+import BlogContent from "./components/Layout.vue";
+import Layout from "./components/Layout.vue";
 
 export default {
     ...DefaultTheme,
+    Layout: Layout,
     enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
         ctx.app.use(i18n);
@@ -44,5 +47,7 @@ export default {
         ctx.app.component("NewWorld", newWorldBadge);
         ctx.app.component("Unknown", unknownBadge);
         ctx.app.component("Unsupported", unsupportedBadge);
+
+        ctx.app.component('blog', BlogContent)
     },
 };

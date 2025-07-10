@@ -21,6 +21,6 @@ Here is the hardware list confirmed after joint testing by the community and can
 :::
 
 <script setup>
-    import HardwaresTagsInfo from "../components/tags/hardware_tagsinfo.vue"
-    import HardwaresList from "../components/hardwares.vue"
+    import HardwaresTagsInfo from "../.vitepress/theme/components/tags/hardware_tagsinfo.vue"
+    import HardwaresList from "../.vitepress/theme/components/hardwares.vue"
 </script>

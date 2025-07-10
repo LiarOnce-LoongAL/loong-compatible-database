@@ -54,4 +54,11 @@ export const shared = defineConfig({
             },
         }
     },
+    transformPageData(pageData) {
+        if (pageData.frontmatter.date) {
+        const date = new Date(pageData.frontmatter.date)
+            pageData.frontmatter.date = date.toISOString().split('T')[0]
+        }
+        return pageData
+    }
 });

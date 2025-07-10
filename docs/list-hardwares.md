@@ -1,6 +1,7 @@
 ---
 aside: false
 outline: false
+banner: false
 ---
 # 硬件兼容性
 此处为社区共同测试后确认的硬件，可用于装机参考。
@@ -20,6 +21,6 @@ outline: false
 :::
 
 <script setup>
-    import HardwaresTagsInfo from "./components/tags/hardware_tagsinfo.vue"
-    import HardwaresList from "./components/hardwares.vue"
+    import HardwaresTagsInfo from "./.vitepress/theme/components/tags/hardware_tagsinfo.vue"
+    import HardwaresList from "./.vitepress/theme/components/hardwares.vue"
 </script>
