@@ -13,7 +13,6 @@ import unknownBadge from './components/badges/unknown.vue'
 import unsupportedBadge from './components/badges/unsupported.vue'
 
 import i18n from "./i18n";
-import BlogContent from "./components/Layout.vue";
 import Layout from "./components/Layout.vue";
 
 export default {
@@ -47,7 +46,5 @@ export default {
         ctx.app.component("NewWorld", newWorldBadge);
         ctx.app.component("Unknown", unknownBadge);
         ctx.app.component("Unsupported", unsupportedBadge);
-
-        ctx.app.component('blog', BlogContent)
     },
 };
