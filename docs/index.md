@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "LoongArch\n兼容性数据库"
+  name: "Loong 1-2-3"
   text: ""
   tagline: 适用于龙架构的兼容性数据网站
   actions:

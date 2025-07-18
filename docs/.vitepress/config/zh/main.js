@@ -9,7 +9,7 @@ import { sidebar_chips } from "./sidebar_chips";
 
 export const zh = defineConfig({
     lang: "zh",
-    title: "LoongArch 兼容性数据库",
+    title: "Loong 1-2-3",
     description: "适用于龙架构的兼容性数据网站",
     themeConfig: {
         outline: {

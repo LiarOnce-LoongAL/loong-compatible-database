@@ -8,7 +8,7 @@ import { sidebar_contribution } from "./sidebar_contribution";
 
 export const en = defineConfig({
     lang: "en",
-    title: "LoongArch Compatibility Database",
+    title: "Loong 1-2-3",
     description: "Compatibility Data Site for LoongArch",
     themeConfig: {
         outline: {

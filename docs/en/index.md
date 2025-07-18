@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "LoongArch Compatibility Database"
+  name: "Loong 1-2-3"
   text: ""
   tagline: Compatibility Data Site for LoongArch
   actions:
