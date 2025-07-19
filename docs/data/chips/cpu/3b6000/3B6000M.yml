@@ -1,7 +1,7 @@
 basic:
   name: 3B6000M
   series: 3B6000
-  market: 1
+  market: 2
   
 ext_info: 
   pic: "/images/chips/cpu/3B6000M.webp"
