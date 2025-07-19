@@ -7,7 +7,7 @@
             {{ isComparing ? '移除对比' : '加入对比' }}
         </el-button>
     </div>
-    <div id="cpu-table-basic">
+    <div class="cpu-table">
         <h3>基本信息</h3>
         <el-row>
             <el-col :span="10"><div>产品名称</div></el-col>
@@ -30,7 +30,7 @@
         </el-row>
     </div>
 
-    <div id="cpu-table-cpuspec">
+    <div class="cpu-table">
         <h3>CPU 规格</h3>
         <el-row>
             <el-col :span="10"><div>核心数</div></el-col>
@@ -78,7 +78,7 @@
         </el-row>
     </div>
 
-    <div id="cpu-table-gpuspec">
+    <div class="cpu-table">
         <h3>GPU 规格</h3>
         <el-row>
             <el-col :span="10"><div>是否配备 GPU</div></el-col>
@@ -95,7 +95,7 @@
         </el-row>
     </div>
 
-    <div id="cpu-table-memoryspec">
+    <div class="cpu-table">
         <h3>内存规格</h3>
         <el-row>
             <el-col :span="10"><div>最大内存大小</div></el-col>
@@ -120,7 +120,7 @@
         </el-row>
     </div>
 
-    <div id="cpu-table-expspec">
+    <div class="cpu-table">
         <h3>扩展性</h3>
         <el-row>
             <el-col :span="10"><div>I/O 通信接口</div></el-col>
@@ -196,7 +196,7 @@
         </el-row>
     </div>
 
-    <div id="cpu-table-package">
+    <div class="cpu-table">
         <h3>封装规格</h3>
         <el-row>
             <el-col :span="10"><div>插槽</div></el-col>
@@ -220,7 +220,7 @@
         </el-row>
     </div>
 
-    <div id="cpu-table-power">
+    <div class="cpu-table">
         <h3>功耗管理</h3>
         <el-row>
             <el-col :span="10"><div>时钟动态关闭</div></el-col>
@@ -251,7 +251,7 @@
         </el-row>
     </div>
 
-    <div id="cpu-table-tech">
+    <div class="cpu-table">
         <h3>先进技术</h3>
         <el-row>
             <el-col :span="10"><div>指令集</div></el-col>
@@ -287,7 +287,7 @@
             if (compareList.value.length < 4) { // Limit to 4 chips for comparison
                 compareList.value.push(props.chips);
             } else {
-                alert('Maximum 4 chips can be compared at once');
+                alert('最多支持 4 款产品进行比对');
                 return;
             }
         }
@@ -300,14 +300,7 @@
     padding: 20px;
 }
 
-#cpu-table-basic div,
-#cpu-table-cpuspec div,
-#cpu-table-gpuspec div,
-#cpu-table-memoryspec div,
-#cpu-table-expspec div,
-#cpu-table-package div,
-#cpu-table-power div,
-#cpu-table-tech div {
+.cpu-table div{
     height: 40px;
 }
 </style>
