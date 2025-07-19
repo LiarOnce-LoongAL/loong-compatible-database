@@ -71,7 +71,7 @@
         localStorage.setItem("cpuCompareList", JSON.stringify(compareList.value));
     };
 
-    const isSame = (chip, fieldPath) => {  // 改为使用字段路径
+    const isSame = (chip, fieldPath) => {
         if (!compareChips.value.length || !fieldPath) return true;
         const firstValue = getFieldValue(compareChips.value[0], fieldPath);
         const currentValue = getFieldValue(chip, fieldPath);

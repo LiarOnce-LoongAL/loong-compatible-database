@@ -2,8 +2,7 @@ basic:
   name: 3A6000-LL
   series: 3A6000
   market: 1
-  tops: "N/A"
-
+  
 ext_info: 
   pic: "/images/chips/cpu/3A6000.webp"
   manual: ""
@@ -27,8 +26,7 @@ gpu:
   opengl: "N/A"
   opengl_es: "N/A"
   opencl: "N/A"
-  tops: "N/A"
-
+  
 memory:
   max: "64 GB"
   types: "DDR4-3200"

@@ -2,8 +2,7 @@ basic:
   name: 3C6000/S
   series: 3C6000
   market: 3
-  tops: "844.8 GFlops (FP64)"
-
+  
 ext_info: 
   pic: "/images/chips/cpu/3C6000S.webp"
   manual: ""
@@ -27,8 +26,7 @@ gpu:
   opengl: "N/A"
   opengl_es: "N/A"
   opencl: "N/A"
-  tops: "N/A"
-
+  
 memory:
   max: "N/A"
   types: "DDR4-3200"

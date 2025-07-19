@@ -28,10 +28,6 @@
                 </div>
             </el-col>
         </el-row>
-        <el-row>
-            <el-col :span="10"><div>峰值运算速度</div></el-col>
-            <el-col :span="10"><div>{{ chipData.basic.tops }}</div></el-col>
-        </el-row>
     </div>
 
     <div id="cpu-table-cpuspec">
@@ -108,10 +104,6 @@
         <el-row>
             <el-col :span="10"><div>OpenCL</div></el-col>
             <el-col :span="10"><div>{{ chipData.gpu.opencl }}</div></el-col>
-        </el-row>
-        <el-row>
-            <el-col :span="10"><div>GPU 峰值运算速度</div></el-col>
-            <el-col :span="10"><div>{{ chipData.gpu.tops }}</div></el-col>
         </el-row>
     </div>
 

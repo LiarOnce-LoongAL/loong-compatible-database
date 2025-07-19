@@ -2,8 +2,7 @@ basic:
   name: 3B6000-8
   series: 3B6000
   market: 1
-  tops: "480 GFlops (FP64)"
-
+  
 ext_info: 
   pic: "/images/chips/cpu/3B6000.webp"
   manual: ""
@@ -27,8 +26,7 @@ gpu:
   opengl: "N/A"
   opengl_es: "N/A"
   opencl: "N/A"
-  tops: "N/A"
-
+  
 memory:
   max: "64 GB"
   types: "DDR4-3200"

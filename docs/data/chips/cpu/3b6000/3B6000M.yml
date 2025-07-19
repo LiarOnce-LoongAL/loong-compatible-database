@@ -2,8 +2,7 @@ basic:
   name: 3B6000M
   series: 3B6000
   market: 1
-  tops: "N/A"
-
+  
 ext_info: 
   pic: "/images/chips/cpu/3B6000M.webp"
   manual: ""
@@ -27,8 +26,7 @@ gpu:
   opengl: "3.3"
   opengl_es: "3.1"
   opencl: "1.1"
-  tops: "7TOPS (INT8)"
-
+  
 memory:
   max: "32 GB"
   types: "DDR4 / LPDDR4"
