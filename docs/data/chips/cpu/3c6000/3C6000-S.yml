@@ -23,9 +23,6 @@ cpu:
 gpu:
   available: false
   name: "N/A"
-  opengl: "N/A"
-  opengl_es: "N/A"
-  opencl: "N/A"
   
 memory:
   max: "N/A"

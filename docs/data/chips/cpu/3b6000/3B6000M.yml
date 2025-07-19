@@ -23,9 +23,6 @@ cpu:
 gpu:
   available: true
   name: "LG200"
-  opengl: "3.3"
-  opengl_es: "3.1"
-  opencl: "1.1"
   
 memory:
   max: "32 GB"

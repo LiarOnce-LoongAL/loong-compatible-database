@@ -93,18 +93,6 @@
             <el-col :span="10"><div>GPU 名称</div></el-col>
             <el-col :span="10"><div>{{ chipData.gpu.name }}</div></el-col>
         </el-row>
-        <el-row>
-            <el-col :span="10"><div>OpenGL</div></el-col>
-            <el-col :span="10"><div>{{ chipData.gpu.opengl }}</div></el-col>
-        </el-row>
-        <el-row>
-            <el-col :span="10"><div>OpenGL ES</div></el-col>
-            <el-col :span="10"><div>{{ chipData.gpu.opengl_es }}</div></el-col>
-        </el-row>
-        <el-row>
-            <el-col :span="10"><div>OpenCL</div></el-col>
-            <el-col :span="10"><div>{{ chipData.gpu.opencl }}</div></el-col>
-        </el-row>
     </div>
 
     <div id="cpu-table-memoryspec">

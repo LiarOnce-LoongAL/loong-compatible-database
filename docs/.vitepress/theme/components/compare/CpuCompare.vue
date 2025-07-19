@@ -10,8 +10,10 @@
                 >
                     <img :src="chip.ext_info.pic" style="max-width: 100px; margin-bottom: 10px" />
                     <h3>{{ chip.basic.name }}</h3>
-                    <el-button type="danger" size="small" @click="removeFromCompare(chip.basic.name)">
-                        Remove
+                    <el-button type="danger" size="small" 
+                        @click="removeFromCompare(chip.basic.name)"
+                    >
+                        删除
                     </el-button>
                 </div>
             </div>
@@ -51,6 +53,49 @@
                     <div class="compare-cell">最高频率</div>
                     <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.freq') }">{{ chip.cpu.freq }}</div>
                 </div>
+                <div class="compare-row">
+                    <div class="compare-cell">一级指令缓存</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.l1_inst_cache') }">{{ chip.cpu.l1_inst_cache }}</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">一级数据缓存</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.l1_data_cache') }">{{ chip.cpu.l1_data_cache }}</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">二级缓存(合计)</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.l2_cache') }">{{ chip.cpu.l2_cache }}</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">三级缓存(共享)</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.l3_cache') }">{{ chip.cpu.l3_cache }}</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">典型电压</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.voltage') }">{{ chip.cpu.voltage }}</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">典型功耗</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.tpc') }">{{ chip.cpu.tpc }}</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">热设计功耗</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.tdp') }">{{ chip.cpu.tdp }}</div>
+                </div>
+            </div>
+
+            <div class="compare-section">
+                <h3>GPU 规格</h3>
+                <div class="compare-row">
+                    <div class="compare-cell">是否配备 GPU</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'gpu.available') }">
+                        <span v-if="chip.gpu.available == true">是</span>
+                        <span v-else-if="chip.gpu.available == false">否</span>
+                    </div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">GPU 名称</div>
+                    <div v-for="chip in compareChips" class="compare-cell" :class="{ 'same-as-first': isSame(chip, 'cpu.threads') }">{{ chip.cpu.threads }}</div>
+                </div>
             </div>
         </div>
     </div>
@@ -86,14 +131,17 @@
 <style scoped>
     .compare-container {
         margin: 40px 0;
+        /* overflow: hidden; */
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .compare-table {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
+        min-width: 100%;
         border: 1px solid #ebeef5;
         border-radius: 4px;
-        overflow: hidden;
     }
 
     .compare-section {
@@ -124,7 +172,7 @@
     }
 
     .compare-header .compare-cell {
-        background-color: inherit !important; /* 强制覆盖高亮样式 */
+        background-color: inherit !important; /* 强制覆盖高亮样式，以解决行首被错误高亮 */
         font-weight: normal !important;
     }
 
