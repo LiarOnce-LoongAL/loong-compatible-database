@@ -25,7 +25,13 @@
         "partial": "Partial Support",
         "new_world": "New-world Available",
         "native": "Native Available",
-        "unsupported": "Unsupported"
+        "unsupported": "Unsupported",
+        "chips": {
+            "yes": "Yes",
+            "no": "No",
+            "supported": "Supported",
+            "unsupported": "Unsupported"
+        }
     },
     "status_taginfo_hardware": {
         "unknown": "The hardware's compatibility is unknown and requires you testing",
@@ -41,5 +47,82 @@
         "native": "The application already provides native support for LoongArch or offers source code, eliminating the need for LAT translation",
         "new_world": "The application already provides a new-world ABI version or offers source code, eliminating the need for packages from the old-world",
         "unsupported": "The application is completely unsupported"
+    },
+    "chips": {
+        "buttons": {
+            "add_compare": "Add Compare",
+            "remove_compare": "Remove Compare",
+            "remove": "Remove"
+        },
+        "basic": {
+            "title": "Basic Information",
+            "name": "Product Name",
+            "series": "Product Series",
+            "market": "Market Type",
+            "market_type": {
+                "desktop": "Desktop",
+                "mobile": "Mobile",
+                "server": "Server",
+                "embedded": "Embedded"
+            }
+        },
+        "cpu": {
+            "title": "CPU Specifications",
+            "cores": "Cores",
+            "threads": "Threads",
+            "arch": "Architecture",
+            "freq": "Max Frequency",
+            "l1_inst": "L1 Instruction Cache",
+            "l1_data": "L1 Data Cache",
+            "l2": "L2 Cache (Total)",
+            "l3": "L3 Cache (Shared)",
+            "voltage": "Typical Voltage",
+            "tpc": "Typical Power Consumption",
+            "tdp": "Thermal Design Power"
+        },
+        "gpu": {
+            "title": "GPU Specifications",
+            "avail": "Is GPU available?",
+            "name": "GPU Name"
+        },
+        "memory": {
+            "title": "Memory Specifications",
+            "max": "Max Memory Size",
+            "types": "Memory Types",
+            "channels": "Max Memory Channels",
+            "ecc": "ECC Memory"
+        },
+        "exp": {
+            "title": "Expansion",
+            "io_name": "I/O Interface",
+            "io_rev": "I/O Revision",
+            "lanes": "Lanes",
+            "eth": "Ethernet ",
+            "num": "Num.",
+            "d2d": {
+                "title": "Die-to-Die Interconnect",
+                "tech": "Die-to-Die Technology",
+                "lcl": "Loongson Coherent Link"
+            },
+            "other": "Other Interface" 
+        },
+        "package": {
+            "title": "Package Specifications",
+            "socket": "Socket",
+            "temp": "Temperature",
+            "size": "Package Size"
+        },
+        "power": {
+            "title": "Power Management",
+            "shutdown_of_the_clocks": "Dynamic shutdown of the clocks",
+            "frequency_scaling": "Dynamic frequency scaling",
+            "voltage_scaling": "Dynamic voltage scaling"
+        },
+        "tech": {
+            "title": "Advanced Technologies",
+            "set": "Instruction Set",
+            "set_ext": "Instruction Set Extensions"
+        },
+        "non_product": "Please select products from the left and add it to view the comparison results here"
     }
 }

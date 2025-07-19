@@ -15,6 +15,7 @@ const navbar = [
             { text: "LibLoL Info", link: "/en/liblol/" }
         ],
     },
+    { text: "Chips", link: "/en/chips/" },
     { text: "Contribution", link: "/en/contribution/" }
 ]
 

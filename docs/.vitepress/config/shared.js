@@ -6,6 +6,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { fileURLToPath } from 'url'
 
+
 import { search_locales_zh } from "./zh/main";
 
 export const shared = defineConfig({
@@ -36,6 +37,11 @@ export const shared = defineConfig({
     vite: {
         ssr: {
             noExternal: ["element-plus", "vue-i18n"],
+        },
+        resolve: {
+            alias: {
+                '@': path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../')
+            }
         },
         plugins: [
             AutoImport({

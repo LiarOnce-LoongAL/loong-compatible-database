@@ -4,191 +4,191 @@
     </div>
     <div class="chip-actions">
         <el-button type="primary" @click="toggleCompare">
-            {{ isComparing ? '移除对比' : '加入对比' }}
+            {{ isComparing ? $t('chips.buttons.remove_compare') : $t('chips.buttons.add_compare') }}
         </el-button>
     </div>
     <div class="cpu-table">
-        <h3>基本信息</h3>
+        <h3>{{ $t('chips.basic.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>产品名称</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.basic.name') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.basic.name }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>产品系列</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.basic.series') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.basic.series }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>市场定位</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.basic.market') }}</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.basic.market == true">桌面</span>
-                    <span v-else-if="chipData.basic.market == 2">移动</span>
-                    <span v-else-if="chipData.basic.market == 3">服务器</span>
-                    <span v-else-if="chipData.basic.market == 4">嵌入式</span>
+                    <span v-if="chipData.basic.market == 1"> {{ $t('chips.basic.market_type.desktop') }}</span>
+                    <span v-else-if="chipData.basic.market == 2">{{ $t('chips.basic.market_type.mobile') }}</span>
+                    <span v-else-if="chipData.basic.market == 3">{{ $t('chips.basic.market_type.server') }}</span>
+                    <span v-else-if="chipData.basic.market == 4">{{ $t('chips.basic.market_type.embedded') }}</span>
                 </div>
             </el-col>
         </el-row>
     </div>
 
     <div class="cpu-table">
-        <h3>CPU 规格</h3>
+        <h3>{{ $t('chips.cpu.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>核心数</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.cores') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.cores }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>线程数</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.threads') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.threads }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>微体系结构</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.arch') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.arch }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>最高频率</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.freq') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.freq }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>一级指令缓存</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.l1_inst') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.l1_inst_cache }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>一级数据缓存</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.l1_data') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.l1_data_cache }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>二级缓存(合计)</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.l2') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.l2_cache }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>三级缓存(共享)</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.l3') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.l3_cache }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>典型电压</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.voltage') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.voltage }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>典型功耗</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.tpc') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.tpc }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>热设计功耗</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.cpu.tdp') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.cpu.tdp }}</div></el-col>
         </el-row>
     </div>
 
     <div class="cpu-table">
-        <h3>GPU 规格</h3>
+        <h3>{{ $t('chips.gpu.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>是否配备 GPU</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.gpu.avail') }}</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.gpu.available == true">是</span>
-                    <span v-else-if="chipData.gpu.available == false">否</span>
+                    <span v-if="chipData.gpu.available == true">{{ $t('status.chips.yes') }}</span>
+                    <span v-else-if="chipData.gpu.available == false">{{ $t('status.chips.no') }}</span>
                 </div>
             </el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>GPU 名称</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.gpu.name') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.gpu.name }}</div></el-col>
         </el-row>
     </div>
 
     <div class="cpu-table">
-        <h3>内存规格</h3>
+        <h3>{{ $t('chips.memory.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>最大内存大小</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.memory.max') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.memory.max }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>内存类型</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.memory.types') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.memory.types }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>最大内存通道数</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.memory.channels') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.memory.channels }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>ECC 内存</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.memory.ecc') }}</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.memory.ecc == true">支持</span>
-                    <span v-else-if="chipData.memory.ecc == false">不支持</span>
+                    <span v-if="chipData.memory.ecc == true">{{ $t('status.chips.supported') }}</span>
+                    <span v-else-if="chipData.memory.ecc == false">{{ $t('status.chips.unsupported') }}</span>
                 </div>
             </el-col>
         </el-row>
     </div>
 
     <div class="cpu-table">
-        <h3>扩展性</h3>
+        <h3>{{ $t('chips.exp.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>I/O 通信接口</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.exp.io_name') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.name }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>I/O 通信修订版</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.exp.io_rev') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.rev }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>通道数量</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.exp.lanes') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.lanes }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>USB 3.1 数量</div></el-col>
+            <el-col :span="10"><div>USB 3.1 {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.usb_5gbps }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>USB 2.0 数量</div></el-col>
+            <el-col :span="10"><div>USB 2.0 {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.usb2 }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>SATA 3 数量</div></el-col>
+            <el-col :span="10"><div>SATA 3 {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.sata3 }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>网口数量</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.exp.eth') }}{{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.eth }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>SPI 数量</div></el-col>
+            <el-col :span="10"><div>SPI {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.spi }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>UART 数量</div></el-col>
+            <el-col :span="10"><div>UART {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.uart }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>I2C 数量</div></el-col>
+            <el-col :span="10"><div>I2C {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.i2c }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>GPIO 数量</div></el-col>
+            <el-col :span="10"><div>GPIO {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.gpio }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>AVS 数量</div></el-col>
+            <el-col :span="10"><div>AVS {{ $t('chips.exp.num') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.exp.avs }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>片间互连</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.exp.d2d.title') }}</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.exp.d2d == true">支持</span>
-                    <span v-else-if="chipData.exp.d2d == false">不支持</span>
+                    <span v-if="chipData.exp.d2d == true">{{ $t('status.chips.supported') }}</span>
+                    <span v-else-if="chipData.exp.d2d == false">{{ $t('status.chips.unsupported') }}</span>
                 </div>
             </el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>片间互连技术</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.exp.d2d.tech') }}</div></el-col>
             <el-col :span="10">
-                <div v-if="chipData.exp.d2d_name == 'lcl'">龙链</div>
+                <div v-if="chipData.exp.d2d_name == 'lcl'">{{ $t('chips.exp.d2d.lcl') }}</div>
                 <div v-if="chipData.exp.d2d_name == 'ccnuma'">ccNUMA</div>
                 <div v-else>N/A</div>
             </el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>其他接口</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.exp.other') }}</div></el-col>
             <el-col :span="10">
                 <div v-if="chipData.exp.other">{{ chipData.exp.other }}</div>
                 <div v-else>N/A</div>
@@ -197,13 +197,13 @@
     </div>
 
     <div class="cpu-table">
-        <h3>封装规格</h3>
+        <h3>{{ $t('chips.package.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>插槽</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.package.socket') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.package.socket }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>壳温范围</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.package.temp') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.package.temperature }}</div></el-col>
         </el-row>
         <el-row>
@@ -215,50 +215,50 @@
             <el-col :span="10"><div>{{ chipData.package.t_junction }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>封装尺寸</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.package.size') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.package.size }}</div></el-col>
         </el-row>
     </div>
 
     <div class="cpu-table">
-        <h3>功耗管理</h3>
+        <h3>{{ $t('chips.power.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>时钟动态关闭</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.power.shutdown_of_the_clocks') }}</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.power.shutdown_of_the_clocks == true">支持</span>
-                    <span v-else-if="chipData.power.shutdown_of_the_clocks == false">不支持</span>
+                    <span v-if="chipData.power.shutdown_of_the_clocks == true">{{ $t('status.chips.supported') }}</span>
+                    <span v-else-if="chipData.power.shutdown_of_the_clocks == false">{{ $t('status.chips.unsupported') }}</span>
                 </div>
             </el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>时钟动态变频</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.power.frequency_scaling') }}</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.power.frequency_scaling == true">支持</span>
-                    <span v-else-if="chipData.power.frequency_scaling == false">不支持</span>
+                    <span v-if="chipData.power.frequency_scaling == true">{{ $t('status.chips.supported') }}</span>
+                    <span v-else-if="chipData.power.frequency_scaling == false">{{ $t('status.chips.unsupported') }}</span>
                 </div>
             </el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>主电压域动态调压</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.power.voltage_scaling') }}</div></el-col>
             <el-col :span="10">
                 <div>
-                    <span v-if="chipData.power.voltage_scaling == true">支持</span>
-                    <span v-else-if="chipData.power.voltage_scaling == false">不支持</span>
+                    <span v-if="chipData.power.voltage_scaling == true">{{ $t('status.chips.supported') }}</span>
+                    <span v-else-if="chipData.power.voltage_scaling == false">{{ $t('status.chips.unsupported') }}</span>
                 </div>
             </el-col>
         </el-row>
     </div>
 
     <div class="cpu-table">
-        <h3>先进技术</h3>
+        <h3>{{ $t('chips.tech.title') }}</h3>
         <el-row>
-            <el-col :span="10"><div>指令集</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.tech.set') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.technologies.set }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>指令集扩展</div></el-col>
+            <el-col :span="10"><div>{{ $t('chips.tech.set_ext') }}</div></el-col>
             <el-col :span="10"><div>{{ chipData.technologies.set_extensions }}</div></el-col>
         </el-row>
     </div>

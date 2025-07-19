@@ -5,6 +5,7 @@ import { sidebar_hardwares } from "./sidebar_hardwares";
 import { sidebar_lat } from "./sidebar_lat";
 import { sidebar_liblol } from "./sidebar_liblol";
 import { sidebar_contribution } from "./sidebar_contribution";
+import { sidebar_chips } from "./sidebar_chips";
 
 export const en = defineConfig({
     lang: "en",
@@ -40,6 +41,7 @@ export const en = defineConfig({
                     items: sidebar_contribution,
                 },
             ],
+            "/en/chips/": sidebar_chips,
         }
     },
 });

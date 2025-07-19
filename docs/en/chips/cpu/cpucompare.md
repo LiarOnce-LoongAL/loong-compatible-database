@@ -4,7 +4,7 @@ aside: false
 prev: false
 next: false
 ---
-# CPU 对比
+# CPU Compare
 
 ::: raw
 <ClientOnly>

@@ -1,19 +1,19 @@
 <template>
     <div v-if="compareChips.length > 0" class="compare-container">
         <div class="compare-table">
-            <div class="compare-row compare-header">
+            <div class="compare-row compare-header"><!-- 产品名称 -->
                 <div class="compare-cell"></div>
                 <div v-for="chip in compareChips" :key="chip.basic.name" class="compare-cell">
                     <img :src="chip.ext_info.pic" style="max-width: 100px; margin-bottom: 10px" />
                     <h3>{{ chip.basic.name }}</h3>
-                    <el-button type="danger" size="small" @click="removeFromCompare(chip.basic.name)"> 删除 </el-button>
+                    <el-button type="danger" size="small" @click="removeFromCompare(chip.basic.name)">{{ $t('chips.buttons.remove') }}</el-button>
                 </div>
             </div>
 
-            <div class="compare-section">
-                <h3>基本信息</h3>
+            <div class="compare-section"><!-- 基本信息 -->
+                <h3>{{ $t('chips.basic.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">产品系列</div>
+                    <div class="compare-cell">{{ $t('chips.basic.name') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -23,24 +23,24 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">市场定位</div>
+                    <div class="compare-cell">{{ $t('chips.basic.market') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'basic.market') }"
                     >
-                        <span v-if="chip.basic.market == 1">桌面</span>
-                        <span v-else-if="chip.basic.market == 2">移动</span>
-                        <span v-else-if="chip.basic.market == 3">服务器</span>
-                        <span v-else-if="chip.basic.market == 4">嵌入式</span>
+                        <span v-if="chip.basic.market == 1">{{ $t('chips.basic.market_type.desktop') }}</span>
+                        <span v-else-if="chip.basic.market == 2">{{ $t('chips.basic.market_type.mobile') }}</span>
+                        <span v-else-if="chip.basic.market == 3">{{ $t('chips.basic.market.type.server') }}</span>
+                        <span v-else-if="chip.basic.market == 4">{{ $t('chips.basic.market_type.embedded') }}</span>
                     </div>
                 </div>
             </div>
 
-            <div class="compare-section">
-                <h3>CPU 规格</h3>
+            <div class="compare-section"><!-- CPU 参数 -->
+                <h3>{{ $t('chips.cpu.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">核心数</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.cores') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">线程数</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.threads') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">微体系结构</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.arch') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">最高频率</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.freq') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">一级指令缓存</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l1_inst') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">一级数据缓存</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l1_data') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">二级缓存(合计)</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l2') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">三级缓存(共享)</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l3') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">典型电压</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.voltage') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">典型功耗</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.tpc') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">热设计功耗</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.tdp') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -151,21 +151,21 @@
                 </div>
             </div>
 
-            <div class="compare-section">
-                <h3>GPU 规格</h3>
+            <div class="compare-section"><!-- GPU 参数 -->
+                <h3>{{ $t('chips.gpu.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">是否配备 GPU</div>
+                    <div class="compare-cell">{{ $t('chips.gpu.avail') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'gpu.available') }"
                     >
-                        <span v-if="chip.gpu.available == true">是</span>
-                        <span v-else-if="chip.gpu.available == false">否</span>
+                        <span v-if="chip.gpu.available == true">{{ $t('status.chips.yes') }}</span>
+                        <span v-else-if="chip.gpu.available == false">{{ $t('status.chips.no') }}</span>
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">GPU 名称</div>
+                    <div class="compare-cell">{{ $t('chips.gpu.name') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -176,10 +176,55 @@
                 </div>
             </div>
 
-            <div class="compare-section">
-                <h3>扩展性</h3>
+            <div class="compare-section"><!-- 内存参数 -->
+                <h3>{{ $t('chips.memory.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">I/O 通信接口</div>
+                    <div class="compare-cell">{{ $t('chips.memory.max') }}</div>
+                    <div
+                        v-for="chip in compareChips"
+                        class="compare-cell"
+                        :class="{ 'same-as-first': isSame(chip, 'memory.max') }"
+                    >
+                        {{ chip.memory.max }}
+                    </div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">{{ $t('chips.memory.types') }}</div>
+                    <div
+                        v-for="chip in compareChips"
+                        class="compare-cell"
+                        :class="{ 'same-as-first': isSame(chip, 'memory.types') }"
+                    >
+                        {{ chip.memory.types }}
+                    </div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">{{ $t('chips.memory.channels') }}</div>
+                    <div
+                        v-for="chip in compareChips"
+                        class="compare-cell"
+                        :class="{ 'same-as-first': isSame(chip, 'memory.channels') }"
+                    >
+                        {{ chip.memory.channels }}
+                    </div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell">{{ $t('chips.memory.ecc') }}</div>
+                    <div
+                        v-for="chip in compareChips"
+                        class="compare-cell"
+                        :class="{ 'same-as-first': isSame(chip, 'memory.ecc') }"
+                    >
+                        <span v-if="chip.memory.ecc == true">{{ $t('status.chips.supported') }}</span>
+                        <span v-else-if="chip.memory.ecc == false">{{ $t('status.chips.unsupported') }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="compare-section"><!-- 扩展性 -->
+                <h3>{{ $t('chips.exp.title') }}</h3>
+                <div class="compare-row">
+                    <div class="compare-cell">{{ $t('chips.exp.io_name') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -189,7 +234,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">I/O 通信修订版</div>
+                    <div class="compare-cell">{{ $t('chips.exp.io_rev') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -199,7 +244,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">通道数量</div>
+                    <div class="compare-cell">{{ $t('chips.exp.lanes') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -209,7 +254,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">USB 3.1 数量</div>
+                    <div class="compare-cell">USB 3.1 {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -219,7 +264,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">USB 2.0 数量</div>
+                    <div class="compare-cell">USB 2.0 {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -229,7 +274,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">SATA 3 数量</div>
+                    <div class="compare-cell">SATA 3 {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -239,7 +284,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">网口数量</div>
+                    <div class="compare-cell">{{ $t('chips.exp.eth') }}{{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -249,7 +294,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">SPI 数量</div>
+                    <div class="compare-cell">SPI {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -259,7 +304,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">UART 数量</div>
+                    <div class="compare-cell">UART {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -269,7 +314,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">I2C 数量</div>
+                    <div class="compare-cell">I2C {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -279,7 +324,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">GPIO 数量</div>
+                    <div class="compare-cell">GPIO {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -289,7 +334,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">AVS 数量</div>
+                    <div class="compare-cell">AVS {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -299,30 +344,30 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">片间互连</div>
+                    <div class="compare-cell">{{ $t('chips.exp.d2d.title') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'exp.d2d') }"
                     >
-                        <span v-if="chip.exp.d2d == true">是</span>
-                        <span v-else-if="chip.exp.d2d == false">否</span>
+                        <span v-if="chip.exp.d2d == true">{{ $t('status.chips.supported') }}</span>
+                        <span v-else-if="chip.exp.d2d == false">{{ $t('status.chips.unsupported') }}</span>
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">片间互连技术</div>
+                    <div class="compare-cell">{{ $t('chips.exp.d2d.tech') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'exp.d2d_name') }"
                     >
-                        <span v-if="chip.exp.d2d_name == 'lcl'">龙链</span>
+                        <span v-if="chip.exp.d2d_name == 'lcl'">{{ $t('chips.exp.d2d.lcl') }}</span>
                         <span v-else-if="chip.exp.d2d_name == 'ccnuma'">ccNUMA</span>
                         <span v-else>N/A</span>
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">其他接口</div>
+                    <div class="compare-cell">{{ $t('chips.exp.other') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -334,10 +379,10 @@
                 </div>
             </div>
 
-            <div class="compare-section">
-                <h3>封装规格</h3>
+            <div class="compare-section"><!-- 封装 -->
+                <h3>{{ $t('chips.package.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">插槽</div>
+                    <div class="compare-cell">{{ $t('chips.package.socket') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -347,7 +392,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">壳温范围</div>
+                    <div class="compare-cell">{{ $t('chips.package.temp') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -377,7 +422,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">封装尺寸</div>
+                    <div class="compare-cell">{{ $t('chips.package.size') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -388,47 +433,47 @@
                 </div>
             </div>
 
-            <div class="compare-section">
-                <h3>功耗管理</h3>
+            <div class="compare-section"><!-- 功耗管理 -->
+                <h3>{{ $t('chips.power.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">时钟动态关闭</div>
+                    <div class="compare-cell">{{ $t('chips.power.shutdown_of_the_clocks') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'power.shutdown_of_the_clocks') }"
                     >
-                        <span v-if="chip.power.shutdown_of_the_clocks == true">支持</span>
-                        <span v-else-if="chip.power.shutdown_of_the_clocks == false">不支持</span>
+                        <span v-if="chip.power.shutdown_of_the_clocks == true">{{ $t('status.chips.supported') }}</span>
+                        <span v-else-if="chip.power.shutdown_of_the_clocks == false">{{ $t('status.chips.unsupported') }}</span>
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">时钟动态变频</div>
+                    <div class="compare-cell">{{ $t('chips.power.frequency_scaling') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'power.frequency_scaling') }"
                     >
-                        <span v-if="chip.power.frequency_scaling == true">支持</span>
-                        <span v-else-if="chip.power.frequency_scaling == false">不支持</span>
+                        <span v-if="chip.power.frequency_scaling == true">{{ $t('status.chips.supported') }}</span>
+                        <span v-else-if="chip.power.frequency_scaling == false">{{ $t('status.chips.unsupported') }}</span>
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">主电压域动态调压</div>
+                    <div class="compare-cell">{{ $t('chips.power.voltage_scaling') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'power.voltage_scaling') }"
                     >
-                        <span v-if="chip.power.voltage_scaling == true">支持</span>
-                        <span v-else-if="chip.power.voltage_scaling == false">不支持</span>
+                        <span v-if="chip.power.voltage_scaling == true">{{ $t('status.chips.supported') }}</span>
+                        <span v-else-if="chip.power.voltage_scaling == false">{{ $t('status.chips.unsupported') }}</span>
                     </div>
                 </div>
             </div>
 
-            <div class="compare-section">
-                <h3>先进技术</h3>
+            <div class="compare-section"><!-- 支持技术 -->
+                <h3>{{ $t('chips.tech.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">指令集</div>
+                    <div class="compare-cell">{{ $t('chips.tech.set') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -438,7 +483,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">指令集扩展</div>
+                    <div class="compare-cell">{{ $t('chips.tech.set_ext') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -451,7 +496,7 @@
         </div>
     </div>
     <div v-else class="compare-container">
-        <p>请从左侧选择产品并添加，以在此查看对比结果</p>
+        <p>{{ $t('chips.non_product') }}</p>
     </div>
 </template>
 
@@ -459,26 +504,30 @@
     import { ref, computed, onMounted } from "vue";
     import chipsJson from "../../../../data/chips.min.json";
 
+    // 初始化 LocalStorage
     const compareList = ref(JSON.parse(localStorage.getItem("cpuCompareList")) || []);
 
     const compareChips = computed(() => {
         return compareList.value.map(chipId => chipsJson.cpu[chipId]);
     });
 
+    // 删除对比选项
     const removeFromCompare = chipName => {
         compareList.value = compareList.value.filter(id => chipsJson.cpu[id].basic.name !== chipName);
         localStorage.setItem("cpuCompareList", JSON.stringify(compareList.value));
     };
 
+    // 获取键值
+    const getFieldValue = (chip, path) => {
+        return path.split(".").reduce((obj, key) => (obj ? obj[key] : null), chip);
+    };
+
+    // 判断是否相同
     const isSame = (chip, fieldPath) => {
         if (!compareChips.value.length || !fieldPath) return true;
         const firstValue = getFieldValue(compareChips.value[0], fieldPath);
         const currentValue = getFieldValue(chip, fieldPath);
         return JSON.stringify(firstValue) === JSON.stringify(currentValue);
-    };
-
-    const getFieldValue = (chip, path) => {
-        return path.split(".").reduce((obj, key) => (obj ? obj[key] : null), chip);
     };
 </script>
 
@@ -535,6 +584,6 @@
     }
 
     .compare-cell:not(:first-child):not(.same-as-first) {
-        background-color: #fff8e1;
+        background-color: #fff8e1;  
     }
 </style>
