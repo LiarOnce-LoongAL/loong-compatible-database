@@ -13,8 +13,14 @@ export const shared = defineConfig({
     i18nRouting: true,
     themeConfig: {
         footer: {
-            message: 'CC BY-SA 4.0 International<br /><a href="https://beian.miit.gov.cn" target="_blank">鄂ICP备2022017735号-10</a>',
-            copyright: 'Copyright © 2023-2025 <a href="https://github.com/LiarOnce" target="_blank">LiarOnce</a>'
+            message: `
+                本项目与任何营利性实体均利益无关，本站内容中提及的商标均为相应拥有者的财产。<br />
+                This project is unaffiliated with any for-profit entity. All trademarks referenced herein are property of their respective holders.
+            `,
+            copyright: `
+                CC BY-SA 4.0 International <a href="https://beian.miit.gov.cn" target="_blank">鄂ICP备2022017735号-10</a>
+                <br />Copyright © 2023-2025 <a href="https://github.com/LiarOnce" target="_blank">LiarOnce</a>
+            `
         },
         search: {
             provider: "local",
