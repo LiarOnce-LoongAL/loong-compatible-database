@@ -1,6 +1,6 @@
 const navbar = [
     { text: "主页", link: "/" },
-    { text: "社区动态", link: "/posts/" },
+    // { text: "社区动态", link: "/posts/" },
     {
         text: "兼容性列表",
         items: [

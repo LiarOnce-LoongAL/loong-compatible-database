@@ -3,6 +3,7 @@ const sidebar_chips = [
         text: "CPU",
         collapsed: false,
         items: [
+            { text: 'CPU 对比', link: '/chips/cpu/cpucompare' },
             {
                 text: '3A6000',
                 base: "/chips/cpu/3a6000/",

@@ -10,7 +10,7 @@ ext_info:
 
 cpu: 
   cores: 8
-  threads: 16
+  threads: 8
   arch: "LA364E"
   freq: "2.5 GHz"
   l1_inst_cache: "64 KB"

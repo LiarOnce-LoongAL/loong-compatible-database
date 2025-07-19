@@ -12,6 +12,8 @@ import newWorldBadge from './components/badges/newWorld.vue'
 import unknownBadge from './components/badges/unknown.vue'
 import unsupportedBadge from './components/badges/unsupported.vue'
 
+import CpuCompare from "./components/compare/CpuCompare.vue";
+
 import i18n from "./i18n";
 import Layout from "./components/Layout.vue";
 
@@ -46,5 +48,7 @@ export default {
         ctx.app.component("NewWorld", newWorldBadge);
         ctx.app.component("Unknown", unknownBadge);
         ctx.app.component("Unsupported", unsupportedBadge);
+
+        ctx.app.component("CpuCompare", CpuCompare);
     },
 };

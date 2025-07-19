@@ -2,6 +2,11 @@
     <div class="chips-pic" style="margin-top: 20px;">
         <img :src="chipData.ext_info.pic" />
     </div>
+    <div class="chip-actions">
+        <el-button type="primary" @click="toggleCompare">
+            {{ isComparing ? '移除对比' : '加入对比' }}
+        </el-button>
+    </div>
     <div id="cpu-table-basic">
         <h3>基本信息</h3>
         <el-row>
@@ -280,7 +285,7 @@
 </template>
 
 <script setup>
-    import { ref } from "vue";
+    import { ref, computed } from "vue";
     import chipsJson from "../../../../data/chips.min.json";
     const current_lang = document.documentElement.lang;
 
@@ -288,6 +293,26 @@
         chips: String
     });
     const chipData = ref(chipsJson.cpu[props.chips]);
+
+    const compareList = ref(JSON.parse(localStorage.getItem('cpuCompareList') || '[]'));
+    
+    const isComparing = computed(() => {
+        return compareList.value.includes(props.chips);
+    });
+
+    const toggleCompare = () => {
+        if (isComparing.value) {
+            compareList.value = compareList.value.filter(id => id !== props.chips);
+        } else {
+            if (compareList.value.length < 4) { // Limit to 4 chips for comparison
+                compareList.value.push(props.chips);
+            } else {
+                alert('Maximum 4 chips can be compared at once');
+                return;
+            }
+        }
+        localStorage.setItem('cpuCompareList', JSON.stringify(compareList.value));
+    };
 </script>
 
 <style lang="css" scoped>
