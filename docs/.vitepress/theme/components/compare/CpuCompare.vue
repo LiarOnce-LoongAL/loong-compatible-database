@@ -3,7 +3,7 @@
         <div class="compare-table">
             <div class="compare-row compare-header"><!-- 产品名称 -->
                 <div class="compare-cell"></div>
-                <div v-for="chip in compareChips" :key="chip.basic.name" class="compare-cell">
+                <div v-for="chip in compareChips" :key="chip.basic.name" class="compare-cell compare-never">
                     <img :src="chip.ext_info.pic" style="max-width: 100px; margin-bottom: 10px" />
                     <h3>{{ chip.basic.name }}</h3>
                     <el-button type="danger" size="small" @click="removeFromCompare(chip.basic.name)">{{ $t('chips.buttons.remove') }}</el-button>
@@ -13,11 +13,10 @@
             <div class="compare-section"><!-- 基本信息 -->
                 <h3>{{ $t('chips.basic.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.basic.name') }}</div>
+                    <div class="compare-cell">{{ $t('chips.basic.series') }}</div>
                     <div
                         v-for="chip in compareChips"
-                        class="compare-cell"
-                        :class="{ 'same-as-first': isSame(chip, 'basic.series') }"
+                        class="compare-cell compare-never"
                     >
                         {{ chip.basic.series }}
                     </div>
@@ -26,8 +25,7 @@
                     <div class="compare-cell">{{ $t('chips.basic.market') }}</div>
                     <div
                         v-for="chip in compareChips"
-                        class="compare-cell"
-                        :class="{ 'same-as-first': isSame(chip, 'basic.market') }"
+                        class="compare-cell compare-never"
                     >
                         <span v-if="chip.basic.market == 1">{{ $t('chips.basic.market_type.desktop') }}</span>
                         <span v-else-if="chip.basic.market == 2">{{ $t('chips.basic.market_type.mobile') }}</span>
@@ -574,16 +572,15 @@
         position: relative;
     }
 
-    .compare-header .compare-cell {
-        background-color: inherit !important; /* 强制覆盖高亮样式，以解决行首被错误高亮 */
-        font-weight: normal !important;
-    }
-
     .compare-cell:last-child {
         border-right: none;
     }
 
     .compare-cell:not(:first-child):not(.same-as-first) {
-        background-color: #fff8e1;  
+        background-color: #fff8e1;
+    }
+
+    .compare-never {
+        background-color: inherit !important; /* 强制覆盖高亮样式，以解决部分行被错误高亮 */
     }
 </style>
