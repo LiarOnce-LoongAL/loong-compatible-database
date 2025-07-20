@@ -31,7 +31,7 @@
                     >
                         <span v-if="chip.basic.market == 1">{{ $t('chips.basic.market_type.desktop') }}</span>
                         <span v-else-if="chip.basic.market == 2">{{ $t('chips.basic.market_type.mobile') }}</span>
-                        <span v-else-if="chip.basic.market == 3">{{ $t('chips.basic.market.type.server') }}</span>
+                        <span v-else-if="chip.basic.market == 3">{{ $t('chips.basic.market_type.server') }}</span>
                         <span v-else-if="chip.basic.market == 4">{{ $t('chips.basic.market_type.embedded') }}</span>
                     </div>
                 </div>

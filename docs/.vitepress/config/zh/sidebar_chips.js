@@ -33,6 +33,18 @@ const sidebar_chips = [
                     { text: '3C6000/Q', link: '3C6000-Q' }
                 ]
             },
+            {
+                text: '3A5000',
+                base: "/chips/cpu/3a5000/",
+                items: [
+                    { text: '3A5000-HV', link: '3A5000-HV' },
+                    { text: '3A5000-LL', link: '3A5000-LL' },
+                    { text: '3A5000-i', link: '3A5000-i' },
+                    { text: '3A5000-iHV', link: '3A5000-iHV' },
+                    { text: '3A5000M', link: '3A5000M' },
+                    { text: '3B5000', link: '3B5000' }
+                ]
+            },
         ]
     }
 ];

@@ -27,4 +27,5 @@ cpu.forEach(files => {
     chips.cpu[basename(files, extname(files))] = jsonResult
 })
 
+fs.writeFileSync(__dirname + "/chips.json", JSON.stringify(chips, null, "\t"))
 fs.writeFileSync(__dirname + "/chips.min.json", JSON.stringify(chips))

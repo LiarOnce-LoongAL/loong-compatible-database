@@ -20,6 +20,10 @@ cpu:
   tpc: ""
   tdp: ""
 
+gpu:
+  available: false
+  name: "N/A"
+  
 memory:
   max: ""
   types: ""
