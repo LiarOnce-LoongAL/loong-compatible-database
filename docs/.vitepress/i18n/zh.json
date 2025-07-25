@@ -105,7 +105,7 @@
             "uart": "UART 数量",
             "i2c": "I2C 数量",
             "avs": "AVS 数量",
-            "gpio": "GPIO",
+            "gpio": "GPIO 数量",
             "num": "数量",
             "d2d": {
                 "title": "片间互联",
