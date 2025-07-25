@@ -72,17 +72,17 @@
             "threads": "线程数",
             "arch": "微体系结构",
             "freq": "最高频率",
-            "l1_inst": "一级指令缓存",
-            "l1_data": "一级数据缓存",
-            "l2": "二级缓存(合计)",
-            "l3": "三级缓存(共享)",
+            "l1_inst_cache": "一级指令缓存",
+            "l1_data_cache": "一级数据缓存",
+            "l2_cache": "二级缓存(合计)",
+            "l3_cache": "三级缓存(共享)",
             "voltage": "典型电压",
             "tpc": "典型功耗",
             "tdp": "热设计功耗"
         },
         "gpu": {
             "title": "GPU 规格",
-            "avail": "是否配备 GPU",
+            "available": "是否配备 GPU",
             "name": "GPU 名称"
         },
         "memory": {
@@ -97,11 +97,19 @@
             "io_name": "I/O 通信接口",
             "io_rev": "I/O 通信修订版",
             "lanes": "通道",
-            "eth": "网口",
+            "usb_5gbps": "USB 5Gbps 数量",
+            "usb2": "USB 2.0 数量",
+            "sata3": "SATA3 数量",
+            "eth": "网口数量",
+            "spi": "SPI 数量",
+            "uart": "UART 数量",
+            "i2c": "I2C 数量",
+            "avs": "AVS 数量",
+            "gpio": "GPIO",
             "num": "数量",
             "d2d": {
                 "title": "片间互联",
-                "tech": "片间互联技术",
+                "d2d_name": "片间互联技术",
                 "lcl": "龙链"
             },
             "other": "其他接口" 
@@ -109,7 +117,7 @@
         "package": {
             "title": "封装规格",
             "socket": "插槽",
-            "temp": "壳温范围",
+            "temperature": "壳温范围",
             "size": "封装尺寸"
         },
         "power": {
@@ -121,7 +129,7 @@
         "tech": {
             "title": "先进技术",
             "set": "指令集",
-            "set_ext": "指令集扩展"
+            "set_extensions": "指令集扩展"
         },
         "non_product": "请从左侧选择产品并添加，以在此查看对比结果"
     }

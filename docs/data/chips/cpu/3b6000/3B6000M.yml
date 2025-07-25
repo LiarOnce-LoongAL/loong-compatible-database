@@ -31,8 +31,8 @@ memory:
   ecc: false
 
 exp:
-  name: "PCI Express"
-  rev: "3.0"
+  io_name: "PCI Express"
+  io_rev: "3.0"
   lanes: 8-Lanes
   usb_5gbps: 4
   usb2: 4

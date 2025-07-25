@@ -31,8 +31,8 @@ memory:
   ecc: true # true=支持 false=不支持
 
 exp:
-  name: ""
-  rev: ""
+  io_name: ""
+  io_rev: ""
   lanes: 
   usb_5gbps: 
   usb2: 

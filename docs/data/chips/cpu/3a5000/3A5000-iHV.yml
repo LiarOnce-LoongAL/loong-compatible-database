@@ -32,7 +32,7 @@ memory:
 
 exp:
     name: "HyperTransport"
-    rev: "3.0"
+    io_rev: "3.0"
     lanes: 32-Lanes (2 * 16-Lanes)
     usb_5gbps: 0
     usb2: 0

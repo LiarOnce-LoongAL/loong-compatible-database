@@ -72,17 +72,17 @@
             "threads": "Threads",
             "arch": "Architecture",
             "freq": "Max Frequency",
-            "l1_inst": "L1 Instruction Cache",
-            "l1_data": "L1 Data Cache",
-            "l2": "L2 Cache (Total)",
-            "l3": "L3 Cache (Shared)",
+            "l1_inst_cache": "L1 Instruction Cache",
+            "l1_data_cache": "L1 Data Cache",
+            "l2_cache": "L2 Cache (Total)",
+            "l3_cache": "L3 Cache (Shared)",
             "voltage": "Typical Voltage",
             "tpc": "Typical Power Consumption",
             "tdp": "Thermal Design Power"
         },
         "gpu": {
             "title": "GPU Specifications",
-            "avail": "Is GPU available?",
+            "available": "Is GPU available?",
             "name": "GPU Name"
         },
         "memory": {
@@ -97,11 +97,11 @@
             "io_name": "I/O Interface",
             "io_rev": "I/O Revision",
             "lanes": "Lanes",
-            "eth": "Ethernet ",
+            "eth": "Ethernet Num.",
             "num": "Num.",
             "d2d": {
                 "title": "Die-to-Die Interconnect",
-                "tech": "Die-to-Die Technology",
+                "d2d_name": "Die-to-Die Technology",
                 "lcl": "Loongson Coherent Link"
             },
             "other": "Other Interface" 
@@ -109,7 +109,7 @@
         "package": {
             "title": "Package Specifications",
             "socket": "Socket",
-            "temp": "Temperature",
+            "temperature": "Temperature",
             "size": "Package Size"
         },
         "power": {
@@ -121,7 +121,7 @@
         "tech": {
             "title": "Advanced Technologies",
             "set": "Instruction Set",
-            "set_ext": "Instruction Set Extensions"
+            "set_extensions": "Instruction Set Extensions"
         },
         "non_product": "Please select products from the left and add it to view the comparison results here"
     }
