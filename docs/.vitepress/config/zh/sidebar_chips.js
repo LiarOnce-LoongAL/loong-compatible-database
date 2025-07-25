@@ -6,6 +6,7 @@ const sidebar_chips = [
             { text: 'CPU 对比', link: '/chips/cpu/cpucompare' },
             {
                 text: '3A6000',
+                collapsed: true,
                 base: "/chips/cpu/3a6000/",
                 items: [
                     { text: '3A6000-HV', link: '3A6000-HV' },
@@ -17,6 +18,7 @@ const sidebar_chips = [
             },
             {
                 text: '3B6000',
+                collapsed: true,
                 base: "/chips/cpu/3b6000/",
                 items: [
                     { text: '3B6000-8(暂定)', link: '3B6000-8' },
@@ -26,6 +28,7 @@ const sidebar_chips = [
             },
             {
                 text: '3C6000',
+                collapsed: true,
                 base: "/chips/cpu/3c6000/",
                 items: [
                     { text: '3C6000/S', link: '3C6000-S' },
@@ -35,6 +38,7 @@ const sidebar_chips = [
             },
             {
                 text: '3A5000',
+                collapsed: true,
                 base: "/chips/cpu/3a5000/",
                 items: [
                     { text: '3A5000-HV', link: '3A5000-HV' },
@@ -45,6 +49,18 @@ const sidebar_chips = [
                     { text: '3B5000', link: '3B5000' }
                 ]
             },
+            {
+                text: '3C5000',
+                collapsed: true,
+                base: "/chips/cpu/3c5000/",
+                items: [
+                    { text: '3C5000', link: '3C5000' },
+                    { text: '3C5000L', link: '3C5000L' },
+                    { text: '3C5000-LL', link: '3C5000-LL' },
+                    { text: '3C5000L-LL', link: '3C5000L-LL' },
+                    { text: '3D5000', link: '3D5000' }
+                ]
+            }
         ]
     }
 ];

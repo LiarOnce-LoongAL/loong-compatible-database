@@ -1,24 +1,24 @@
 basic:
-  name: 3C6000/S
-  series: 3C6000
+  name: 3C5000L-LL
+  series: 3C5000
   market: 3
   
 ext_info: 
-  pic: "/images/chips/cpu/3C6000S.webp"
+  pic: "/images/chips/cpu/3C5000L.webp"
   manual: ""
 
 cpu: 
   cores: 16
-  threads: 32
-  arch: "LA664"
-  freq: "2.2 GHz"
+  threads: 16
+  arch: "LA464"
+  freq: "2.0 GHz"
   l1_inst_cache: "64 KB"
   l1_data_cache: "64 KB"
   l2_cache: "4 MB (256 KB * 16)"
-  l3_cache: "32 MB"
-  voltage: "N/A"
-  tpc: "100 W - 120 W"
-  tdp: "N/A"
+  l3_cache: "64 MB (16 MB * 4)"
+  voltage: "1.15 V"
+  tpc: "125 W"
+  tdp: "160 W"
 
 gpu:
   available: false
@@ -31,9 +31,9 @@ memory:
   ecc: true
 
 exp:
-  io_name: "PCI Express"
-  io_rev: "4.0/3.0"
-  lanes: 64-Lanes (4 * 16-Lanes)
+  io_name: "HyperTransport"
+  io_rev: "3.0"
+  lanes: 32-Lanes (4 * 8-Lanes)
   usb_5gbps: 0
   usb2: 0
   sata3: 0
@@ -41,17 +41,17 @@ exp:
   spi: 1
   uart: 1
   i2c: 3
-  avs: 1
   gpio: 16
+  avs: 1
   d2d: true
-  d2d_name: lcl
+  d2d_name: ccnuma
 
 package:
   socket: "FCBGA2422"
-  temperature: "N/A"
-  t_case: "N/A"
-  t_junction: "N/A"
-  size: "N/A"
+  temperature: "0 - 70℃"
+  t_case: "70℃"
+  t_junction: "85℃"
+  size: "49.9 mm * 49.9 mm"
 
 power:
   shutdown_of_the_clocks: true

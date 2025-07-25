@@ -11,7 +11,7 @@ cpu:
   cores: 32
   threads: 64
   arch: "LA664"
-  freq: "2.1GHz"
+  freq: "2.1 GHz"
   l1_inst_cache: "64 KB"
   l1_data_cache: "64 KB"
   l2_cache: "8 MB (256 KB * 16 * 2)"

@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.cpu.l1_inst') }}</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l1_inst_cache') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.cpu.l1_data') }}</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l1_data_cache') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.cpu.l2') }}</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l2_cache') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.cpu.l3') }}</div>
+                    <div class="compare-cell">{{ $t('chips.cpu.l3_cache') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -152,7 +152,7 @@
             <div class="compare-section"><!-- GPU 参数 -->
                 <h3>{{ $t('chips.gpu.title') }}</h3>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.gpu.avail') }}</div>
+                    <div class="compare-cell">{{ $t('chips.gpu.available') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -228,7 +228,7 @@
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'exp.name') }"
                     >
-                        {{ chip.exp.name }}
+                        {{ chip.exp.io_name }}
                     </div>
                 </div>
                 <div class="compare-row">
@@ -238,7 +238,7 @@
                         class="compare-cell"
                         :class="{ 'same-as-first': isSame(chip, 'exp.rev') }"
                     >
-                        {{ chip.exp.rev }}
+                        {{ chip.exp.io_rev }}
                     </div>
                 </div>
                 <div class="compare-row">
@@ -353,7 +353,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.exp.d2d.tech') }}</div>
+                    <div class="compare-cell">{{ $t('chips.exp.d2d.d2d_name') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -390,7 +390,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.package.temp') }}</div>
+                    <div class="compare-cell">{{ $t('chips.package.temperature') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
@@ -481,7 +481,7 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">{{ $t('chips.tech.set_ext') }}</div>
+                    <div class="compare-cell">{{ $t('chips.tech.set_extensions') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
