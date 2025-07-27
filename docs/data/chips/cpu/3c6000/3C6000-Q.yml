@@ -17,7 +17,7 @@ cpu:
   l2_cache: "16 MB (256 KB * 16 * 4)"
   l3_cache: "128 MB (32 MB * 4)"
   voltage: "N/A"
-  tpc: "250 W - 300 W"
+  tpc: "300 W"
   tdp: "N/A"
 
 gpu:
@@ -36,7 +36,7 @@ exp:
   lanes: 128-Lanes
   usb_5gbps: 0
   usb2: 0
-  sata3: 0
+  sata: 0
   eth: 0
   spi: 1
   uart: 1

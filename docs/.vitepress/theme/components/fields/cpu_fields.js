@@ -33,7 +33,7 @@ export default {
         lanes: 'lanes',
         usb_5gbps: 'usb_5gbps',
         usb2: 'usb2',
-        sata3: 'sata3',
+        sata: 'sata',
         eth: 'eth',
         spi: 'spi',
         uart: 'uart',

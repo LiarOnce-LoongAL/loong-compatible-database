@@ -143,8 +143,8 @@
             <el-col :span="10"><div>{{ chipData.exp.usb2 }}</div></el-col>
         </el-row>
         <el-row>
-            <el-col :span="10"><div>SATA 3 {{ $t('chips.exp.num') }}</div></el-col>
-            <el-col :span="10"><div>{{ chipData.exp.sata3 }}</div></el-col>
+            <el-col :span="10"><div>SATA{{ $t('chips.exp.num') }}</div></el-col>
+            <el-col :span="10"><div>{{ chipData.exp.sata }}</div></el-col>
         </el-row>
         <el-row>
             <el-col :span="10"><div>{{ $t('chips.exp.eth') }}{{ $t('chips.exp.num') }}</div></el-col>

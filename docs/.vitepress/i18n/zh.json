@@ -99,7 +99,7 @@
             "lanes": "通道",
             "usb_5gbps": "USB 5Gbps 数量",
             "usb2": "USB 2.0 数量",
-            "sata3": "SATA3 数量",
+            "sata": "SATA 数量",
             "eth": "网口数量",
             "spi": "SPI 数量",
             "uart": "UART 数量",

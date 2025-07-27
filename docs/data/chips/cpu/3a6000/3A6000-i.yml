@@ -36,7 +36,7 @@ exp:
   lanes: 16-Lanes
   usb_5gbps: 0
   usb2: 0
-  sata3: 0
+  sata: 0
   eth: 0
   spi: 1
   uart: 1

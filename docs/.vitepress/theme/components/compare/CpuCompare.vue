@@ -272,13 +272,13 @@
                     </div>
                 </div>
                 <div class="compare-row">
-                    <div class="compare-cell">SATA 3 {{ $t('chips.exp.num') }}</div>
+                    <div class="compare-cell">SATA {{ $t('chips.exp.num') }}</div>
                     <div
                         v-for="chip in compareChips"
                         class="compare-cell"
-                        :class="{ 'same-as-first': isSame(chip, 'exp.sata3') }"
+                        :class="{ 'same-as-first': isSame(chip, 'exp.sata') }"
                     >
-                        {{ chip.exp.sata3 }}
+                        {{ chip.exp.sata }}
                     </div>
                 </div>
                 <div class="compare-row">

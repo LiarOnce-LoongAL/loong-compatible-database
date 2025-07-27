@@ -99,7 +99,7 @@
             "lanes": "Lanes",
             "usb_5gbps": "USB 5Gbps Num.",
             "usb2": "USB 2.0 Num.",
-            "sata3": "SATA3 Num.",
+            "sata": "SATA Num.",
             "eth": "Ethernet Num.",
             "spi": "SPI Num.",
             "uart": "UART Num.",
