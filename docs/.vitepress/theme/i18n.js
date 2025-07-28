@@ -9,6 +9,7 @@ if (typeof window !== "undefined") {
 
 const i18n = createI18n({
     // locale: document.documentElement.lang || "zh",
+    legacy: false,
     locale: current_lang,
     globalInjection: true,
     silentTranslationWarn: true,

@@ -3,6 +3,7 @@ import './custom.css'
 import ElementPlus from 'element-plus'
 import 'element-plus/theme-chalk/base.css'
 import 'element-plus/theme-chalk/dark/css-vars.css'
+import 'element-plus/theme-chalk/el-message.css';
 import { nextTick } from "vue";
 
 import compatibleBadge from './components/badges/compatible.vue'

@@ -122,6 +122,10 @@
 
 <script setup>
     import { ref, computed } from "vue";
+    import { ElMessage } from "element-plus";
+    import { useI18n } from 'vue-i18n'
+    const { t } = useI18n()
+
     import chipsJson from "../../../data/chips.min.json";
     const current_lang = document.documentElement.lang;
 
@@ -144,7 +148,7 @@
             if (compareList.value.length < 4) { // Limit to 4 chips for comparison
                 compareList.value.push(props.chips);
             } else {
-                alert('最多支持 4 款产品进行比对');
+                ElMessage.error(t('chips.up_to_four_chips'));
                 return;
             }
         }
