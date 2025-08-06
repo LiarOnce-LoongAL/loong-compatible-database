@@ -1,5 +1,5 @@
-model: GeForce RTX 2080 SUPER
-arch: Turing
+model: GeForce RTX 5090 / RTX 5090D / RTX 5090D v2
+arch: Blackwell
 brand: NVIDIA
 type: GPU 
 status: -1

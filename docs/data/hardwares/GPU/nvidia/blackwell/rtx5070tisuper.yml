@@ -1,5 +1,5 @@
-model: GeForce RTX 2080 SUPER
-arch: Turing
+model: GeForce RTX 5070 Ti SUPER
+arch: Blackwell
 brand: NVIDIA
 type: GPU 
 status: -1

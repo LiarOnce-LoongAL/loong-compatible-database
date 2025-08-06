@@ -2,8 +2,8 @@ model: GeForce 510
 arch: Fermi
 brand: NVIDIA
 type: GPU 
-status: 0
-notes: 可尝试使用 Nouveau 驱动测试。
-notes_en: Try using the Nouveau driver test. 
-link: 
-link_en: 
+status: -1
+notes: 无法加载 VBIOS GOP
+notes_en: Cannot load VBIOS GOP
+link: /hardwares/nvidia.html#fermi-kepler
+link_en: /en/hardwares/nvidia.html#fermi-kepler

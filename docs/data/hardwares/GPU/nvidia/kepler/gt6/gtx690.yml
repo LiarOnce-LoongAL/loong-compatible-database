@@ -2,7 +2,7 @@ model: GeForce GTX 690
 arch: Kepler
 brand: NVIDIA
 type: GPU 
-status: 0
+status: -1
 notes: 双芯卡难以确认兼容性，可尝试使用 Nouveau 驱动测试。
 notes_en: Dual-GPUs cards are difficult to confirm compatibility, Try using the Nouveau driver test. 
 link: 
