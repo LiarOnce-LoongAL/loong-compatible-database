@@ -80,6 +80,10 @@
             "tpc": "典型功耗",
             "tdp": "热设计功耗"
         },
+        "chipset": {
+            "title":"桥片规格",
+            "interface": "前端接口"
+        },
         "gpu": {
             "title": "GPU 规格",
             "available": "是否配备 GPU",

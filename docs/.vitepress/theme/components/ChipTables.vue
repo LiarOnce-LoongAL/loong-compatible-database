@@ -23,7 +23,7 @@
         </el-row>
     </div>
 
-    <div class="chip-table">
+    <div class="chip-table" v-if="props.fields.cpu">
         <h3>{{ $t('chips.cpu.title') }}</h3>
         <el-row v-for="(item, key) in props.fields.cpu" :key="key">
             <el-col :span="10"><div>{{ $t(`chips.cpu.${key}`) }}</div></el-col>
@@ -31,7 +31,15 @@
         </el-row>
     </div>
 
-    <div class="chip-table">
+    <div class="chip-table" v-if="props.fields.chipset">
+        <h3>{{ $t('chips.chipset.title') }}</h3>
+        <el-row v-for="(item, key) in props.fields.chipset" :key="key">
+            <el-col :span="10"><div>{{ $t(`chips.chipset.${key}`) }}</div></el-col>
+            <el-col :span="10"><div>{{ chipData.chipset[key] }}</div></el-col>
+        </el-row>
+    </div>
+
+    <div class="chip-table" v-if="props.fields.gpu">
         <h3>{{ $t('chips.gpu.title') }}</h3>
         <el-row v-for="(item, key) in props.fields.gpu" :key="key">
             <el-col :span="10"><div>{{ $t(`chips.gpu.${key}`) }}</div></el-col>
@@ -45,7 +53,7 @@
         </el-row>
     </div>
 
-    <div class="chip-table">
+    <div class="chip-table" v-if="props.fields.memory">
         <h3>{{ $t('chips.memory.title') }}</h3>
         <el-row v-for="(item, key) in props.fields.memory" :key="key">
             <el-col :span="10"><div>{{ $t(`chips.memory.${key}`) }}</div></el-col>
@@ -96,7 +104,7 @@
         </el-row>
     </div>
 
-    <div class="chip-table">
+    <div class="chip-table" v-if="props.fields.power">
         <h3>{{ $t('chips.power.title') }}</h3>
         <el-row v-for="(item, key) in props.fields.power" :key="key">
             <el-col :span="10">
@@ -111,7 +119,7 @@
         </el-row>
     </div>
 
-    <div class="chip-table">
+    <div class="chip-table" v-if="props.fields.technologies">
         <h3>{{ $t('chips.tech.title') }}</h3>
         <el-row v-for="(item, key) in props.fields.technologies" :key="key">
             <el-col :span="10"><div>{{ $t(`chips.tech.${key}`) }}</div></el-col>
@@ -133,7 +141,22 @@
         chips: String,
         fields: Object
     });
-    const chipData = ref(chipsJson.cpu[props.chips]);
+
+    // const chipData = ref(chipsJson.cpu[props.chips]);
+    let chipData;
+    switch(props.fields.type) {
+        case "cpu":
+            chipData = ref(chipsJson.cpu[props.chips])
+            break
+
+        case "chipset":
+            chipData = ref(chipsJson.chipset[props.chips])
+            break
+        
+        default:
+            chipData = ref(chipsJson.cpu[props.chips])
+            break
+    }
 
     const compareList = ref(JSON.parse(localStorage.getItem('cpuCompareList') || '[]'));
     

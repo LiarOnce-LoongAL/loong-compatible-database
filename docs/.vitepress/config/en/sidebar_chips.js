@@ -108,6 +108,36 @@ const sidebar_chips = [
                 ]
             }
         ]
+    },
+    {
+        text: "Chipset",
+        collapsed: false,
+        items: [
+            {
+                text: "Loongson 7A chipset family",
+                items: [
+                    {
+                        text: '7A2000',
+                        collapsed: true,
+                        base: "/en/chips/chipset/7a2000/",
+                        items: [
+                            { text: '7A2000', link: '7A2000' },
+                            { text: '7A2000-i', link: '7A2000-i' },
+                            { text: '7A2000-F', link: '7A2000-F' }
+                        ]
+                    },
+                    {
+                        text: '7A1000',
+                        collapsed: true,
+                        base: "/en/chips/chipset/7a1000/",
+                        items: [
+                            { text: '7A1000', link: '7A1000' },
+                            { text: '7A1000-i', link: '7A1000-i' }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ];
 

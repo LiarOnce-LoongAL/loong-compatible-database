@@ -27,5 +27,12 @@ cpu.forEach(files => {
     chips.cpu[basename(files, extname(files))] = jsonResult
 })
 
+const chipset = await glob(__dirname + "/chips/chipset/**/*.yml", glob_options)
+chipset.forEach(files => {
+    let yamlFile = fs.readFileSync(files, 'utf-8')
+    let jsonResult = yaml.load(yamlFile)
+    chips.chipset[basename(files, extname(files))] = jsonResult
+})
+
 fs.writeFileSync(__dirname + "/chips.json", JSON.stringify(chips, null, "\t"))
 fs.writeFileSync(__dirname + "/chips.min.json", JSON.stringify(chips))

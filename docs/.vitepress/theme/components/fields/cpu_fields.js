@@ -1,4 +1,5 @@
 export default {
+    type: "cpu",
     basic: {
         name: 'name',
         series: 'series',
@@ -41,7 +42,8 @@ export default {
         avs: 'avs',
         gpio: 'gpio',
         d2d: 'd2d',
-        d2d_name: 'd2d_name'
+        d2d_name: 'd2d_name',
+        other: 'other'
     },
     package: {
         socket: 'socket',

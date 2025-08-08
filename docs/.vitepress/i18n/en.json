@@ -80,6 +80,10 @@
             "tpc": "Typical Power Consumption",
             "tdp": "Thermal Design Power"
         },
+        "chipset": {
+            "title":"Chipset Specifications",
+            "interface": "Interface"
+        },
         "gpu": {
             "title": "GPU Specifications",
             "available": "Is GPU available?",

@@ -5,7 +5,7 @@ const sidebar_chips = [
         items: [
             { text: 'CPU 对比', link: '/chips/cpu/cpucompare' },
             {
-                text: '龙芯3号', 
+                text: '龙芯3号',
                 items: [
                     {
                         text: '3A6000',
@@ -103,6 +103,36 @@ const sidebar_chips = [
                         items: [
                             { text: '2K0300', link: '2K0300' },
                             { text: '2K0300-i', link: '2K0300-i' }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        text: "桥片",
+        collapsed: false,
+        items: [
+            {
+                text: "龙芯7A",
+                items: [
+                    {
+                        text: '7A2000',
+                        collapsed: true,
+                        base: "/chips/chipset/7a2000/",
+                        items: [
+                            { text: '7A2000', link: '7A2000' },
+                            { text: '7A2000-i', link: '7A2000-i' },
+                            { text: '7A2000-F', link: '7A2000-F' }
+                        ]
+                    },
+                    {
+                        text: '7A1000',
+                        collapsed: true,
+                        base: "/chips/chipset/7a1000/",
+                        items: [
+                            { text: '7A1000', link: '7A1000' },
+                            { text: '7A1000-i', link: '7A1000-i' }
                         ]
                     }
                 ]
