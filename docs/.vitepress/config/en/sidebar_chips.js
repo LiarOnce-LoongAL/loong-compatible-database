@@ -78,6 +78,15 @@ const sidebar_chips = [
                         ]
                     },
                     {
+                        text: '2K2000',
+                        collapsed: true,
+                        base: "/en/chips/cpu/2k2000/",
+                        items: [
+                            { text: '2K2000', link: '2K2000' },
+                            { text: '2K2000-i', link: '2K2000-i' }
+                        ]
+                    },
+                    {
                         text: '2K1000',
                         collapsed: true,
                         base: "/en/chips/cpu/2k1000/",
