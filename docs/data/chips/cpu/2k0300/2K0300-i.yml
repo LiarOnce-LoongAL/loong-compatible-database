@@ -21,8 +21,8 @@ cpu:
   tdp: "3 W"
 
 gpu:
-  available: true
-  name: "unknown"
+  available: false
+  name: "N/A"
   
 memory:
   max: "1 GB"
@@ -31,14 +31,14 @@ memory:
   ecc: true
 
 exp:
-  io_name: "PCI Express"
-  io_rev: "2.0"
-  lanes: "2-Lanes"
+  io_name: "N/A"
+  io_rev: "N/A"
+  lanes: "N/A"
   usb_5gbps: 0
-  usb2: 2
+  usb2: 1
   sata: 0
   eth: "2 (1Gbps)"
-  spi: 6
+  spi: 4
   uart: 10
   i2c: 4
   gpio: 106
@@ -48,7 +48,7 @@ exp:
 
 package:
   socket: "FCBGA286"
-  temperature: "-40 - 85℃"
+  temperature: "-40 - 105℃"
   t_case: "N/A"
   t_junction: "105℃"
   size: "12 mm x 12 mm"
