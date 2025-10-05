@@ -25,10 +25,10 @@ gpu:
   name: "LG200"
   
 memory:
-  max: "32 GB"
-  types: "DDR4-3200 / LPDDR4"
+  max: "32 GB (DDR4) / 16 GB (LPDDR4)"
+  types: "DDR4-3200 / LPDDR4-4266"
   channels: "1 (64-Bit) / 2 (32-Bit)"
-  ecc: false
+  ecc: true
 
 exp:
   io_name: "PCI Express"
