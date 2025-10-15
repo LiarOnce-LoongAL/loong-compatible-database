@@ -4,5 +4,5 @@ type: Wireless
 status: 2
 notes: 需自行编译驱动安装，详见安装教程
 notes_en: 
-link: /hardwares/senscomm#scm2625a
-link_en: 
+link: /hardwares/senscomm.html#scm2625a
+link_en: /en/hardwares/senscomm.html#scm2625a
