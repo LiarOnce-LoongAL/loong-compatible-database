@@ -4,5 +4,5 @@ type: Ethernet
 status: 1 
 notes: 在新世界发行版需自行编译驱动安装
 notes_en: It necessary to compile and install drivers by oneself in new-world distributions
-link: /hardwares/motorcomm#yt6801
-link_en: /en/hardwares/motorcomm#yt6801
+link: /hardwares/motorcomm.html#yt6801
+link_en: /en/hardwares/motorcomm.html#yt6801
